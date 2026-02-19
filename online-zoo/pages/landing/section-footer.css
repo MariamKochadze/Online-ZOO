@@ -41,6 +41,7 @@
 .footer__nav-ul li a {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .footer-btn button {

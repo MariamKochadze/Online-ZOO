@@ -1,0 +1,93 @@
+.section__map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 12px;
+}
+
+.section__map h2 {
+    text-transform: uppercase;
+    color: var(--blue-1);
+    width: 601px;
+    height: 131px;
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: 600;
+    padding: 0 12px;
+}
+
+.main__section-map {
+    background-image: url(../../assets/images/map/map-images/Map.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    width: 1406px;
+    height: 912px;
+    position: relative;
+}
+
+.pin {
+    width: 100px;
+    height: 144px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.animal__species-1 {
+    background-image: url(../../assets/images/map/map-icons/agle.png);
+    top: 46%;
+    left: 11.2%;
+}
+
+.animal__species-2 {
+    background-image: url(../../assets/images/map/map-icons/croc.png);
+    background-repeat: no-repeat;
+    top: 46.2%;
+    left: 20.1%;
+}
+
+.animal__species-3 {
+    background-image: url(../../assets/images/map/map-icons/lion.png);
+    background-repeat: no-repeat;
+    top: 470px;
+    left: 560px;
+}
+
+.animal__species-4 {
+    background-image: url(../../assets/images/map/map-icons/monkey.png);
+    background-repeat: no-repeat;
+    top: 490px;
+    left: 700px;
+}
+
+.animal__species-5 {
+    background-image: url(../../assets/images/map/map-icons/lemur.png);
+    background-repeat: no-repeat;
+    top: 620px;
+    left: 785px;
+}
+
+.animal__species-6 {
+    background-image: url(../../assets/images/map/map-icons/bear.png);
+    background-repeat: no-repeat;
+    top: 360px;
+    left: 940px;
+}
+
+.animal__species-7 {
+    background-image: url(../../assets/images/map/map-icons/tiger.png);
+    background-repeat: no-repeat;
+    top: 520px;
+    left: 1005px;
+}
+
+.animal__species-8 {
+    background-image: url(../../assets/images/map/map-icons/bear-2.png);
+    background-repeat: no-repeat;
+    top: 640px;
+    left: 1140px;
+}

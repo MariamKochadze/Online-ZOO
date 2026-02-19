@@ -20,7 +20,7 @@
 
 .container__pets-feedback-sec {
     display: flex;
-    gap: 60px;
+    gap: 50px;
 }
 
 .container__pets-feedback-header h2 {
@@ -117,4 +117,3 @@
     margin-left: 200px;
     margin-top: 300px;
 }
-
