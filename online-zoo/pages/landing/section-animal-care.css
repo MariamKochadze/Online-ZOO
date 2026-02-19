@@ -1,0 +1,46 @@
+.section-animal-care {
+    padding-right: 250px;
+}
+.care h2 {
+    width: 655px;
+    height: 132px;
+    text-align: center;
+}
+
+.care p {
+    width: 537px;
+
+    text-align: center;
+}
+
+.animal-care {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.care-1 img {
+    height: 658px;
+}
+
+.container__pets-touch-img {
+    margin-top: 100px;
+}
+
+.care-card {
+    height: 658px;
+}
+
+.care-card-img {
+    height: 373px;
+        overflow: hidden;
+    width: 440px;
+}
+.care-card-img img {
+    
+
+}
+
+.care-desc {
+    height: 285px;
+}

@@ -1,0 +1,53 @@
+.background__image {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 110px);
+    background-image: url('../../assets/images/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.container {
+    max-width: 890px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    transform: translate(0, -50%);
+}
+
+.container__h1 {
+    text-transform: uppercase;
+    color: var(--green-1);
+}
+
+.container__p {
+    font-size: 20px;
+    max-width: 430px;
+}
+
+.container__btn {
+    align-items: center;
+}
+
+.container__btn button {
+    width: 240px;
+    height: 74px;
+    background-color: var(--orange-1);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.container__btn button img{
+    position: absolute;
+    top: 50%;
+    transform: translate(10px, -50%);
+}

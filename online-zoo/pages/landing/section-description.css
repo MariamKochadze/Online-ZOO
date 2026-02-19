@@ -1,0 +1,32 @@
+.container__zoo-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.container__zoo-description,
+.container__zoo-description-how-work {
+    display: grid;
+    grid-template-columns: 1fr 800px;
+    gap: 50px;
+}
+
+.container__zoo-description-how-work {
+    grid-template-columns: 800px 1fr;
+}
+
+.container__zoo-welcome{
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.container__zoo-welcome h2{
+    color: var(--green-1);
+}
+
+.container__zoo-welcome p{
+    font-size: 18px;
+}

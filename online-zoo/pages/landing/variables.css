@@ -1,0 +1,12 @@
+/*Variables*/
+:root {
+    /*Colors*/
+    --orange-1: #f58021;
+    --green-1: #00a092;
+    --blue-1: #20113d;
+
+    /*Font-sizes*/
+    --heading-1: 5.1rem; /* 82px / 16px = 5.1rem*/
+    --heading-2: 3.3rem; /* 54px / 16px = 3.3rem*/
+    --heading-3: 2.6rem; /* 42/ 16px = 2.6rem*/
+}

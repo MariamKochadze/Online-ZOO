@@ -1,0 +1,120 @@
+.container__pets-feedback {
+    background-image: url('../../assets/images/image\ 97.svg');
+    width: 1920px;
+    height: 1776px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    padding-top: 50px;
+}
+
+.container__pets-feedback-header h2,
+.container__pets-feedback-header p {
+    color: white;
+}
+
+.container__pets-feedback-header {
+    padding-right: 0;
+}
+
+.container__pets-feedback-sec {
+    display: flex;
+    gap: 60px;
+}
+
+.container__pets-feedback-header h2 {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 100%;
+    text-transform: uppercase;
+    width: 440px;
+    margin-bottom: 30px;
+}
+
+.container__pets-feedback-header p {
+    width: 560px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+}
+
+.container__pets-feedback-desc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+.container__pets-feedback-desc-1 {
+    width: 515px;
+    height: 463px;
+    background-color: white;
+
+    border-radius: 5px;
+}
+
+.container__pets-feedback-desc-2 {
+    width: 92px;
+    height: 96px;
+    font-weight: 800;
+    font-size: 120px;
+    color: var(--green-1);
+    padding: 20px;
+}
+
+.container__pets-feedback-desc-1 p {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 130%;
+    padding: 20px;
+}
+
+.container__pets-feedback-desc-1 span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 20px;
+    width: 415px;
+    height: 135px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.container__pets-feedback-desc-1-p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.container__pets-btn-scroll {
+    text-align: center;
+    margin: 100px;
+}
+
+.container__pets-btn-scroll button {
+    background: none;
+}
+
+.container__pets-btn-scroll button:first-child {
+    margin-right: 30px;
+}
+
+.container__pets-btn-2-feedback button {
+    top: 200px;
+    right: 640px;
+    width: 359px;
+    height: 74px;
+    color: white;
+    background: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: block;
+    margin-left: 200px;
+    margin-top: 300px;
+}
+

@@ -1,0 +1,63 @@
+.footer-animals {
+    background-color: var(--blue-1);
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.footer_line::before {
+    content: '';
+    display: block;
+    width: 1400px;
+    height: 1px;
+    background-color: white;
+
+    top: 10px;
+    left: 100px;
+}
+
+.footer__icons-container {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__nav-ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+
+.footer__nav-ul li {
+    text-decoration: none;
+}
+
+.footer__nav-ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-btn button {
+    margin: 0;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.footer__bottom-1 p {
+    color: white;
+}
+
+.footer__bottom-1 {
+    display: flex;
+    gap: 40px;
+}

@@ -1,0 +1,63 @@
+.container__pets-pay {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--blue-1);
+    margin-bottom: 0;
+}
+
+.container__pets-pay-header h2 {
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 0%;
+}
+.container__pets-pay-header h2,
+.container__pets-pay-number p,
+.container__pets-pay-desc p,
+.container__pets-pay-desc span {
+    color: white;
+}
+
+.container__pets-pay-number p {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    line-height: 130%;
+    position: relative;
+}
+
+.container__pets-pay-number p::before {
+    content: '';
+    display: block;
+    width: 1280px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.container__pets-pay-info {
+    display: flex;
+    gap: 80px;
+}
+
+.container__pets-pay-desc img {
+    margin-bottom: 30px;
+}
+
+.container__pets-pay-desc p {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 30px;
+    line-height: 130%;
+}
+
+.container__pets-pay-desc span {
+    display: block;
+    width: 560px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 150%;
+}

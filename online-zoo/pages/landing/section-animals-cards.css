@@ -1,0 +1,146 @@
+/* pets info */
+
+.container__pets-infos {
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.container__pets-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.container__pets-info h2 {
+    text-transform: uppercase;
+    font-size: 54px;
+    line-height: 100%;
+    color: var(--green-1);
+}
+
+.container__pets-info p {
+    width: 920px;
+    font-size: 26px;
+    line-height: 130%;
+}
+
+.container__pets-btn {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container__pets-btn button {
+    cursor: pointer;
+    border: none;
+}
+
+.container__pets-card {
+    position: relative;
+    width: 440px;
+    height: 747px;
+    border-radius: 5px;
+}
+
+.container__pets-cards-name {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-1);
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.container__pets-cards-img {
+    height: 436px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container__pets-cards-img img {
+    height: 436px;
+}
+
+.card-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--blue-1);
+    color: white;
+    height: 311px;
+}
+
+.card-description p {
+    font-size: 26px;
+    line-height: 130%;
+    padding: 20px;
+}
+
+.card-description span {
+    font-size: 18px;
+    line-height: 150%;
+    padding: 0 80px;
+}
+
+.container__btn-card button {
+    background-color: var(--blue-1);
+    color: var(--orange-1);
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    width: 240px;
+    height: 74px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.container__btn-card button img {
+    color: var(--orange-1);
+    position: absolute;
+    top: 50%;
+    transform: translate(10px, -50%);
+}
+
+.container__pets-1,
+.container__pets-2 {
+    display: flex;
+    gap: 50px;
+}
+
+.container__pets-2 {
+    margin-bottom: 70px;
+}
+.container__pets-1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container__pets-btn-2 {
+    width: 359px;
+    height: 74px;
+    margin: 0 auto;
+}
+
+.container__pets-btn-2 button {
+    width: 359px;
+    height: 74px;
+    color: #20113d;
+    background-color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.container__pets-btn-2 button img {
+    position: absolute;
+    top: 50%;
+    transform: translate(10px, -50%);
+}
