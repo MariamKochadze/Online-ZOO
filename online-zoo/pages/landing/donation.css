@@ -2,8 +2,15 @@
     background-color: var(--blue-1);
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 221px;
     gap: 100px;
+}
+
+.donation-desc {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .container__donation h3 {
@@ -57,4 +64,3 @@
 .donation_btn button span {
     padding: 0 20px;
 }
-

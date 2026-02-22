@@ -1,0 +1,140 @@
+.zoo-did-you-know {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.zoo-page h2 {
+    text-transform: uppercase;
+    color: var(--green-1);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: 600;
+    padding: 0 12px;
+}
+
+.zoo-page-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding: 50px 0;
+}
+
+.zoo-page-header h2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.zoo-page-more-live h2 {
+    color: black;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 100%;
+}
+
+.zoo-page-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.zoo-page-images img:first-child,
+.zoo-page-images img:last-child {
+    width: 80px;
+    height: 75px;
+}
+
+.zoo-did-you-know-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 1040px;
+    height: 269px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 50px 0px #00000040;
+}
+
+.zoo-did-you-know-info h3 {
+    text-transform: uppercase;
+    color: var(--green-1);
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.zoo-did-you-know-info p {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 130%;
+    width: 919px;
+    height: 102px;
+    text-align: center;
+}
+
+.zoo-desc {
+    width: 479px;
+    height: 382px;
+}
+
+.zoo-desc dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+}
+
+dt {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+}
+
+dd {
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+dt,
+dd {
+    padding: 5px;
+}
+
+.container__btn-card.zoos-btn-1 button {
+    background-color: white;
+    position: absolute;
+    left: 700px;
+    bottom: -1700px;
+}
+
+.zoo-animal-info {
+    display: flex;
+    gap: 300px;
+    padding: 50px;
+}
+
+.zoo-animal-desription{
+    width: 1160px;
+    height: 189px;
+}
+
+.zoo-animal-desription p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.zoo-page-side-nav-left-icon{
+    display: none;
+}
