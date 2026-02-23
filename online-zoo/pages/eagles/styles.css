@@ -1,0 +1,9 @@
+.zoo-did-you-know-info.eagle {
+    height: 375px;
+}
+
+.zoo-did-you-know-info.eagle h2,
+p {
+    /* padding: 50px;
+    border: 1px solid red; */
+}

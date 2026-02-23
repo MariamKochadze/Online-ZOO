@@ -1,3 +1,20 @@
+main {
+    display: block;
+}
+
+.zoo-top-layout {
+    display: flex;
+    align-items: flex-start;
+}
+
+.zoo-page {
+    flex: 1;
+}
+
+.main__section {
+    padding: 0 140px;
+}
+
 .zoo-did-you-know {
     display: flex;
     flex-direction: column;
@@ -124,17 +141,149 @@ dd {
     padding: 50px;
 }
 
-.zoo-animal-desription{
+.zoo-animal-desription {
     width: 1160px;
     height: 189px;
 }
 
-.zoo-animal-desription p{
+.zoo-animal-desription p {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
 }
 
-.zoo-page-side-nav-left-icon{
+/* SIDEBAR */
+
+.sidebar {
+    width: 220px;
+    background: var(--blue-1);
+    color: white;
+    height: 846px;
+    position: sticky;
+    top: 0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+/* HEADER */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.animal-list-sec-btn-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animal-list-sec-btn {
+    height: 70px;
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+/* ANIMAL LIST */
+.animal-list {
+    list-style: none;
+}
+
+.animal-list-sec {
+    position: relative;
+    height: 180px;
+    /* padding: 30px; */
+}
+
+.animal-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--orange-1);
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animal-item span {
     display: none;
+}
+.animal-item:hover {
+    background: #3e2563;
+}
+
+.animal-list-sec::before,
+.animal-list-sec-btn-cont::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 1px;
+    background-color: white;
+}
+
+.animal-item.active {
+    background: white;
+}
+
+.animal-item.active {
+    width: 104px;
+    height: 104px;
+}
+
+.animal-item.active::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+
+    background-image: url('../../assets/images/panda-page/panda-icons/Ellipse 7.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* TEXT */
+.text {
+    margin-left: 15px;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+}
+
+/* Hide text when collapsed */
+.sidebar.collapsed .text {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* CENTER ICONS WHEN COLLAPSED */
+.sidebar.collapsed .animal-item {
+    justify-content: center;
+}
+
+/* MAIN CONTENT */
+.content {
+    flex: 1;
+    padding: 40px;
 }
