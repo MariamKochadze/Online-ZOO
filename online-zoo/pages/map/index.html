@@ -11,21 +11,26 @@
         <link rel="stylesheet" href="../landing/variables.css" />
         <link rel="stylesheet" href="../landing/section-feedback.css" />
         <link rel="stylesheet" href="../landing/section-footer.css" />
+        <script src="../../pages/landing/script.js" defer></script>
     </head>
     <body>
         <header>
             <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li>
-                        <a href="#online-logo">
-                            <img src="../../assets/images/Logo.svg" alt="online logo" />
-                        </a>
-                    </li>
+                <div class="header__menu-list">
+                    <a href="#online-logo">
+                        <img src="../../assets/images/Logo.svg" alt="online logo" />
+                    </a>
 
-                    <li class="header__menu-info-social-links-container">
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <li class="header__menu-info-social-links-container" id="navMenu">
                         <ul class="header__menu-info">
                             <li>
-                                <a href="#about">ABOUT</a>
+                                <a href="#about" class="active">ABOUT</a>
                             </li>
                             <li>
                                 <a href="#map">MAP</a>
@@ -41,7 +46,7 @@
                             </li>
                         </ul>
 
-                        <ul class="header__menu-social-links">
+                        <ul class="header__menu-social-links header">
                             <li>
                                 <a href="#youtube">
                                     <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
@@ -59,7 +64,7 @@
                             </li>
                         </ul>
                     </li>
-                </ul>
+                </div>
             </nav>
         </header>
         <main>
@@ -99,13 +104,13 @@
                             <li><a href="#about">Contact us</a></li>
                         </ul>
                     </nav>
-                    <div class="container__pets-btn-2-feedback footer-btn">
-                        <button>
-                            donate for volunteers
-                            <img src="../../assets/icons/Union.svg" alt="icon" />
-                        </button>
-                    </div>
+
+                    <button class="container__pets-btn-2-feedback footer-btn">
+                        donate for volunteers
+                        <img src="../../assets/icons/Union.svg" alt="icon" />
+                    </button>
                 </div>
+
                 <div class="footer_line"></div>
                 <div class="footer__bottom">
                     <div class="footer__bottom-1">
@@ -114,7 +119,7 @@
                         <p>© RSSchool</p>
                     </div>
                     <div>
-                        <ul class="header__menu-social-links">
+                        <ul class="header__menu-social-links footer">
                             <li>
                                 <a href="#youtube">
                                     <img src="../../assets/images/YouTube.svg" alt="youtube logo" />

@@ -1,5 +1,8 @@
 .contact__us-img img {
-    margin: 100px 0;
+    margin: 0 0 100px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .contact__us-container {
@@ -15,12 +18,16 @@
     text-transform: uppercase;
     margin-bottom: 50px;
 }
+.contact__us-get-in-touch {
+    text-align: start;
+}
 
 .contact__us-get-in-touch p {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    width: 545px;
+    max-width: 545px;
+    width: 100%;
 }
 
 .contact__us-get-in-touch-form form {
@@ -31,7 +38,7 @@
 }
 
 .contact__us-get-in-touch-form form label {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     padding-top: 30px;
@@ -69,4 +76,48 @@
     width: 359px;
     margin-top: 30px;
     background-color: var(--green-1);
+}
+
+/* Responsive style */
+
+@media (max-width: 1550px) {
+    .contact__us-container {
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__us-get-in-touch {
+        text-align: center;
+    }
+    .contact__us-get-in-touch p {
+        max-width: 835px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__us-get-in-touch-form form,
+    .contact__us-get-in-touch p {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact__us-get-in-touch-form form,
+    .contact__us-get-in-touch p {
+        max-width: 300px;
+    }
+
+    .contact__us-get-in-touch-form form {
+        max-height: 568px;
+    }
+
+    .contact__us-get-in-touch h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .container__btn.contact-us-btn button {
+        max-width: 300px;
+    }
 }

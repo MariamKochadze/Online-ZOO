@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="./section-feedback.css" />
         <link rel="stylesheet" href="./section-animal-care.css" />
         <link rel="stylesheet" href="./section-footer.css" />
+        <script src="./script.js" defer></script>
     </head>
     <body>
         <header>
@@ -463,15 +464,13 @@
                     </div>
                 </div>
                 <div class="container__pets-btn-scroll">
-                    <button><img src="../../assets/icons/btn.svg" alt="button icon" /></button>
-                    <button><img src="../../assets/icons/btn (1).svg" alt="button icon" /></button>
+                    <button><img src="../../assets/icons/donate-arrow.png" alt="button icon" /></button>
+                    <button><img src="../../assets/icons/donate-arrow-1.png" alt="button icon" /></button>
                 </div>
-                <div class="container__pets-btn-2-feedback">
-                    <button>
-                        leave feedback
-                        <img src="../../assets/icons/Union.svg" alt="icon" />
-                    </button>
-                </div>
+                <button class="container__pets-btn-2-feedback">
+                    leave feedback
+                    <img src="../../assets/icons/Union.svg" alt="icon" />
+                </button>
             </section>
             <section class="main__section container__pets-infos section-animal-care">
                 <div class="container__pets-info care">
@@ -479,13 +478,17 @@
                     <p>You can help to look after the animals you love with your gift today</p>
                 </div>
 
+                <!-- Grid Cintainer for Animal Care  -->
                 <div class="container__pets-1 animal-care">
-                    <div class="container__pets-card animal-care-1">
-                        <div class="container__pets-cards-img care-1">
+                    <!-- Grid Item 1 -->
+                    <div class="container__pets-card grid-item animal-care-1">
+                        <div class="container__pets-cards-img">
                             <img src="../../assets/images/koala.svg" alt="koala image" />
                         </div>
                     </div>
-                    <div class="container__pets-card care-card">
+
+                    <!-- Grid Item 2 -->
+                    <div class="container__pets-card grid-item care-card animal-care-2">
                         <div class="care-card-img">
                             <img src="../../assets/images/Feed panda.svg" alt="panda image" />
                         </div>
@@ -499,9 +502,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container__pets-2">
-                    <div class="container__pets-card care-card">
+
+                    <!-- Grid Item 3 -->
+                    <div class="container__pets-card grid-item care-card animal-care-3">
                         <div class="container__pets-cards-img care-card-img">
                             <img src="../../assets/images/image 156.svg" alt="tiger image" />
                         </div>
@@ -515,7 +518,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__pets-card care-card">
+
+                    <!-- Grid Item 4 -->
+                    <div class="container__pets-card grid-item care-card animal-care-4">
                         <div class="care-card-img">
                             <img src="../../assets/images/image 155.svg" alt="lemur image" />
                         </div>
@@ -532,7 +537,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__pets-card care-card">
+
+                    <!-- Grid Item 5 -->
+                    <div class="container__pets-card grid-item care-card animal-care-5">
                         <div class="care-card-img">
                             <img src="../../assets/images/image 144.svg" alt="birds image" />
                         </div>
@@ -549,6 +556,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- End For Grid -->
+
                 <div class="container__pets-btn-2">
                     <button>
                         choose your favourite
@@ -582,14 +591,13 @@
                             <li><a href="#about">Contact us</a></li>
                         </ul>
                     </nav>
-                    <div class="container__pets-btn-2-feedback footer-btn">
-                        <button>
-                            donate for volunteers
-                            <img src="../../assets/icons/Union.svg" alt="icon" />
-                        </button>
-                    </div>
+
+                    <button class="container__pets-btn-2-feedback footer-btn">
+                        donate for volunteers
+                        <img src="../../assets/icons/Union.svg" alt="icon" />
+                    </button>
                 </div>
-                <div class="footer_line">hello</div>
+                <div class="footer_line"></div>
                 <div class="footer__bottom">
                     <div class="footer__bottom-1">
                         <p>© 2021 DinaK</p>
@@ -597,7 +605,7 @@
                         <p>© RSSchool</p>
                     </div>
                     <div>
-                        <ul class="header__menu-social-links">
+                        <ul class="header__menu-social-links footer">
                             <li>
                                 <a href="#youtube">
                                     <img src="../../assets/images/YouTube.svg" alt="youtube logo" />

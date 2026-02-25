@@ -19,8 +19,42 @@ h3 {
 .main__section {
     padding: 0 260px;
     margin-bottom: 100px;
+    max-width: 1920px;
+    margin: 0 auto 100px;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive style */
+@media (max-width: 1700px) {
+    .main__section {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .main__section {
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 1440px) {
+   .main__section {
+        padding: 0 60px;
+    }
+}
+
+
+@media (max-width: 1300px) {
+   .main__section {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 480px){
+    .main__section {
+        padding: 0 10px;
+    }
 }
