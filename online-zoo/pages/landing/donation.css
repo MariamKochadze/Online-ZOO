@@ -11,6 +11,7 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
+    align-items: center;
 }
 
 .container__donation h3 {
@@ -22,10 +23,13 @@
     color: white;
     font-size: 18px;
     width: 609px;
+    font-weight: 400;
 }
 
 .container__donation h5 {
     font-size: 26px;
+    font-weight: 500;
+    line-height: 130%;
     color: white;
 }
 
@@ -63,4 +67,24 @@
 }
 .donation_btn button span {
     padding: 0 20px;
+}
+
+@media (max-width: 1199px) {
+    .container__donation {
+        flex-direction: column;
+        height: 640px !important;
+        text-align: center;
+        gap: 50px !important;
+    }
+}
+
+@media (max-width: 630px) {
+    .container__donation {
+        height: 539px !important;
+    }
+
+    .container__donation p {
+        width: 300px !important;
+        text-align: center;
+    }
 }

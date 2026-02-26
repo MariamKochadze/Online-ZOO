@@ -25,6 +25,9 @@
         <link rel="stylesheet" href="./section-feedback.css" />
         <link rel="stylesheet" href="./section-animal-care.css" />
         <link rel="stylesheet" href="./section-footer.css" />
+        <link rel="stylesheet" href="./grid-layout.css" />
+        <link rel="stylesheet" href="./animal-card.css" />
+        <link rel="stylesheet" href="./buttons.css" />
         <script src="./script.js" defer></script>
     </head>
     <body>
@@ -40,7 +43,7 @@
                     <li class="header__menu-info-social-links-container">
                         <ul class="header__menu-info">
                             <li>
-                                <a href="#about">ABOUT</a>
+                                <a href="#about" class="active">ABOUT</a>
                             </li>
                             <li>
                                 <a href="#map">MAP</a>
@@ -479,23 +482,25 @@
                 </div>
 
                 <!-- Grid Cintainer for Animal Care  -->
-                <div class="container__pets-1 animal-care">
+                <div class="grd xl-grd-cols-12 xl-grd-rows-2 l-grd-rows-3 xl-grd-gap-40 l-grd-gap-20 animal-care-container">
                     <!-- Grid Item 1 -->
-                    <div class="container__pets-card grid-item animal-care-1">
-                        <div class="container__pets-cards-img">
+                    <div class="animal-cards-banner-img-container xl-col-span-8 l-col-span-12">
+                        <div class="animal-cards-banner-img">
                             <img src="../../assets/images/koala.svg" alt="koala image" />
                         </div>
                     </div>
 
                     <!-- Grid Item 2 -->
-                    <div class="container__pets-card grid-item care-card animal-care-2">
-                        <div class="care-card-img">
+                    <div class="animal-card care-card xl-col-span-4 l-col-span-6">
+                        <div class="animal-card-img-container">
                             <img src="../../assets/images/Feed panda.svg" alt="panda image" />
                         </div>
-                        <div class="card-description care-desc">
-                            <span>Your $30 could give Lucas  a slice of panda cake, made with our secret recipe. </span>
-                            <div class="container__btn-card">
-                                <button>
+                        <div class="animal-card-body">
+                            <span class="animal-card-body-text"
+                                >Your $30 could give Lucas  a slice of panda cake, made with our secret recipe.
+                            </span>
+                            <div>
+                                <button class="button-text">
                                     feed
                                     <img src="../../assets/icons/Union-1.svg" alt="union icon" />
                                 </button>
@@ -504,14 +509,16 @@
                     </div>
 
                     <!-- Grid Item 3 -->
-                    <div class="container__pets-card grid-item care-card animal-care-3">
-                        <div class="container__pets-cards-img care-card-img">
+                    <div class="animal-card care-card xl-col-span-4 l-col-span-6">
+                        <div class="animal-card-img-container">
                             <img src="../../assets/images/image 156.svg" alt="tiger image" />
                         </div>
-                        <div class="card-description care-desc">
-                            <span> Your $150 will help to care for Senja,  a Sumatran tiger, for three weeks. </span>
-                            <div class="container__btn-card">
-                                <button>
+                        <div class="animal-card-body">
+                            <span class="animal-card-body-text">
+                                Your $150 will help to care for Senja,  a Sumatran tiger, for three weeks.
+                            </span>
+                            <div>
+                                <button class="button-text">
                                     feed
                                     <img src="../../assets/icons/Union-1.svg" alt="union icon" />
                                 </button>
@@ -520,17 +527,17 @@
                     </div>
 
                     <!-- Grid Item 4 -->
-                    <div class="container__pets-card grid-item care-card animal-care-4">
-                        <div class="care-card-img">
+                    <div class="animal-card care-card xl-col-span-4 l-col-span-6">
+                        <div class="animal-card-img-container">
                             <img src="../../assets/images/image 155.svg" alt="lemur image" />
                         </div>
-                        <div class="card-description care-desc">
-                            <span
+                        <div class="animal-card-body">
+                            <span class="animal-card-body-text"
                                 >With your support, we can give Andy his favorite fruits. Especially when it's not fruit
                                 season in its natural habitat.
                             </span>
-                            <div class="container__btn-card">
-                                <button>
+                            <div>
+                                <button class="button-text">
                                     feed
                                     <img src="../../assets/icons/Union-1.svg" alt="union icon" />
                                 </button>
@@ -539,16 +546,16 @@
                     </div>
 
                     <!-- Grid Item 5 -->
-                    <div class="container__pets-card grid-item care-card animal-care-5">
-                        <div class="care-card-img">
+                    <div class="animal-card care-card xl-col-span-4 l-col-span-6">
+                        <div class="animal-card-img-container">
                             <img src="../../assets/images/image 144.svg" alt="birds image" />
                         </div>
-                        <div class="card-description care-desc">
-                            <span
+                        <div class="animal-card-body">
+                            <span class="animal-card-body-text"
                                 >Sam & Lora have hatched and raised numerous young and will be happy with your help.
                             </span>
-                            <div class="container__btn-card">
-                                <button>
+                            <div>
+                                <button class="button-text">
                                     feed
                                     <img src="../../assets/icons/Union-1.svg" alt="union icon" />
                                 </button>
@@ -558,8 +565,8 @@
                 </div>
                 <!-- End For Grid -->
 
-                <div class="container__pets-btn-2">
-                    <button>
+                <div class="choose-favorite-btn-container">
+                    <button class="button-outline">
                         choose your favourite
                         <img src="../../assets/icons/Union-2.svg" alt="icon" />
                     </button>

@@ -1,0 +1,30 @@
+.button-outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 359px;
+    height: 74px;
+    color: #20113d;
+    background-color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.button-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--blue-1);
+    color: var(--orange-1);
+    font-size: 25px;
+    width: 142px;
+    height: 74px;
+}

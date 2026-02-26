@@ -14,18 +14,35 @@
         <link rel="stylesheet" href="../landing/section-animals-cards.css" />
         <link rel="stylesheet" href="../landing/section-feedback.css" />
         <link rel="stylesheet" href="../landing/section-footer.css" />
+        <link rel="stylesheet" href="../../pages/landing/grid-layout.css" />
+        <!-- <link rel="stylesheet" href="./animal-info-section.css">
+        <link rel="stylesheet" href="./animal-list.css">
+        <link rel="stylesheet" href="./base.css">
+        <link rel="stylesheet" href="./card-button.css">
+        <link rel="stylesheet" href="./did-you-know-section.css">
+        <link rel="stylesheet" href="./header-button.css">
+        <link rel="stylesheet" href="./header-button.css">
+        <link rel="stylesheet" href="./main-layout.css">
+        <link rel="stylesheet" href="./page-images.css">
+        <link rel="stylesheet" href="./responsive.css">
+        <link rel="stylesheet" href="./sidebar-header.css">
+        <link rel="stylesheet" href="./sidebar.css"> -->
     </head>
     <body>
         <header>
             <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li>
-                        <a href="#online-logo">
-                            <img src="../../assets/images/Logo.svg" alt="online logo" />
-                        </a>
-                    </li>
+                <div class="header__menu-list">
+                    <a href="#online-logo">
+                        <img src="../../assets/images/Logo.svg" alt="online logo" />
+                    </a>
 
-                    <li class="header__menu-info-social-links-container">
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <li class="header__menu-info-social-links-container" id="navMenu">
                         <ul class="header__menu-info">
                             <li>
                                 <a href="#about">ABOUT</a>
@@ -34,7 +51,7 @@
                                 <a href="#map">MAP</a>
                             </li>
                             <li>
-                                <a href="#zoos">ZOOS</a>
+                                <a href="#zoos" class="active">ZOOS</a>
                             </li>
                             <li>
                                 <a href="#contact-us">CONTACT US</a>
@@ -44,84 +61,102 @@
                             </li>
                         </ul>
 
-                        <ul class="header__menu-social-links">
+                        <ul class="header__menu-social-links header">
                             <li>
-                                <a href="#youtube">
+                                <a href="https://www.youtube.com/@RollingScopesSchool" target="_blank">
                                     <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#instagram">
+                                <a href="https://www.instagram.com/rsschool_en?igsh=em1janI5bzZ0dXlx" target="_blank">
                                     <img src="../../assets/images/Instagram.svg" alt="instagram logo" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#facebook">
+                                <a
+                                    href="https://www.facebook.com/EPAM.Poland?mibextid=wwXIfr&rdid=cgRX3ckS90yDJAxo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18JdV47Fxn%2F%3Fmibextid%3DwwXIfr#"
+                                    target="_blank"
+                                >
                                     <img src="../../assets/images/Facebook.svg" alt="facebook logo" />
                                 </a>
                             </li>
                         </ul>
                     </li>
-                </ul>
+                </div>
             </nav>
         </header>
         <main>
             <div class="zoo-top-layout">
                 <div class="zoo-page-side-nav">
-                    <aside class="sidebar" id="sidebar">
+                    <input type="checkbox" id="sidebarToggle" hidden />
+                    <aside class="sidebar">
                         <div class="sidebar-header">
                             <span class="logo"
                                 ><img src="../../assets/images/panda-page/panda-icons/LIVE Badge.svg" alt="live image"
                             /></span>
-                            <button id="toggleBtn" class="toggle-btn">
-                                <img src="../../assets/images/panda-page/panda-icons/Group 17.svg" alt="arrow icon" />
-                            </button>
+                            <label for="sidebarToggle" class="toggle-btn">
+                                <img
+                                    src="../../assets/images/panda-page/panda-icons/Group 17.svg"
+                                    alt="arrow icon"
+                                    class="arrow-img"
+                                />
+                            </label>
                         </div>
 
                         <ul class="animal-list">
-                            <li class="animal-list-sec">
-                                <div class="animal-item active" data-animal="panda">
-                                    <img
-                                        src="../../assets/images/panda-page/panda-icons/Panda.svg"
-                                        alt="panda icon"
-                                        class="icon"
-                                    />
-                                    <span class="text">Watch live from China’s Panda Center</span>
-                                </div>
-                            </li>
+                            <div class="animal-list-sec-panda">
+                                <li class="animal-list-sec">
+                                    <div class="animal-item active" data-animal="panda">
+                                        <img
+                                            src="../../assets/images/panda-page/panda-icons/Panda.svg"
+                                            alt="panda icon"
+                                            class="icon"
+                                        />
+                                        <span class="text">Watch live from China's Panda Center </span>
+                                    </div>
+                                </li>
+                            </div>
 
-                            <li class="animal-list-sec">
-                                <div class="animal-item" data-animal="eagle">
-                                    <img
-                                        src="../../assets/images/panda-page/panda-icons/Eagle.svg"
-                                        alt="eagle icon"
-                                        class="icon"
-                                    />
-                                    <span class="text">Watch Bald Eagles Nest Cam</span>
-                                </div>
-                            </li>
+                            <div class="animal-list-sec-eagle">
+                                <li class="animal-list-sec">
+                                    <div class="animal-item" data-animal="eagle">
+                                        <img
+                                            src="../../assets/images/panda-page/panda-icons/Eagle.svg"
+                                            alt="eagle icon"
+                                            class="icon"
+                                        />
+                                        <span class="text">Watch The Bald Eagles Nest from West End cam</span>
+                                    </div>
+                                </li>
+                            </div>
 
-                            <li class="animal-list-sec">
-                                <div class="animal-item" data-animal="gorilla">
-                                    <img
-                                        src="../../assets/images/panda-page/panda-icons/Gorilla.svg"
-                                        alt="gorilla icon"
-                                        class="icon"
-                                    />
-                                    <span class="text">Livestream from Gorilla Habitat</span>
-                                </div>
-                            </li>
+                            <div class="animal-list-sec-gorilla">
+                                <li class="animal-list-sec">
+                                    <div class="animal-item" data-animal="gorilla">
+                                        <img
+                                            src="../../assets/images/panda-page/panda-icons/Gorilla.svg"
+                                            alt="gorilla icon"
+                                            class="icon"
+                                        />
+                                        <span class="text">Livestream from Gorilla Forest Corridor habitat cam</span>
+                                    </div>
+                                </li>
+                            </div>
 
-                            <li class="animal-list-sec">
-                                <div class="animal-item" data-animal="lemur">
-                                    <img
-                                        src="../../assets/images/panda-page/panda-icons/Lemur.svg"
-                                        alt="lemur icon"
-                                        class="icon"
-                                    />
-                                    <span class="text">Ring-tailed Lemurs in Madagascar</span>
-                                </div>
-                            </li>
+                            <div class="animal-list-sec-lemur">
+                                <li class="animal-list-sec">
+                                    <div class="animal-item" data-animal="lemur">
+                                        <img
+                                            src="../../assets/images/panda-page/panda-icons/Lemur.svg"
+                                            alt="lemur icon"
+                                            class="icon"
+                                        />
+                                        <span class="text"
+                                            >The ring-tailed lemurs play in Madagascar, Lemuria Land</span
+                                        >
+                                    </div>
+                                </li>
+                            </div>
                         </ul>
                         <div class="animal-list-sec-btn-cont">
                             <button class="animal-list-sec-btn">
@@ -131,38 +166,40 @@
                     </aside>
                 </div>
 
-                <section class="main__section zoo-page">
-                    <div class="zoo-page-header">
+                <section class="grd xl-grd-cols-12 xl-grd-rows-3 s-grd-rows-4 main__section zoo-page">
+                    <div class="zoo-page-header xl-col-span-10 s-col-span-12">
                         <h2>find live panda cams</h2>
-                        <div class="container__btn zoo-page-btn">
-                            <button>
-                                donate now
-                                <img src="../../assets/icons/Union.svg" alt="union icon" />
-                            </button>
-                        </div>
                     </div>
-                    <div>
+                    <div class="container__btn zoo-page-btn xl-col-span-2 s-col-span-12 s-order-3 xs-order-4">
+                        <button>
+                            donate now
+                            <img src="../../assets/icons/Union.svg" alt="union icon" />
+                        </button>
+                    </div>
+                    <div class="zoo-page-img xl-col-span-12 s-order-2">
                         <img src="../../assets/images/panda-page/panda-image/panda-youtube-img.png" alt="panda image" />
                     </div>
-                    <div class="zoo-page-more-live">
+                    <div class="zoo-page-more-live xl-col-span-12 s-order-4 xs-order-3">
                         <div>
                             <h2>more live views</h2>
                         </div>
-                        <div class="zoo-page-images">
-                            <img src="../../assets/images/panda-page/panda-icons/btn.png" alt="arrow icon" />
-                            <img
-                                src="../../assets/images/panda-page/panda-image/Panda additional cam card.png"
-                                alt="panda image"
-                            />
-                            <img
-                                src="../../assets/images/panda-page/panda-image/Panda additional cam card (1).png"
-                                alt="panda image"
-                            />
-                            <img
-                                src="../../assets/images/panda-page/panda-image/Panda additional cam card (2).png"
-                                alt="panda image"
-                            />
-                            <img src="../../assets/images/panda-page/panda-icons/btn (1).png" alt="arrow icon" />
+                        <div class="zoo-page-images-slider-container">
+                            <div class="zoo-page-images">
+                                <img src="../../assets/images/panda-page/panda-icons/btn.png" alt="arrow icon" />
+                                <img
+                                    src="../../assets/images/panda-page/panda-image/Panda additional cam card.png"
+                                    alt="panda image"
+                                />
+                                <img
+                                    src="../../assets/images/panda-page/panda-image/Panda additional cam card (1).png"
+                                    alt="panda image"
+                                />
+                                <img
+                                    src="../../assets/images/panda-page/panda-image/Panda additional cam card (2).png"
+                                    alt="panda image"
+                                />
+                                <img src="../../assets/images/panda-page/panda-icons/btn (1).png" alt="arrow icon" />
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -217,16 +254,16 @@
                             <dd>Forests</dd>
 
                             <dt>Range:</dt>
-                            <dd>Eastern Asia</dd>
+                            <dd class="range-row">
+                                <span>Eastern Asia</span>
+                                <button class="container__btn-card zoos-btn-1">
+                                    VIEW map
+                                    <img src="../../assets/icons/Union-1.svg" alt="union icon" />
+                                </button>
+                            </dd>
                         </dl>
-                        <div class="container__btn-card zoos-btn-1">
-                            <button>
-                                VIEW map
-                                <img src="../../assets/icons/Union-1.svg" alt="union icon" />
-                            </button>
-                        </div>
                     </div>
-                    <div>
+                    <div class="zoo-panda-img">
                         <img src="../../assets/images/panda-page/panda-image/image 163.png" alt="panda image" />
                     </div>
                 </div>
@@ -267,13 +304,13 @@
                             <li><a href="#about">Contact us</a></li>
                         </ul>
                     </nav>
-                    <div class="container__pets-btn-2-feedback footer-btn">
-                        <button>
-                            donate for volunteers
-                            <img src="../../assets/icons/Union.svg" alt="icon" />
-                        </button>
-                    </div>
+
+                    <button class="container__pets-btn-2-feedback footer-btn">
+                        donate for volunteers
+                        <img src="../../assets/icons/Union.svg" alt="icon" />
+                    </button>
                 </div>
+
                 <div class="footer_line"></div>
                 <div class="footer__bottom">
                     <div class="footer__bottom-1">
@@ -282,19 +319,22 @@
                         <p>© RSSchool</p>
                     </div>
                     <div>
-                        <ul class="header__menu-social-links">
+                        <ul class="header__menu-social-links footer">
                             <li>
-                                <a href="#youtube">
+                                <a href="https://www.youtube.com/@RollingScopesSchool" target="_blank">
                                     <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#instagram">
+                                <a href="https://www.instagram.com/rsschool_en?igsh=em1janI5bzZ0dXlx" target="_blank">
                                     <img src="../../assets/images/Instagram.svg" alt="instagram logo" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#facebook">
+                                <a
+                                    href="https://www.facebook.com/EPAM.Poland?mibextid=wwXIfr&rdid=cgRX3ckS90yDJAxo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18JdV47Fxn%2F%3Fmibextid%3DwwXIfr#"
+                                    target="_blank"
+                                >
                                     <img src="../../assets/images/Facebook.svg" alt="facebook logo" />
                                 </a>
                             </li>
