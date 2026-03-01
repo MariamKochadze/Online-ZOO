@@ -15,55 +15,62 @@
         <link rel="stylesheet" href="../landing/section-animals-cards.css" />
         <link rel="stylesheet" href="../landing/section-feedback.css" />
         <link rel="stylesheet" href="../landing/section-footer.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/navigation.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/grid-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/variables.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/shared-classes.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/reset.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/flex-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/buttons.css" />
     </head>
     <body>
         <header>
-            <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li>
-                        <a href="#online-logo">
-                            <img src="../../assets/images/Logo.svg" alt="online logo" />
-                        </a>
-                    </li>
+            <nav class="header__menu row flx align-center">
+                <a href="#online-logo">
+                    <img src="../../assets/images/Logo.svg" alt="online logo" />
+                </a>
 
-                    <li class="header__menu-info-social-links-container">
-                        <ul class="header__menu-info">
-                            <li>
-                                <a href="#about">ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="#map">MAP</a>
-                            </li>
-                            <li>
-                                <a href="#zoos" class="active">ZOOS</a>
-                            </li>
-                            <li>
-                                <a href="#contact-us">CONTACT US</a>
-                            </li>
-                            <li>
-                                <a href="#design">DESIGN</a>
-                            </li>
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+                <label for="menu-toggle" class="menu-overlay"></label>
+
+                <label for="menu-toggle" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+
+                <ul class="header__menu-list flx align-center justify-flex-end wrap desktop-only">
+                    <li class="header__menu-info-social-links-container flx align-center">
+                        <ul class="header__menu-info flx justify-space-between">
+                            <li><a href="../landing/index.html">ABOUT</a></li>
+                            <li><a href="../map/index.html">MAP</a></li>
+                            <li><a href="#" class="active">ZOOS</a></li>
+                            <li><a href="../contact-us/index.html">CONTACT US</a></li>
+                            <li><a href="#design">DESIGN</a></li>
                         </ul>
-
-                        <ul class="header__menu-social-links">
+                        <ul class="header__menu-social-links flx justify-space-between wrap">
                             <li>
-                                <a href="#youtube">
-                                    <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
-                                </a>
+                                <a href="#youtube"><img src="../../assets/images/YouTube.svg" alt="youtube" /></a>
                             </li>
                             <li>
-                                <a href="#instagram">
-                                    <img src="../../assets/images/Instagram.svg" alt="instagram logo" />
-                                </a>
+                                <a href="#instagram"><img src="../../assets/images/Instagram.svg" alt="instagram" /></a>
                             </li>
                             <li>
-                                <a href="#facebook">
-                                    <img src="../../assets/images/Facebook.svg" alt="facebook logo" />
-                                </a>
+                                <a href="#facebook"><img src="../../assets/images/Facebook.svg" alt="facebook" /></a>
                             </li>
                         </ul>
                     </li>
                 </ul>
+
+                <aside class="sidebar">
+                    <ul class="mobile-nav-list flx direction-column align-center">
+                        <li><a href="../landing/index.html">ABOUT</a></li>
+                        <li><a href="../map/index.html">MAP</a></li>
+                        <li><a href="#" class="active">ZOOS</a></li>
+                        <li><a href="../contact-us/index.html">CONTACT US</a></li>
+                        <li><a href="#design">DESIGN</a></li>
+                    </ul>
+                </aside>
             </nav>
         </header>
         <main>
@@ -165,23 +172,24 @@
                     </div>
                 </section>
             </div>
-            <section class="main__section container__donation">
-                <div class="donation-desc">
-                    <h3>Provide Andy the lemur with fruits!</h3>
-                    <p>
-                        More than 90% of lemur species are endangered and might face extinction in the nearest future.
-                        Watch the ring-tailed lemurs play and climb in this soothing setting and support them by
-                        donating for the fruits they adore.
-                    </p>
-                </div>
-                <div class="donation_btn">
-                    <h5>Quick Donate</h5>
-                    <button>
-                        <span>$ DONATION AMOUNT</span>
-                        <span class="icon-box">
-                            <img src="../../assets/icons/Union.svg" alt="icon" />
-                        </span>
-                    </button>
+            <section class="flx align-center justify-center m-align-flex-start main__section container__donation">
+                <div class="row flx align-center justify-space-between wrap">
+                    <div class="flx direction-column donation-desc">
+                        <h3>Your donation makes a difference!</h3>
+                        <p>
+                            The Online Zoo's animal webcams are some of the most famous on the internet. Tune in to
+                            watch your favourite animals — live, 24/7!
+                        </p>
+                    </div>
+                    <div class="donation_btn">
+                        <h5>Quick Donate</h5>
+                        <a class="btn btn-outline">
+                            <span>$ DONATION AMOUNT</span>
+                            <span class="icon-box">
+                                <img src="../../assets/icons/Union.svg" alt="icon" />
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="main__section zoo-did-you-know">
