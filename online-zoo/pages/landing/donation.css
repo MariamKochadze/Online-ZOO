@@ -5,6 +5,7 @@
     justify-content: center;
     height: 221px;
     gap: 100px;
+    max-width: unset;
 }
 
 .donation-desc {
@@ -39,7 +40,7 @@
     flex-direction: column;
 }
 
-.donation_btn button {
+.donation_btn .donation-open-btn {
     cursor: pointer;
     background-color: var(--blue-1);
     color: white;
@@ -65,7 +66,7 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.donation_btn button span {
+.donation_btn .donation-desctiption {
     padding: 0 20px;
 }
 

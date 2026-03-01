@@ -73,6 +73,7 @@ main {
     height: 269px;
     border-radius: 5px;
     box-shadow: 0px 4px 50px 0px #00000040;
+    margin-top: 100px;
 }
 
 .zoo-did-you-know-info h3 {
@@ -161,6 +162,494 @@ dd {
     font-size: 18px;
     line-height: 150%;
 }
+
+/* donation pop-up */
+.donation__popup {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* when user click donate button popup should be visible */
+#donationToggle:checked ~ .donation__popup {
+    display: flex;
+}
+
+#donationToggle:checked ~ main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.donation__popup-container {
+    width: 100%;
+    max-width: 1160px;
+    height: auto;
+    background: white;
+
+    box-shadow: 0px 4px 50px 0px #00000040;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.donation__popup-section h2 {
+    color: var(--orange-1);
+    text-transform: uppercase;
+    max-width: 678px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.donation__popup-section p {
+    max-width: 570px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.donation__popup-amount {
+    width: 1000px;
+    height: 65px;
+}
+.donation__popup-img {
+    position: relative;
+    display: inline-block;
+}
+
+.donation__popup-img img:last-child {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.donation__popup-amount {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/* make your donation pop-up-1 */
+.make__your-donation {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.make__your-donation-container {
+    width: 100%;
+    max-width: 920px;
+    height: 819px;
+    background: white;
+    box-shadow: 0px 4px 50px 0px #00000040;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.make__your-donation-header {
+    height: 135px;
+    background-color: var(--orange-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.make__your-donation-header h3 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.make__your-donation-form p {
+    font-weight: 600;
+    text-align: start;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.donation__cont {
+    padding: 0 120px;
+    position: relative;
+}
+
+.make__your-donation-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.make__your-donation-form-container label {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.make__your-donation-form-container label::before {
+    content: ' *';
+    color: green;
+    font-weight: bold;
+}
+
+.make__your-donation-line::before {
+    content: '';
+    display: block;
+    border: 1px solid #a4a8ae;
+    padding: 0;
+    width: 919px !important;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+}
+
+.make__your-donation-images {
+    width: 680px;
+}
+
+.make__your-donation-images img {
+    padding: 0 20px;
+}
+
+.make__your-donation-images img:first-child,
+.make__your-donation-images img:last-child {
+    padding: 0;
+}
+
+.make__your-donation-other-amount,
+.make__your-donation-select-pet {
+    display: flex;
+}
+.make__your-donation-other-amount input {
+    width: 200px;
+    height: 65px;
+    margin-left: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.select-wrapper {
+    margin-left: 30px;
+}
+.select-wrapper .dropdown-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 440px !important;
+    height: 65px;
+    text-align: center;
+
+    text-align: center;
+    color: #a4a8ae;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 120px;
+}
+
+.make__your-donation-select-pet .dropdown-placeholder::after,
+.make__your-donation-select-pet .dropdown-placeholder::before {
+    content: none;
+}
+.select-wrapper a,
+.select-wrapper .dropdown-placeholder,
+.dropdown-content-checkbox p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.select-wrapper a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+.dropdown-placeholder {
+    text-align: center;
+}
+
+.dropdown-placeholder-icon {
+    width: 30px;
+    height: 100%;
+    background-color: #80cfc8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: auto;
+}
+
+.select-wrapper .dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    min-width: 440px;
+    height: 200px;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 5px rgb(196, 190, 190);
+    text-align: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content::-webkit-scrollbar-button:vertical:decrement,
+.dropdown-content::-webkit-scrollbar-button:vertical:increment {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dropdown-content::-webkit-scrollbar-button:single-button {
+    display: block;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dropdown-content::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('../../assets/icons/scrollba-arrow-1.svg');
+}
+
+.dropdown-content::-webkit-scrollbar-button:vertical:increment {
+    background-image: url('../../assets/icons/scrollba-arrow-2.svg');
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: #80cfc8;
+    border-radius: 10px;
+    border: 3.5px solid transparent;
+    background-clip: padding-box;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 32px;
+    height: 72px;
+    display: block;
+}
+
+#animalToggle:checked ~ .dropdown-content {
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-content-checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown-content-checkbox input {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 17px;
+}
+
+.dropdown-content-checkbox p {
+    padding: 0;
+}
+
+.container__btn button {
+    /* margin-left: 420px; */
+    background-color: #00a092 !important;
+}
+
+/* next */
+
+.next-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-container-circle {
+    display: flex;
+    gap: 10px;
+    padding: 40px 0;
+}
+.next-container-circle-1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00a092;
+}
+
+.next-container-circle-2,
+.next-container-circle-3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #00a092;
+}
+
+/* make your donation pop-up-2*/
+
+.make__your-donation {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.make__your-donation-form-personal-info form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 680px;
+    height: 309px;
+}
+
+.make__your-donation-form-personal-info label {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+.make__your-donation-form-personal-info p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.make__your-donation-form-personal-info label::before {
+    content: ' *';
+    color: green;
+    font-weight: bold;
+}
+
+.make__your-donation-form-personal-info input {
+    width: 680px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.make__your-donation-form-personal-info input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 10px;
+    color: #969696;
+}
+
+.next-container-back-btn {
+    margin: 20px;
+}
+
+.next-container-back-btn a {
+    color: #00a092;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+/* make your donation pop-up-3*/
+/* make your donation pop-up-3 */
+.make__your-donation {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* Container */
+.make__your-donation-form-personal-info.payment-info {
+    width: 680px;
+}
+
+/* Form layout */
+.make__your-donation-form-personal-info.payment-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Labels */
+.make__your-donation-form-personal-info.payment-info label {
+    padding-top: 10px;
+    text-align: start;
+}
+
+/* Card + CVV row */
+.payment-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Field wrapper */
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input style */
+.field input {
+    height: 65px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+/* Specific widths */
+.card-field input {
+    width: 442px;
+}
+
+.cvv-field input {
+    width: 198px;
+}
+
+/* Expiration dropdown */
+.expiration-field .dropdown-placeholder {
+    width: 201px !important;
+    height: 65px;
+    padding-left: 15px !important;
+}
+
+/* Remove extra margin */
+.select-wrapper.popup-3 {
+    margin-left: 0;
+}
+
+.year-popup {
+    padding: 0 !important;
+}
+
+.expiration__date-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
 
 /* SIDEBAR */
 

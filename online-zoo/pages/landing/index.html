@@ -15,8 +15,6 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="./navigation.css" />
-        <link rel="stylesheet" href="./variables.css" />
         <link rel="stylesheet" href="./banner.css" />
         <link rel="stylesheet" href="./section-description.css" />
         <link rel="stylesheet" href="./donation.css" />
@@ -25,85 +23,94 @@
         <link rel="stylesheet" href="./section-feedback.css" />
         <link rel="stylesheet" href="./section-animal-care.css" />
         <link rel="stylesheet" href="./section-footer.css" />
-        <link rel="stylesheet" href="./grid-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/navigation.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/grid-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/variables.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/shared-classes.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/reset.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/flex-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/buttons.css" />
         <link rel="stylesheet" href="./animal-card.css" />
         <link rel="stylesheet" href="./buttons.css" />
         <script src="./script.js" defer></script>
     </head>
     <body>
         <header>
-            <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li>
-                        <a href="#online-logo">
-                            <img src="../../assets/images/Logo.svg" alt="online logo" />
-                        </a>
-                    </li>
+            <nav class="header__menu row flx align-center">
+                <a href="#online-logo">
+                    <img src="../../assets/images/Logo.svg" alt="online logo" />
+                </a>
 
-                    <li class="header__menu-info-social-links-container">
-                        <ul class="header__menu-info">
-                            <li>
-                                <a href="#about" class="active">ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="#map">MAP</a>
-                            </li>
-                            <li>
-                                <a href="#zoos">ZOOS</a>
-                            </li>
-                            <li>
-                                <a href="#contact-us">CONTACT US</a>
-                            </li>
-                            <li>
-                                <a href="#design">DESIGN</a>
-                            </li>
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+                <label for="menu-toggle" class="menu-overlay"></label>
+
+                <label for="menu-toggle" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+
+                <ul class="header__menu-list flx align-center justify-flex-end wrap desktop-only">
+                    <li class="header__menu-info-social-links-container flx align-center">
+                        <ul class="header__menu-info flx justify-space-between">
+                            <li><a href="#about" class="active">ABOUT</a></li>
+                            <li><a href="#map">MAP</a></li>
+                            <li><a href="#zoos">ZOOS</a></li>
+                            <li><a href="#contact-us">CONTACT US</a></li>
+                            <li><a href="#design">DESIGN</a></li>
                         </ul>
-
-                        <ul class="header__menu-social-links">
+                        <ul class="header__menu-social-links flx justify-space-between wrap">
                             <li>
-                                <a href="#youtube">
-                                    <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
-                                </a>
+                                <a href="#youtube"><img src="../../assets/images/YouTube.svg" alt="youtube" /></a>
                             </li>
                             <li>
-                                <a href="#instagram">
-                                    <img src="../../assets/images/Instagram.svg" alt="instagram logo" />
-                                </a>
+                                <a href="#instagram"><img src="../../assets/images/Instagram.svg" alt="instagram" /></a>
                             </li>
                             <li>
-                                <a href="#facebook">
-                                    <img src="../../assets/images/Facebook.svg" alt="facebook logo" />
-                                </a>
+                                <a href="#facebook"><img src="../../assets/images/Facebook.svg" alt="facebook" /></a>
                             </li>
                         </ul>
                     </li>
                 </ul>
+
+                <aside class="sidebar">
+                    <ul class="mobile-nav-list flx direction-column align-center">
+                        <li><a href="#about" class="active">ABOUT</a></li>
+                        <li><a href="#map">MAP</a></li>
+                        <li><a href="#zoos">ZOOS</a></li>
+                        <li><a href="#contact-us">CONTACT US</a></li>
+                        <li><a href="#design">DESIGN</a></li>
+                    </ul>
+                </aside>
             </nav>
         </header>
+
         <main>
             <section class="main__section background__image">
-                <div class="container">
-                    <div class="container__h1">
-                        <h1>Watch your favourite animal online</h1>
-                    </div>
-                    <div class="container__p">
-                        <p>
-                            Explore the exciting and mysterious world of wild animals in a natural setting without
-                            leaving your home.
-                        </p>
-                    </div>
-                    <div class="container__btn">
-                        <button>
+                <div class="row banner-content-wrapper flx align-center s-direction-column">
+                    <div class="container flx direction-column align-flex-start">
+                        <div class="container__h1">
+                            <h1>Watch your favourite animal online</h1>
+                        </div>
+                        <div class="container__p">
+                            <p>
+                                Explore the exciting and mysterious world of wild animals in a natural setting without
+                                leaving your home.
+                            </p>
+                        </div>
+
+                        <a class="btn btn-primary s-row s-margin-top-10">
                             view live cam
                             <img src="../../assets/icons/Union.svg" alt="union icon" />
-                        </button>
+                        </a>
                     </div>
                 </div>
+                <div class="mobile-banner-img-container s-row"></div>
             </section>
 
-            <section class="main__section container__zoo-descriptions">
-                <div class="container__zoo-description">
-                    <div class="container__zoo-welcome">
+            <section class="row flx direction-column container__zoo-descriptions">
+                <div class="grd xl-grd-cols-12 container__zoo-description">
+                    <div class="xl-col-span-5 container__zoo-welcome">
                         <h2>Welcome to the Online Zoo!</h2>
                         <p>
                             On our website, using live webcams, fans of all ages can observe various animals. Among
@@ -113,15 +120,15 @@
                             view on cameras, so please check back if you don't see anything.
                         </p>
                     </div>
-                    <div class="container__zoo-img">
+                    <div class="xl-col-span-7 container__zoo-img">
                         <img src="../../assets/images/Group 11.svg" alt="Group image" />
                     </div>
                 </div>
-                <div class="container__zoo-description container__zoo-description-how-work">
-                    <div class="container__zoo-img">
+                <div class="grd xl-grd-cols-12 container__zoo-description">
+                    <div class="xl-col-span-7 container__zoo-img how-works">
                         <img src="../../assets/images/Group 12.svg" alt="Group image" />
                     </div>
-                    <div class="container__zoo-welcome">
+                    <div class="xl-col-span-5 container__zoo-welcome how-works">
                         <h2>How we work</h2>
                         <p>
                             Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and
@@ -133,6 +140,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="main__section container__donation">
                 <div class="donation-desc">
                     <h3>Your donation makes a difference!</h3>
@@ -151,6 +159,7 @@
                     </button>
                 </div>
             </section>
+
             <section class="main__section container__pets-infos">
                 <div class="main__section container__pets-info">
                     <h2>meet some our Pets</h2>
@@ -482,7 +491,9 @@
                 </div>
 
                 <!-- Grid Cintainer for Animal Care  -->
-                <div class="grd xl-grd-cols-12 xl-grd-rows-2 l-grd-rows-3 xl-grd-gap-40 l-grd-gap-20 animal-care-container">
+                <div
+                    class="grd xl-grd-cols-12 xl-grd-rows-2 l-grd-rows-3 xl-grd-gap-40 l-grd-gap-20 animal-care-container"
+                >
                     <!-- Grid Item 1 -->
                     <div class="animal-cards-banner-img-container xl-col-span-8 l-col-span-12">
                         <div class="animal-cards-banner-img">

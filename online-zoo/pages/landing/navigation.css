@@ -4,6 +4,8 @@ header {
 
 .header__menu {
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .burger {
@@ -22,7 +24,7 @@ header {
 
 .header__menu-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     height: 110px;
@@ -33,9 +35,8 @@ header {
 }
 
 .header__menu-list li a {
-    text-decoration: none;
-    color: #000000;
-    cursor: pointer;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 .header__menu-info a.active {
@@ -48,7 +49,12 @@ header {
     gap: 60px;
 }
 
-.header__menu-info,
+.header__menu-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 48.25px;
+}
+
 .header__menu-social-links {
     display: flex;
     justify-content: space-between;

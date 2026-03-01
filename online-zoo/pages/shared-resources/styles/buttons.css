@@ -1,0 +1,64 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 74px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: filter 0.2s ease;
+    padding: 26px 29.86px;
+}
+
+.btn-primary {
+    background-color: var(--orange-1);
+    color: white;
+}
+
+.btn-outline {
+    background-color: white;
+    color: #20113d;
+    /* Note: If it's an "outline", you might want a border: 1px solid #20113d; */
+}
+
+.btn-text {
+    background-color: var(--blue-1);
+    color: var(--orange-1);
+    font-size: 25px;
+}
+
+.btn-w-240 {
+    width: 240px;
+}
+.btn-w-359 {
+    width: 359px;
+}
+.btn-w-142 {
+    width: 142px;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+/* Table */
+@media (max-width: 640px) {
+    .btn {
+        padding: 26px 52.36px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+    .btn {
+        padding: 0;
+        height: 45px;
+    }
+}

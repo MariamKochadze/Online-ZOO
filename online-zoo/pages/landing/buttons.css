@@ -1,3 +1,19 @@
+.button-primary {
+    width: 240px;
+    height: 74px;
+    background-color: var(--orange-1);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+
 .button-outline {
     display: flex;
     align-items: center;
