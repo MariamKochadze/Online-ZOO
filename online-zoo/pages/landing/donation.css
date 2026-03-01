@@ -70,6 +70,12 @@
     }
 }
 
+@media (max-width: 1500px) {
+    .donation-desc {
+        max-width: 577px;
+    }
+}
+
 @media (max-width: 1100px) {
     .container__donation {
         padding: 50px 38px;

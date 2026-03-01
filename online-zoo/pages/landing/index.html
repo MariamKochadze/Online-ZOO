@@ -54,9 +54,9 @@
                     <li class="header__menu-info-social-links-container flx align-center">
                         <ul class="header__menu-info flx justify-space-between">
                             <li><a href="#about" class="active">ABOUT</a></li>
-                            <li><a href="#map">MAP</a></li>
-                            <li><a href="#zoos">ZOOS</a></li>
-                            <li><a href="#contact-us">CONTACT US</a></li>
+                            <li><a href="../map/index.html">MAP</a></li>
+                            <li><a href="../panda/index.html">ZOOS</a></li>
+                            <li><a href="../contact-us/index.html">CONTACT US</a></li>
                             <li><a href="#design">DESIGN</a></li>
                         </ul>
                         <ul class="header__menu-social-links flx justify-space-between wrap">
@@ -76,9 +76,9 @@
                 <aside class="sidebar">
                     <ul class="mobile-nav-list flx direction-column align-center">
                         <li><a href="#about" class="active">ABOUT</a></li>
-                        <li><a href="#map">MAP</a></li>
-                        <li><a href="#zoos">ZOOS</a></li>
-                        <li><a href="#contact-us">CONTACT US</a></li>
+                        <li><a href="../map/index.html">MAP</a></li>
+                        <li><a href="../panda/index.html">ZOOS</a></li>
+                        <li><a href="../contact-us/index.html">CONTACT US</a></li>
                         <li><a href="#design">DESIGN</a></li>
                     </ul>
                 </aside>
@@ -162,6 +162,7 @@
                 </div>
             </section>
 
+            <!-- Carusel Section -->
             <section class="main__section container__pets-infos">
                 <div class="main__section container__pets-info">
                     <h2>meet some our Pets</h2>
@@ -176,7 +177,7 @@
                     <button><img src="../../assets/icons/btn (1).svg" alt="button icon" /></button>
                 </div>
 
-                <div class="container__pets-1">
+                <div class="row container__pets-1">
                     <div class="container__pets-card panda">
                         <div class="container__pets-cards-name">
                             <p>Lucas</p>
@@ -427,7 +428,7 @@
             </section>
             <section class="main__section container__pets-feedback">
                 <div class="container__pets-feedback-sec">
-                    <div class="main__section container__pets-feedback-header">
+                    <div class="container__pets-feedback-header">
                         <h2>what our users think</h2>
                         <p>
                             We are continuously striving to improve the experiences of our future guests. Below you can
@@ -486,16 +487,14 @@
                     <img src="../../assets/icons/Union.svg" alt="icon" />
                 </button>
             </section>
-            <section class="main__section container__pets-infos section-animal-care">
-                <div class="container__pets-info care">
+            <section class="flx direction-column align-center container__pets-infos section-animal-care">
+                <div class="row container__pets-info care">
                     <h2>care for the animals you love</h2>
                     <p>You can help to look after the animals you love with your gift today</p>
                 </div>
 
                 <!-- Grid Cintainer for Animal Care  -->
-                <div
-                    class="grd xl-grd-cols-12 xl-grd-rows-2 l-grd-rows-3 xl-grd-gap-40 l-grd-gap-20 animal-care-container"
-                >
+                <div class="row grd xl-grd-cols-12 xl-grd-rows-2 xl-grd-gap-40 l-grd-gap-20 animal-care-container">
                     <!-- Grid Item 1 -->
                     <div class="animal-cards-banner-img-container xl-col-span-8 l-col-span-12">
                         <div class="animal-cards-banner-img">
@@ -578,12 +577,20 @@
                 </div>
                 <!-- End For Grid -->
 
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
                 <div class="choose-favorite-btn-container">
                     <button class="button-outline">
                         choose your favourite
                         <img src="../../assets/icons/Union-2.svg" alt="icon" />
                     </button>
                 </div>
+            </section>
+            <section class="main__section animal_img">
                 <div class="container__pets-touch-img">
                     <img src="../../assets/images/Touch the animal2 1.svg" alt="touch image" />
                 </div>
@@ -605,10 +612,10 @@
                     </div>
                     <nav class="footer__nav">
                         <ul class="footer__nav-ul">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#about">map</a></li>
-                            <li><a href="#about">Zoos</a></li>
-                            <li><a href="#about">Contact us</a></li>
+                            <li><a href="../landing/index.html">ABOUT</a></li>
+                            <li><a href="#" class="active">MAP</a></li>
+                            <li><a href="../panda/index.html">ZOOS</a></li>
+                            <li><a href="../contact-us/index.html">CONTACT US</a></li>
                         </ul>
                     </nav>
 
@@ -617,6 +624,7 @@
                         <img src="../../assets/icons/Union.svg" alt="icon" />
                     </button>
                 </div>
+
                 <div class="footer_line"></div>
                 <div class="footer__bottom">
                     <div class="footer__bottom-1">
@@ -625,7 +633,7 @@
                         <p>© RSSchool</p>
                     </div>
                     <div>
-                        <ul class="header__menu-social-links footer">
+                        <ul class="flx header__menu-social-links footer">
                             <li>
                                 <a href="#youtube">
                                     <img src="../../assets/images/YouTube.svg" alt="youtube logo" />

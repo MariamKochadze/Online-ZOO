@@ -163,75 +163,7 @@ dd {
     line-height: 150%;
 }
 
-/* donation pop-up */
-.donation__popup {
-    position: fixed;
-    inset: 0;
-    display: none;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-}
 
-/* when user click donate button popup should be visible */
-#donationToggle:checked ~ .donation__popup {
-    display: flex;
-}
-
-#donationToggle:checked ~ main {
-    height: 100vh;
-    overflow: hidden;
-}
-
-.donation__popup-container {
-    width: 100%;
-    max-width: 1160px;
-    height: auto;
-    background: white;
-
-    box-shadow: 0px 4px 50px 0px #00000040;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.donation__popup-section h2 {
-    color: var(--orange-1);
-    text-transform: uppercase;
-    max-width: 678px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-
-.donation__popup-section p {
-    max-width: 570px;
-    padding-bottom: 30px;
-    margin: 0 auto;
-}
-
-.donation__popup-amount {
-    width: 1000px;
-    height: 65px;
-}
-.donation__popup-img {
-    position: relative;
-    display: inline-block;
-}
-
-.donation__popup-img img:last-child {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-}
-
-.donation__popup-amount {
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
 
 /* make your donation pop-up-1 */
 .make__your-donation {

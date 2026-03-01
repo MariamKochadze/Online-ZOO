@@ -7,64 +7,63 @@
         <!-- Styles -->
         <link rel="stylesheet" href="../landing/style.css" />
         <link rel="stylesheet" href="./styles.css" />
-        <link rel="stylesheet" href="../landing/navigation.css" />
-        <link rel="stylesheet" href="../landing/variables.css" />
         <link rel="stylesheet" href="../landing/section-feedback.css" />
         <link rel="stylesheet" href="../landing/section-footer.css" />
-        <script src="../../pages/landing/script.js" defer></script>
+        <link rel="stylesheet" href="../shared-resources/styles/variables.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/navigation.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/grid-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/shared-classes.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/reset.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/flex-layout.css" />
     </head>
     <body>
         <header>
-            <nav class="header__menu">
-                <div class="header__menu-list">
-                    <a href="#online-logo">
-                        <img src="../../assets/images/Logo.svg" alt="online logo" />
-                    </a>
+            <nav class="header__menu row flx align-center">
+                <a href="#online-logo">
+                    <img src="../../assets/images/Logo.svg" alt="online logo" />
+                </a>
 
-                    <div class="burger" id="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+                <label for="menu-toggle" class="menu-overlay"></label>
 
-                    <li class="header__menu-info-social-links-container" id="navMenu">
-                        <ul class="header__menu-info">
-                            <li>
-                                <a href="#about" >ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="#map" class="active">MAP</a>
-                            </li>
-                            <li>
-                                <a href="#zoos">ZOOS</a>
-                            </li>
-                            <li>
-                                <a href="#contact-us">CONTACT US</a>
-                            </li>
-                            <li>
-                                <a href="#design">DESIGN</a>
-                            </li>
+                <label for="menu-toggle" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+
+                <ul class="header__menu-list flx align-center justify-flex-end wrap desktop-only">
+                    <li class="header__menu-info-social-links-container flx align-center">
+                        <ul class="header__menu-info flx justify-space-between">
+                            <li><a href="../landing/index.html">ABOUT</a></li>
+                            <li><a href="#" class="active">MAP</a></li>
+                            <li><a href="../panda/index.html">ZOOS</a></li>
+                            <li><a href="../contact-us/index.html">CONTACT US</a></li>
+                            <li><a href="#design">DESIGN</a></li>
                         </ul>
-
-                        <ul class="header__menu-social-links header">
+                        <ul class="header__menu-social-links flx justify-space-between wrap">
                             <li>
-                                <a href="#youtube">
-                                    <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
-                                </a>
+                                <a href="#youtube"><img src="../../assets/images/YouTube.svg" alt="youtube" /></a>
                             </li>
                             <li>
-                                <a href="#instagram">
-                                    <img src="../../assets/images/Instagram.svg" alt="instagram logo" />
-                                </a>
+                                <a href="#instagram"><img src="../../assets/images/Instagram.svg" alt="instagram" /></a>
                             </li>
                             <li>
-                                <a href="#facebook">
-                                    <img src="../../assets/images/Facebook.svg" alt="facebook logo" />
-                                </a>
+                                <a href="#facebook"><img src="../../assets/images/Facebook.svg" alt="facebook" /></a>
                             </li>
                         </ul>
                     </li>
-                </div>
+                </ul>
+
+                <aside class="sidebar">
+                    <ul class="mobile-nav-list flx direction-column align-center">
+                        <li><a href="../landing/index.html">ABOUT</a></li>
+                        <li><a href="#" class="active">MAP</a></li>
+                        <li><a href="../panda/index.html">ZOOS</a></li>
+                        <li><a href="../contact-us/index.html">CONTACT US</a></li>
+                        <li><a href="#design">DESIGN</a></li>
+                    </ul>
+                </aside>
             </nav>
         </header>
         <main>
@@ -98,10 +97,10 @@
                     </div>
                     <nav class="footer__nav">
                         <ul class="footer__nav-ul">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#about">map</a></li>
-                            <li><a href="#about">Zoos</a></li>
-                            <li><a href="#about">Contact us</a></li>
+                            <li><a href="../landing/index.html">ABOUT</a></li>
+                            <li><a href="#" class="active">MAP</a></li>
+                            <li><a href="../panda/index.html">ZOOS</a></li>
+                            <li><a href="../contact-us/index.html">CONTACT US</a></li>
                         </ul>
                     </nav>
 
@@ -119,7 +118,7 @@
                         <p>© RSSchool</p>
                     </div>
                     <div>
-                        <ul class="header__menu-social-links footer">
+                        <ul class="flx header__menu-social-links footer">
                             <li>
                                 <a href="#youtube">
                                     <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
