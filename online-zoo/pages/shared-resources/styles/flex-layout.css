@@ -39,6 +39,10 @@
     .m-direction-column {
         flex-direction: column;
     }
+
+    .m-align-flex-start {
+        align-items: flex-start;
+    }
 }
 
 /* Below 320 */

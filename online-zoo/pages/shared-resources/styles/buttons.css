@@ -23,8 +23,10 @@
 }
 
 .btn-outline {
-    background-color: white;
-    color: #20113d;
+    background-color: var(--blue-1);
+    color: var(--white-1);
+    padding: 0 0 0 14px;
+    border: 1px solid var(--white-1);
     /* Note: If it's an "outline", you might want a border: 1px solid #20113d; */
 }
 
@@ -53,6 +55,10 @@
     .btn {
         padding: 26px 52.36px;
     }
+
+    .btn-outline {
+        padding: 0 0 0 40px;
+    }
 }
 
 /* Mobile */
@@ -60,5 +66,15 @@
     .btn {
         padding: 0;
         height: 45px;
+    }
+
+    .btn-outline span,
+    .btn-outline a,
+    .btn-outline p {
+        font-size: 16px;
+    }
+
+    .btn.btn-outline {
+        padding-left: 26px;
     }
 }
