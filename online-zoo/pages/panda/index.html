@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="../shared-resources/styles/reset.css" />
         <link rel="stylesheet" href="../shared-resources/styles/flex-layout.css" />
         <link rel="stylesheet" href="../shared-resources/styles/buttons.css" />
+        <link rel="stylesheet" href="./popup.css" />
         <!-- <link rel="stylesheet" href="./animal-info-section.css">
         <link rel="stylesheet" href="./animal-list.css">
         <link rel="stylesheet" href="./base.css">
@@ -225,31 +226,7 @@
                     </div>
                 </div>
             </section>
-            <section class="donation__popup">
-                <div class="donation__popup-container">
-                    <div class="donation__popup-img">
-                        <img src="../../assets/images/donation-popup-img.png" alt="donation image" />
-                        <label for="donationToggle">
-                            <img src="../../assets/icons/donation-popup-close.svg" alt="close image" />
-                        </label>
-                    </div>
-                    <div class="donation__popup-section">
-                        <h2>together we care, save and protect!</h2>
-                        <p>
-                            Your most generous gift not only cares for countless animals, but it also offers hope and a
-                            vital lifeline to the world’s most endangered wildlife relying on us to survive.
-                        </p>
-                    </div>
-                    <div class="donation__popup-amount">
-                        <img src="../../assets/icons/donation-20.svg" alt="donation icon" />
-                        <img src="../../assets/icons/donation-30.svg" alt="donation icon" />
-                        <img src="../../assets/icons/donation-50.svg" alt="donation icon" />
-                        <img src="../../assets/icons/donation-80.svg" alt="donation icon" />
-                        <img src="../../assets/icons/donation-100.svg" alt="donation icon" />
-                        <img src="../../assets/icons/donation-other-amount.svg" alt="donation icon" />
-                    </div>
-                </div>
-            </section>
+
             <!-- Make your donation popup-1 -->
             <section class="make__your-donation">
                 <div class="make__your-donation-container">
@@ -536,14 +513,46 @@
                             <li><a href="#" class="active">MAP</a></li>
                             <li><a href="../panda/index.html">ZOOS</a></li>
                             <li><a href="../contact-us/index.html">CONTACT US</a></li>
-                            <li><a href="#design">DESIGN</a></li>
                         </ul>
                     </nav>
 
-                    <button class="container__pets-btn-2-feedback footer-btn">
-                        donate for volunteers
-                        <img src="../../assets/icons/Union.svg" alt="icon" />
-                    </button>
+                    <div class="feedback-controller">
+                        <input type="checkbox" id="feedback-checkbox" class="feedback-checkbox" hidden />
+
+                        <label for="feedback-checkbox" class="container__pets-btn-2-feedback footer-btn">
+                            donate for volunteers
+                            <img src="../../assets/icons/Union.svg" alt="icon" />
+                        </label>
+
+                        <!-- footer donation popup -->
+                        <section class="donation__popup">
+                            <input type="checkbox" id="for-close" hidden />
+                            <div class="donation__popup-container">
+                                <div class="donation__popup-img">
+                                    <img src="../../assets/images/donation-popup-img.png" alt="donation image" />
+                                    <label for="for-close" class="close-popup">
+                                        <img src="../../assets/icons/donation-popup-close.svg" alt="close image" />
+                                    </label>
+                                </div>
+                                <div class="donation__popup-section">
+                                    <h2>together we care, save and protect!</h2>
+                                    <p>
+                                        Your most generous gift not only cares for countless animals, but it also offers
+                                        hope and a vital lifeline to the world’s most endangered wildlife relying on us
+                                        to survive.
+                                    </p>
+                                </div>
+                                <div class="donation__popup-amount">
+                                    <img src="../../assets/icons/donation-20.svg" alt="donation icon" />
+                                    <img src="../../assets/icons/donation-30.svg" alt="donation icon" />
+                                    <img src="../../assets/icons/donation-50.svg" alt="donation icon" />
+                                    <img src="../../assets/icons/donation-80.svg" alt="donation icon" />
+                                    <img src="../../assets/icons/donation-100.svg" alt="donation icon" />
+                                    <img src="../../assets/icons/donation-other-amount.svg" alt="donation icon" />
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
 
                 <div class="footer_line"></div>

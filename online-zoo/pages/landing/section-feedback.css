@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     padding: 0;
     padding-top: 160px;
+    margin-bottom: 136px;
 }
 
 .container__pets-feedback-header h2 {
@@ -26,6 +27,7 @@
 .container__pets-feedback-sec {
     display: flex;
     gap: 50px;
+    padding-left: 260px;
 }
 
 .container__pets-feedback-header h2 {
@@ -95,7 +97,7 @@
 
 .container__pets-btn-scroll {
     text-align: center;
-    margin: 100px;
+    margin: 60px auto 376px;
 }
 
 .container__pets-btn-scroll button {
@@ -109,9 +111,8 @@
 }
 
 .container__pets-btn-2-feedback {
-    position: absolute;
+    margin-left: 260px;
     bottom: 200px;
-    left: 200px;
     width: 359px;
     height: 74px;
     color: white;
@@ -127,9 +128,65 @@
     gap: 10px;
 }
 
+@media (max-width: 1919px) {
+    .container__pets-feedback-sec {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .container__pets-feedback-sec {
+        flex-direction: column;
+    }
+
+    .container__pets-feedback-desc {
+        justify-content: end;
+    }
+
+    .container__pets-btn-scroll {
+        text-align: end;
+        margin: 100px;
+    }
+
+    .container__pets-btn-2-feedback {
+        margin-left: 100px;
+    }
+
+    .container__pets-feedback {
+        height: 1880px;
+    }
+}
+
 /* Responsive styles */
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1160px) {
+    .container__pets-feedback-desc {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
     .container__pets-feedback {
+        height: 1660px;
+    }
+
+    .container__pets-btn-scroll {
+        display: none;
+    }
+
+    .container__pets-btn-2-feedback {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container__pets-feedback-sec {
+        padding-left: 10px;
+    }
+    .container__pets-feedback-header {
+        text-align: start;
+    }
+
+    .container__pets-feedback-desc {
+        overflow: scroll;
     }
 }

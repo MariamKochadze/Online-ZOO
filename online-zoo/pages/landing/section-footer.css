@@ -42,6 +42,7 @@
 
 .footer__nav-ul li {
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .footer__nav-ul li a {
@@ -70,6 +71,17 @@
 }
 
 /* Responsive style */
+
+@media (max-width: 1200px) {
+    .footer__icons-container {
+        gap: 30px;
+        margin-right: 20px;
+    }
+    .container__pets-btn-2-feedback {
+        margin-left: 10px;
+        white-space: nowrap;
+    }
+}
 @media (max-width: 1199px) {
     .footer__icons {
         flex-direction: column;

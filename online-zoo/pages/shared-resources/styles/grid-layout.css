@@ -66,7 +66,7 @@
     order: 4;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
     .l-grd-rows-3 {
         grid-template-rows: repeat(3, 1fr);
     }

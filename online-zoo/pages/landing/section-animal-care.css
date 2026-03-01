@@ -1,9 +1,7 @@
 .section-animal-care {
-    display: flex;
-    flex-direction: column;
     gap: 100px;
-    padding-right: 250px;
 }
+
 .care h2 {
     width: 655px;
     height: 132px;
@@ -16,9 +14,6 @@
 }
 
 /* animal cards container */
-.animal-care-container {
-    max-width: 1400px;
-}
 
 .animal-cards-banner-img-container,
 .animal-cards-banner-img {
@@ -41,4 +36,37 @@
 
 .container__pets-touch-img {
     margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .section-animal-care {
+        /* padding-right: 40px; */
+    }
+
+    .main__section.animal_img {
+        padding: 0;
+    }
+
+    .container__pets-touch-img img {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .care h2 {
+        max-width: 600px;
+        max-height: 132px;
+    }
+
+    .care p {
+        max-width: 600px;
+        max-height: 65px;
+    }
+
+    .animal-cards-banner-img {
+        display: none;
+    }
 }

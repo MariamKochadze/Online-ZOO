@@ -62,3 +62,33 @@
     margin-bottom: 30px;
     line-height: 150%;
 }
+
+@media (max-width: 1200px) {
+    .container__pets-pay-desc span {
+        max-width: 549px;
+        text-align: center;
+    }
+
+    .container__pets-pay-number p::before {
+        max-width: 1025px;
+        text-align: center;
+    }
+
+    .container__pets-pay-info {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 648px) {
+    .container__pets-pay-number p::before {
+        max-width: 558px;
+        left: 50px;
+    }
+
+    .container__pets-pay-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
