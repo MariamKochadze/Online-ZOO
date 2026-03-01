@@ -15,6 +15,12 @@
         <link rel="stylesheet" href="../landing/section-feedback.css" />
         <link rel="stylesheet" href="../landing/section-footer.css" />
         <link rel="stylesheet" href="../../pages/landing/grid-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/navigation.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/grid-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/variables.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/shared-classes.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/reset.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/flex-layout.css" />
         <!-- <link rel="stylesheet" href="./animal-info-section.css">
         <link rel="stylesheet" href="./animal-list.css">
         <link rel="stylesheet" href="./base.css">
@@ -30,59 +36,52 @@
     </head>
     <body>
         <header>
-            <nav class="header__menu">
-                <div class="header__menu-list">
-                    <a href="#online-logo">
-                        <img src="../../assets/images/Logo.svg" alt="online logo" />
-                    </a>
+            <nav class="header__menu row flx align-center">
+                <a href="#online-logo">
+                    <img src="../../assets/images/Logo.svg" alt="online logo" />
+                </a>
 
-                    <div class="burger" id="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+                <label for="menu-toggle" class="menu-overlay"></label>
 
-                    <li class="header__menu-info-social-links-container" id="navMenu">
-                        <ul class="header__menu-info">
-                            <li>
-                                <a href="#about">ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="#map">MAP</a>
-                            </li>
-                            <li>
-                                <a href="#zoos" class="active">ZOOS</a>
-                            </li>
-                            <li>
-                                <a href="#contact-us">CONTACT US</a>
-                            </li>
-                            <li>
-                                <a href="#design">DESIGN</a>
-                            </li>
+                <label for="menu-toggle" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+
+                <ul class="header__menu-list flx align-center justify-flex-end wrap desktop-only">
+                    <li class="header__menu-info-social-links-container flx align-center">
+                        <ul class="header__menu-info flx justify-space-between">
+                            <li><a href="../landing/index.html">ABOUT</a></li>
+                            <li><a href="../map/index.html">MAP</a></li>
+                            <li><a href="#" class="active">ZOOS</a></li>
+                            <li><a href="../contact-us/index.html">CONTACT US</a></li>
+                            <li><a href="#design">DESIGN</a></li>
                         </ul>
-
-                        <ul class="header__menu-social-links header">
+                        <ul class="header__menu-social-links flx justify-space-between wrap">
                             <li>
-                                <a href="https://www.youtube.com/@RollingScopesSchool" target="_blank">
-                                    <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
-                                </a>
+                                <a href="#youtube"><img src="../../assets/images/YouTube.svg" alt="youtube" /></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/rsschool_en?igsh=em1janI5bzZ0dXlx" target="_blank">
-                                    <img src="../../assets/images/Instagram.svg" alt="instagram logo" />
-                                </a>
+                                <a href="#instagram"><img src="../../assets/images/Instagram.svg" alt="instagram" /></a>
                             </li>
                             <li>
-                                <a
-                                    href="https://www.facebook.com/EPAM.Poland?mibextid=wwXIfr&rdid=cgRX3ckS90yDJAxo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18JdV47Fxn%2F%3Fmibextid%3DwwXIfr#"
-                                    target="_blank"
-                                >
-                                    <img src="../../assets/images/Facebook.svg" alt="facebook logo" />
-                                </a>
+                                <a href="#facebook"><img src="../../assets/images/Facebook.svg" alt="facebook" /></a>
                             </li>
                         </ul>
                     </li>
-                </div>
+                </ul>
+
+                <aside class="sidebar">
+                    <ul class="mobile-nav-list flx direction-column align-center">
+                        <li><a href="../landing/index.html">ABOUT</a></li>
+                        <li><a href="../map/index.html">MAP</a></li>
+                        <li><a href="#" class="active">ZOOS</a></li>
+                        <li><a href="../contact-us/index.html">CONTACT US</a></li>
+                        <li><a href="#design">DESIGN</a></li>
+                    </ul>
+                </aside>
             </nav>
         </header>
         <main>
@@ -414,7 +413,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="field expiration-field ">
+                                    <div class="field expiration-field">
                                         <div class="select-wrapper popup-3">
                                             <input type="checkbox" id="yearToggle" hidden />
 
