@@ -1,0 +1,123 @@
+.contact__us-img img {
+    margin: 0 0 100px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.contact__us-container {
+    display: flex;
+    gap: 100px;
+}
+
+.contact__us-get-in-touch h2 {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 100%;
+    color: var(--green-1);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.contact__us-get-in-touch {
+    text-align: start;
+}
+
+.contact__us-get-in-touch p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 545px;
+    width: 100%;
+}
+
+.contact__us-get-in-touch-form form {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    height: 618px;
+}
+
+.contact__us-get-in-touch-form form label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    padding-top: 30px;
+}
+
+.contact__us-get-in-touch-form form label::before {
+    content: ' *';
+    color: green;
+    font-weight: bold;
+}
+
+.contact__us-get-in-touch-form form input {
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.contact__us-get-in-touch-form form input::placeholder,
+.contact__us-get-in-touch-form form textarea::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 10px;
+    color: #969696;
+}
+
+.contact__us-get-in-touch-form form textarea {
+    height: 200px;
+    border: 1px solid black;
+    padding-top: 30px;
+    border-radius: 5px;
+}
+
+.container__btn.contact-us-btn button {
+    width: 359px;
+    margin-top: 30px;
+    background-color: var(--green-1);
+}
+
+/* Responsive style */
+
+@media (max-width: 1550px) {
+    .contact__us-container {
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__us-get-in-touch {
+        text-align: center;
+    }
+    .contact__us-get-in-touch p {
+        max-width: 835px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__us-get-in-touch-form form,
+    .contact__us-get-in-touch p {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact__us-get-in-touch-form form,
+    .contact__us-get-in-touch p {
+        max-width: 300px;
+    }
+
+    .contact__us-get-in-touch-form form {
+        max-height: 568px;
+    }
+
+    .contact__us-get-in-touch h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .container__btn.contact-us-btn button {
+        max-width: 300px;
+    }
+}
