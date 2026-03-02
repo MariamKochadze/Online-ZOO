@@ -81,3 +81,21 @@
         display: none;
     }
 }
+
+@media (max-width: 640px) {
+    .container__pets-pay{
+        padding: 0;
+    }
+    .container__pets-info {
+        gap: 20px;
+    }
+    .care h2 {
+        font-size: 26px;
+        height: auto;
+    }
+    .care h2,
+    .care p {
+        max-width: 300px;
+    }
+
+}

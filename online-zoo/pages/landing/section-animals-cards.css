@@ -348,3 +348,43 @@
         display: none;
     }
 }
+
+@media (max-width: 550px) {
+    .container__pets-info h2 {
+        max-width: 320px;
+        font-weight: 500;
+    }
+    .container__pets-info p {
+        max-width: 300px;
+    }
+
+    .container__pets-btn-2 {
+        display: none;
+    }
+
+    .container__pets-pay-number p::before {
+        max-width: 273px;
+    }
+
+    .container__pets-pay-desc span {
+        max-width: 280px !important;
+    }
+
+    .container__pets-pay-desc p {
+        text-align: center;
+    }
+
+    .container__pets-pay-header h2 {
+        text-align: center;
+    }
+    .container__pets-feedback-header h2,
+    .container__pets-feedback-header p {
+        max-width: 300px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .container__pets-feedback-desc-1 {
+        height: 549px !important;
+    }
+}

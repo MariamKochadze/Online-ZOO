@@ -54,6 +54,17 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.zoo-page-images img:first-child:hover,
+.zoo-page-images img:last-child:hover {
+    background-color: var(--blue-1);
+    border-radius: 5px;
+    transform: scale(1.1);
+    color: white;
+    
 }
 
 .zoo-page-images img:first-child,
@@ -138,7 +149,23 @@ dd {
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
+    transition: 0.3s ease;
 }
+
+.container__btn-card.zoos-btn-1:hover {
+    background-color: var(--orange-1);
+    color: white;
+}
+
+.container__btn-card.zoos-btn-1:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.container__btn-card.zoos-btn-1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 .container__btn-card.zoos-btn-1 img {
     position: absolute;
     top: 50%;
@@ -162,8 +189,6 @@ dd {
     font-size: 18px;
     line-height: 150%;
 }
-
-
 
 /* make your donation pop-up-1 */
 .make__your-donation {
@@ -397,10 +422,10 @@ dd {
     padding: 0;
 }
 
-.container__btn button {
-    /* margin-left: 420px; */
+/* .container__btn.zoo-page-pnda button {
+    margin-left: 420px;
     background-color: #00a092 !important;
-}
+} */
 
 /* next */
 
@@ -581,8 +606,6 @@ dd {
     gap: 50px;
 }
 
-
-
 /* SIDEBAR */
 
 .sidebar {
@@ -715,9 +738,7 @@ dd {
 .animal-item span {
     display: none;
 }
-.animal-item:hover {
-    background: #3e2563;
-}
+
 
 .animal-list-sec::before {
     content: '';

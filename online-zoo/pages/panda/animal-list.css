@@ -53,10 +53,6 @@
     display: none;
 }
 
-.animal-item:hover {
-    background: #3e2563;
-}
-
 .animal-item.active {
     background: white;
     width: 104px;
