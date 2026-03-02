@@ -64,7 +64,6 @@ main {
     border-radius: 5px;
     transform: scale(1.1);
     color: white;
-    
 }
 
 .zoo-page-images img:first-child,
@@ -135,6 +134,7 @@ dd {
 }
 
 .container__btn-card.zoos-btn-1 {
+    display: flex;
     white-space: nowrap;
     width: 240px;
     height: 74px;
@@ -150,6 +150,8 @@ dd {
     font-size: 18px;
     line-height: 100%;
     transition: 0.3s ease;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .container__btn-card.zoos-btn-1:hover {
@@ -169,7 +171,10 @@ dd {
 .container__btn-card.zoos-btn-1 img {
     position: absolute;
     top: 50%;
+    left: 40%;
     transform: translate(10px, -50%);
+    margin: 0 auto;
+
 }
 
 .zoo-animal-info {
@@ -738,7 +743,6 @@ dd {
 .animal-item span {
     display: none;
 }
-
 
 .animal-list-sec::before {
     content: '';
