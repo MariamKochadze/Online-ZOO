@@ -59,3 +59,9 @@
 .button-text:hover img {
     filter: brightness(0);
 }
+
+@media (max-width: 550px) {
+    .button-outline {
+        width: 300px;
+    }
+}

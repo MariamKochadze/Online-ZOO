@@ -85,6 +85,10 @@
         left: 50px;
     }
 
+    .container__pets-pay-number p {
+        padding: 0 10px;
+    }
+
     .container__pets-pay-desc {
         display: flex;
         flex-direction: column;
