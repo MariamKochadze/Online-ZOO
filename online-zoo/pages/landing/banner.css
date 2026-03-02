@@ -52,6 +52,11 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
+    transition: filter 0.3s ease;
+}
+
+.container__btn button:hover {
+    filter: brightness(1.1);
 }
 
 .container__btn button img {

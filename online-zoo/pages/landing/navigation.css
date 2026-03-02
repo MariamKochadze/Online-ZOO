@@ -37,6 +37,11 @@ header {
 .header__menu-list li a {
     font-weight: 600;
     text-transform: capitalize;
+   
+}
+
+.header__menu-list a:hover {
+    color: var(--green-1) !important;
 }
 
 .header__menu-info a.active {
