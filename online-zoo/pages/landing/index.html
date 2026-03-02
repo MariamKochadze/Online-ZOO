@@ -32,7 +32,9 @@
         <link rel="stylesheet" href="../shared-resources/styles/buttons.css" />
         <link rel="stylesheet" href="./animal-card.css" />
         <link rel="stylesheet" href="./buttons.css" />
+        <link rel="stylesheet" href="../panda/popup.css" />
         <script src="./script.js" defer></script>
+        <script src="../panda/script.js" defer></script>
     </head>
     <body>
         <header>
@@ -155,7 +157,213 @@
                     </div>
                 </div>
             </section>
+            <!-- Make your donation popup-1 -->
+            <section class="make__your-donation" id="step-1">
+                <div class="make__your-donation-container">
+                    <div class="make__your-donation-header">
+                        <h3>make your donation</h3>
+                    </div>
+                    <div class="donation__cont make__your-donation-form">
+                        <p>Donation Information:</p>
+                        <div class="make__your-donation-line"></div>
+                        <form action="" class="make__your-donation-form-container">
+                            <label for="">Choose your donation amount:</label>
+                            <div class="make__your-donation-images">
+                                <img src="../../assets/icons/make-your-donation-10.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-20.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-30.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-50.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-80.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-100.svg" alt="donation image" />
+                            </div>
+                            <div class="make__your-donation-other-amount">
+                                <img src="../../assets/icons/donation-other-amount.svg" alt="donation image" />
+                                <input type="text" name="" id="" />
+                            </div>
+                            <div class="make__your-donation-select-pet">
+                                <img
+                                    src="../../assets/icons/make-your-donation-for-special-pet.svg"
+                                    alt="donation image"
+                                />
 
+                                <div class="select-wrapper">
+                                    <input type="checkbox" id="animalToggle" hidden />
+                                    <label for="animalToggle" class="dropdown-placeholder">
+                                        Choose your favourite
+                                        <div class="dropdown-placeholder-icon">
+                                            <img src="../../assets/icons/arrow-down.svg" alt="arrow image" />
+                                        </div>
+                                    </label>
+                                    <div class="dropdown-content">
+                                        <a href="">Lukas the Panda</a>
+                                        <a href="">Andy the Lemur</a>
+                                        <a href="">Glen the Gorilla</a>
+                                        <a href="">Mike the Alligator</a>
+                                        <a href="">Sam & Lora the eagles family</a><a href="">Liz the Koala</a>
+                                        <a href="">Shake the Lion</a>
+                                        <a href="">Senja the Tiger</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-content-checkbox">
+                                <input type="checkbox" name="" id="" />
+                                <p>Make this a monthly recurring gift</p>
+                            </div>
+                        </form>
+                        <div class="next-container">
+                            <div class="next-container-circle">
+                                <div class="next-container-circle-1"></div>
+                                <div class="next-container-circle-2"></div>
+                                <div class="next-container-circle-3"></div>
+                            </div>
+                            <div class="container__btn">
+                                <button class="next-btn" data-next="step-2">
+                                    next
+                                    <img src="../../assets/icons/Union.svg" alt="union icon" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Make your donation popup-2 -->
+            <section class="make__your-donation">
+                <div class="make__your-donation-container">
+                    <div class="make__your-donation-header">
+                        <h3>make your donation</h3>
+                    </div>
+                    <div class="donation__cont make__your-donation-form">
+                        <p>Billing Information:</p>
+                        <div class="make__your-donation-line"></div>
+                        <div class="make__your-donation-form-personal-info">
+                            <form action="submit">
+                                <label for="name">Your Name </label>
+                                <input type="text" name="name" id="" placeholder="First and last name" />
+                                <label for="email">Your Email Address </label>
+                                <input type="text" name="email" id="" placeholder="Enter your email" />
+                                <p>
+                                    You will receive emails from the Online Zoo, including updates and news on the
+                                    latest discoveries and translations. You can unsubscribe at any time.
+                                </p>
+                            </form>
+                        </div>
+                        <div class="next-container">
+                            <div class="next-container-circle">
+                                <div class="next-container-circle-1"></div>
+                                <div class="next-container-circle-2"></div>
+                                <div class="next-container-circle-3"></div>
+                            </div>
+                            <div class="next-container-back-btn">
+                                <a href="#">back</a>
+                            </div>
+                            <div class="container__btn">
+                                <button>
+                                    next
+                                    <img src="../../assets/icons/Union.svg" alt="union icon" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Make your donation popup-3 -->
+            <section class="make__your-donation">
+                <div class="make__your-donation-container">
+                    <div class="make__your-donation-header">
+                        <h3>make your donation</h3>
+                    </div>
+                    <div class="donation__cont make__your-donation-form">
+                        <p>Payment Information:</p>
+                        <div class="make__your-donation-line"></div>
+                        <div class="make__your-donation-form-personal-info payment-info">
+                            <form action="submit">
+                                <!-- Card + CVV Row -->
+                                <div class="payment-row">
+                                    <div class="field card-field">
+                                        <label for="card-number">Credit Card Number</label>
+                                        <input type="text" id="card-number" inputmode="numeric" />
+                                    </div>
+
+                                    <div class="field cvv-field">
+                                        <label for="cvv">CVV Number</label>
+                                        <input type="text" id="cvv" inputmode="numeric" />
+                                    </div>
+                                </div>
+
+                                <!-- Expiration Date -->
+                                <div class="expiration__date-container">
+                                    <div class="field expiration-field">
+                                        <label for="expiration">Expiration Date</label>
+
+                                        <div class="select-wrapper popup-3">
+                                            <input type="checkbox" id="monthToggle" hidden />
+
+                                            <label for="monthToggle" class="dropdown-placeholder year-popup">
+                                                Month
+                                                <div class="dropdown-placeholder-icon year-popup-arrow">
+                                                    <img src="../../assets/icons/arrow-down.svg" alt="arrow image" />
+                                                </div>
+                                            </label>
+
+                                            <div class="dropdown-content year-popup-month">
+                                                <a href="#">January</a>
+                                                <a href="#">February</a>
+                                                <a href="#">March</a>
+                                                <a href="#">April</a>
+                                                <a href="#">May</a>
+                                                <a href="#">June</a>
+                                                <a href="#">July</a>
+                                                <a href="#">August</a>
+                                                <a href="#">September</a>
+                                                <a href="#">October</a>
+                                                <a href="#">November</a>
+                                                <a href="#">December</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field expiration-field">
+                                        <div class="select-wrapper popup-3">
+                                            <input type="checkbox" id="yearToggle" hidden />
+
+                                            <label for="monthToggle" class="dropdown-placeholder year-popup">
+                                                Year
+                                                <div class="dropdown-placeholder-icon year-popup-arrow">
+                                                    <img src="../../assets/icons/arrow-down.svg" alt="arrow image" />
+                                                </div>
+                                            </label>
+
+                                            <div class="dropdown-content year-popup-month">
+                                                <a href="#">2026</a>
+                                                <a href="#">2027</a>
+                                                <a href="#">2028</a>
+                                                <a href="#">2029</a>
+                                                <a href="#">2030</a>
+                                                <a href="#">2031</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="next-container">
+                            <div class="next-container-circle">
+                                <div class="next-container-circle-1"></div>
+                                <div class="next-container-circle-2"></div>
+                                <div class="next-container-circle-3"></div>
+                            </div>
+                            <div class="next-container-back-btn">
+                                <a href="#">back</a>
+                            </div>
+                            <div class="container__btn">
+                                <button>
+                                    complete donation
+                                    <img src="../../assets/icons/Union.svg" alt="union icon" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="flx align-center justify-center m-align-flex-start main__section container__donation">
                 <div class="row flx align-center justify-space-between wrap">
                     <div class="flx direction-column donation-desc">
@@ -612,6 +820,32 @@
             </section>
         </main>
         <footer>
+            <!-- footer donation popup -->
+            <section class="donation__popup">
+                <div class="donation__popup-container">
+                    <div class="donation__popup-img">
+                        <img src="../../assets/images/donation-popup-img.png" alt="donation image" />
+                        <label for="for-close" class="close-popup">
+                            <img src="../../assets/icons/donation-popup-close.svg" alt="close image" />
+                        </label>
+                    </div>
+                    <div class="donation__popup-section">
+                        <h2>together we care, save and protect!</h2>
+                        <p>
+                            Your most generous gift not only cares for countless animals, but it also offers hope and a
+                            vital lifeline to the world’s most endangered wildlife relying on us to survive.
+                        </p>
+                    </div>
+                    <div class="donation__popup-amount">
+                        <img src="../../assets/icons/donation-20.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-30.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-50.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-80.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-100.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-other-amount.svg" alt="donation icon" />
+                    </div>
+                </div>
+            </section>
             <section class="main__section footer-animals">
                 <div class="footer__icons">
                     <div class="footer__icons-container">
