@@ -51,6 +51,22 @@
     text-transform: uppercase;
 }
 
+.footer__nav-ul li a {
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+    text-decoration: none; 
+}
+
+
+.footer__nav-ul li a:hover {
+    transform: translateY(-5px); 
+}
+
+
+.footer__nav-ul li a:active {
+    transform: translateY(-2px);
+}
+
 .footer-btn {
     position: static;
 }

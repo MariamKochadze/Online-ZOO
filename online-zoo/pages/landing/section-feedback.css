@@ -104,6 +104,30 @@
     background: none;
     width: 60px;
     height: 60px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.container__pets-btn-scroll button img {
+    transition: filter 0.3s ease;
+}
+
+.container__pets-btn-2-feedback img {
+    transition: filter 0.3s ease;
+}
+
+.container__pets-btn-scroll button:hover,
+.container__pets-btn-2-feedback:hover {
+    background-color: white;
+    transform: scale(1.1);
+    color: black;
+}
+
+.container__pets-btn-scroll button:hover img,
+.container__pets-btn-2-feedback:hover img {
+    filter: brightness(0);
 }
 
 .container__pets-btn-scroll button:first-child {
@@ -111,6 +135,7 @@
 }
 
 .container__pets-btn-2-feedback {
+    cursor: pointer;
     margin-left: 260px;
     bottom: 200px;
     width: 359px;
@@ -126,6 +151,9 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
 }
 
 @media (max-width: 1919px) {

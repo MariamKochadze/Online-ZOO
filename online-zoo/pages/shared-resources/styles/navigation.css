@@ -17,6 +17,18 @@ header {
     font-weight: 600;
     text-transform: capitalize;
 }
+.header__menu-list li a:hover {
+    color: var(--green-1);
+}
+.header__menu-social-links li a {
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+}
+
+
+.header__menu-social-links li a:hover {
+    transform: translateY(-5px) scale(1.1);
+}
 
 .header__menu-info a.active {
     color: var(--green-1);

@@ -39,6 +39,17 @@
 .container__pets-btn button {
     cursor: pointer;
     border: none;
+    transition: 0.3s;
+}
+
+.container__pets-btn button:hover {
+    background-color: var(--blue-1);
+    border: none;
+    border-radius: 5px;
+}
+
+.container__pets-btn button img:hover {
+    filter: invert(1) brightness(2);
 }
 
 .container__pets-card {
@@ -46,6 +57,16 @@
     max-width: 440px;
     max-height: 747px;
     border-radius: 5px;
+    transition:
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.container__pets-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    z-index: 10;
 }
 
 .container__pets-cards-name {
@@ -102,6 +123,12 @@
     height: 74px;
     position: relative;
     text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.container__btn-card button:hover {
+    background-color: var(--orange-1);
+    color: white;
 }
 
 .container__btn-card button img {
@@ -109,6 +136,11 @@
     position: absolute;
     top: 50%;
     transform: translate(10px, -50%);
+    transition: filter 0.3s ease;
+}
+
+.container__btn-card button:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .container__pets-1,
@@ -142,12 +174,22 @@
     border-radius: 5px;
     text-transform: uppercase;
     position: relative;
+    transition: 0.3s;
+}
+
+.container__pets-btn-2 button:hover {
+    background-color: var(--blue-1);
+    color: white;
 }
 
 .container__pets-btn-2 button img {
     position: absolute;
     top: 50%;
     transform: translate(10px, -50%);
+    transition: filter 0.3s ease;
+}
+.container__pets-btn-2 button:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .carousel-dots {

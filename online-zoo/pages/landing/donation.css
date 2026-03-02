@@ -59,6 +59,11 @@
 
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.icon-box:hover {
+    background-color: #d26004;
 }
 .donation_btn .donation-desctiption {
     padding: 0 20px;
