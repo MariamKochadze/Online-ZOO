@@ -98,6 +98,7 @@
     background-color: var(--blue-1);
     color: white;
     /* height: 100%; */
+    padding: 30px 0 50px 0;
 }
 
 .card-description p {
@@ -121,9 +122,13 @@
     cursor: pointer;
     width: 240px;
     height: 74px;
-    position: relative;
+    /* position: relative; */
     text-transform: uppercase;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
 .container__btn-card button:hover {
@@ -133,9 +138,9 @@
 
 .container__btn-card button img {
     color: var(--orange-1);
-    position: absolute;
-    top: 50%;
-    transform: translate(10px, -50%);
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translate(10px, -50%); */
     transition: filter 0.3s ease;
 }
 
@@ -154,13 +159,13 @@
 }
 .container__pets-1 {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .container__pets-btn-2 {
     width: 359px;
     height: 74px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .container__pets-btn-2 button {
