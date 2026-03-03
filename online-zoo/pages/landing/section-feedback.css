@@ -110,7 +110,7 @@
         transform 0.2s ease;
 }
 
-.container__pets-btn-2-feedback a{
+.container__pets-btn-2-feedback a {
     color: white;
 }
 
@@ -126,6 +126,10 @@
 .container__pets-btn-2-feedback:hover {
     background-color: white;
     transform: scale(1.1);
+    color: black;
+}
+
+.container__pets-btn-2-feedback:hover a {
     color: black;
 }
 

@@ -63,7 +63,6 @@ main {
     background-color: white;
     border-radius: 5px;
     transform: scale(1.1);
-    
 }
 
 .zoo-page-images img:first-child,
@@ -174,7 +173,6 @@ dd {
     left: 40%;
     transform: translate(10px, -50%);
     margin: 0 auto;
-
 }
 
 .zoo-animal-info {
@@ -194,8 +192,6 @@ dd {
     font-size: 18px;
     line-height: 150%;
 }
-
-
 
 /* SIDEBAR */
 
@@ -384,6 +380,7 @@ dd {
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
+    color: white;
 }
 
 /* Hide text when collapsed */
