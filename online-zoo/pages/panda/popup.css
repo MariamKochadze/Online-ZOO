@@ -73,7 +73,6 @@ body:has(.feedback-checkbox:checked) {
     background: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
 }
 
 .make__your-donation-container {
@@ -84,6 +83,7 @@ body:has(.feedback-checkbox:checked) {
     box-shadow: 0px 4px 50px 0px #00000040;
     border-radius: 5px;
     text-align: center;
+    margin: 150px;
 }
 
 .make__your-donation-header {
@@ -362,7 +362,10 @@ body:has(.feedback-checkbox:checked) {
 
 .make__your-donation-form-personal-info input {
     width: 680px;
-    height: 60px;
+    height: 60px !important;
+    box-sizing: border-box !important;
+    flex-shrink: 0;
+    max-height: none !important;
     border-radius: 5px;
     border: 1px solid black;
 }
@@ -387,7 +390,6 @@ body:has(.feedback-checkbox:checked) {
 }
 
 /* make your donation pop-up-3 */
-
 
 /* Container */
 .make__your-donation-form-personal-info.payment-info {
@@ -457,4 +459,190 @@ body:has(.feedback-checkbox:checked) {
     display: flex;
     flex-direction: row;
     gap: 50px;
+}
+
+.expiration__date-container .expiration-field:nth-child(2) {
+    margin-top: 40px;
+}
+
+@media (max-width: 1400px) {
+    .make__your-donation-container {
+        max-height: 700px;
+        margin: 600px;
+    }
+}
+
+@media (max-width: 950px) {
+    .donation__cont {
+        padding: 0 60px;
+    }
+
+    .make__your-donation-form-container {
+        max-width: 446px;
+        max-height: 591px;
+    }
+
+    .make__your-donation-images {
+        width: 445px;
+        flex-direction: column;
+    }
+    .make__your-donation-container {
+        max-width: 600px;
+        max-height: 800px;
+        margin: 100px;
+    }
+
+    .make__your-donation-header {
+        height: 99px;
+    }
+
+    .make__your-donation-header h3 {
+        font-size: 42px;
+    }
+
+    .make__your-donation-line::before {
+        width: 560px !important;
+    }
+    .make__your-donation-images img {
+        width: 135px;
+        height: 65px;
+        border-radius: 5px;
+    }
+
+    .make__your-donation-images img:first-child,
+    .make__your-donation-images img:last-child {
+        padding: 0;
+    }
+
+    .make__your-donation-images img {
+        padding: 0;
+    }
+
+    .make__your-donation-select-pet {
+        flex-direction: column;
+        gap: 10px;
+        text-align: start;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .make__your-donation-select-pet img {
+        width: 211px;
+        height: 65px;
+    }
+
+    .dropdown-placeholder-icon img {
+        width: 16px;
+        height: 8px;
+    }
+
+    .dropdown-placeholder {
+        padding: 0;
+    }
+
+    .select-wrapper {
+        margin-left: 0;
+    }
+
+    .make__your-donation-form-personal-info input {
+        width: 446px;
+    }
+
+    .make__your-donation-form-personal-info p {
+        width: 446px;
+    }
+
+    .make__your-donation-form-personal-info form {
+        height: 361px;
+        margin-bottom: 40px;
+    }
+
+    .payment-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .donation__cont {
+        padding: 10px;
+    }
+
+    .make__your-donation-line::before {
+        width: 300px !important;
+    }
+
+    .make__your-donation-container {
+        max-width: 300px;
+    }
+    .make__your-donation-header h3 {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .make__your-donation-form p {
+        text-align: center;
+    }
+
+    .make__your-donation-form-container {
+        max-width: 280px;
+        max-height: 474px;
+    }
+
+    .make__your-donation-container {
+        max-height: 900px;
+        margin: 50px;
+    }
+
+    .make__your-donation-images {
+        width: 278px;
+    }
+
+    .make__your-donation-other-amount input,
+    .make__your-donation-other-amount img {
+        width: 130px;
+        height: 50px;
+    }
+
+    .make__your-donation-form p,
+    .dropdown-content-checkbox input {
+        display: none;
+    }
+
+    .select-wrapper {
+        width: 280px;
+    }
+    .select-wrapper .dropdown-placeholder {
+        padding-left: 10px;
+        width: 280px !important;
+    }
+
+ 
+    .make__your-donation-form-personal-info input {
+        width: 280px;
+        height: 50px;
+    }
+    .make__your-donation-form p {
+        width: 280px;
+    }
+
+    .next-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+    }
+
+    .next-container-circle {
+        padding: 20px 0;
+    }
+
+    .expiration__date-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .expiration__date-container .expiration-field:first-child {
+        display: none;
+    }
 }

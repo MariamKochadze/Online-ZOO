@@ -60,10 +60,10 @@ main {
 
 .zoo-page-images img:first-child:hover,
 .zoo-page-images img:last-child:hover {
-    background-color: var(--blue-1);
+    background-color: white;
     border-radius: 5px;
     transform: scale(1.1);
-    color: white;
+    
 }
 
 .zoo-page-images img:first-child,
