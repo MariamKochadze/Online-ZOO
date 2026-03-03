@@ -159,13 +159,13 @@
 }
 .container__pets-1 {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .container__pets-btn-2 {
     width: 359px;
     height: 74px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .container__pets-btn-2 button {
