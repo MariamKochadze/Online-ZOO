@@ -51,7 +51,10 @@
 }
 
 .contact__us-get-in-touch-form form input {
-    height: 60px;
+    height: 60px !important;
+    box-sizing: border-box !important;
+    flex-shrink: 0;
+    max-height: none !important;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -70,6 +73,9 @@
     border: 1px solid black;
     padding-top: 30px;
     border-radius: 5px;
+    box-sizing: border-box !important;
+    flex-shrink: 0;
+    max-height: none !important;
 }
 
 .container__btn.contact-us-btn button {
@@ -108,9 +114,9 @@
         max-width: 300px;
     }
 
-    .contact__us-get-in-touch-form form {
+    /* .contact__us-get-in-touch-form form {
         max-height: 568px;
-    }
+    } */
 
     .contact__us-get-in-touch h2 {
         font-size: 24px;

@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const quickDonateBtn = document.querySelector('.btn-outline');
     const donateNowBtn = document.querySelector('.zoo-page-btn button');
-    const volunteerBtns = document.querySelectorAll('.container__pets-btn-2-feedback');
 
     const togetherWeCarePopup = document.querySelector('.donation__popup');
     const allFormSteps = document.querySelectorAll('.make__your-donation');
@@ -38,12 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    volunteerBtns.forEach((btn) => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            openStep(togetherWeCarePopup);
-        });
-    });
+ 
 
     // --- NAVIGATION LOGIC ---
 

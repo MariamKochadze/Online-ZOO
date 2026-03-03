@@ -110,6 +110,10 @@
         transform 0.2s ease;
 }
 
+.container__pets-btn-2-feedback a{
+    color: white;
+}
+
 .container__pets-btn-scroll button img {
     transition: filter 0.3s ease;
 }
