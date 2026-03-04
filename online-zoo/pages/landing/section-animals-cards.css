@@ -311,7 +311,7 @@
     .container__pets-2 {
         display: inline-flex;
         flex-wrap: nowrap;
-
+        padding-bottom: 80px;
         gap: 20px;
         padding: 0 20px;
     }
