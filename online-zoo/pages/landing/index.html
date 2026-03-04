@@ -238,10 +238,16 @@
                         <div class="make__your-donation-line"></div>
                         <div class="make__your-donation-form-personal-info">
                             <form action="submit">
-                                <label for="name">Your Name </label>
-                                <input type="text" name="name" placeholder="First and last name" />
-                                <label for="email">Your Email Address </label>
-                                <input type="text" name="email" placeholder="Enter your email" />
+                                <label class="field-label">
+                                    <span>Your Name</span>
+                                    <input type="text" name="name" placeholder="First and last name" required />
+                                </label>
+
+                                <label class="field-label">
+                                    <span>Your Email Address</span>
+                                    <input type="email" name="email" placeholder="Enter your email" required />
+                                </label>
+
                                 <p>
                                     You will receive emails from the Online Zoo, including updates and news on the
                                     latest discoveries and translations. You can unsubscribe at any time.
@@ -294,16 +300,16 @@
                                 <!-- Expiration Date -->
                                 <div class="expiration__date-container">
                                     <div class="field expiration-field">
-                                        <label for="expiration">Expiration Date</label>
+                                        <label for="monthToggle">Expiration Date</label>
 
                                         <div class="select-wrapper popup-3">
                                             <input type="checkbox" id="monthToggle" class="visually-hidden" />
 
                                             <label for="monthToggle" class="dropdown-placeholder year-popup">
                                                 Month
-                                                <div class="dropdown-placeholder-icon year-popup-arrow">
+                                                <span class="dropdown-placeholder-icon year-popup-arrow">
                                                     <img src="../../assets/icons/arrow-down.svg" alt="arrow image" />
-                                                </div>
+                                                </span>
                                             </label>
 
                                             <div class="dropdown-content year-popup-month">
@@ -322,15 +328,16 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="field expiration-field">
                                         <div class="select-wrapper popup-3">
                                             <input type="checkbox" id="yearToggle" class="visually-hidden" />
 
-                                            <label for="monthToggle" class="dropdown-placeholder year-popup">
+                                            <label for="yearToggle" class="dropdown-placeholder year-popup">
                                                 Year
-                                                <div class="dropdown-placeholder-icon year-popup-arrow">
+                                                <span class="dropdown-placeholder-icon year-popup-arrow">
                                                     <img src="../../assets/icons/arrow-down.svg" alt="arrow image" />
-                                                </div>
+                                                </span>
                                             </label>
 
                                             <div class="dropdown-content year-popup-month">

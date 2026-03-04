@@ -18,6 +18,7 @@
     text-transform: uppercase;
     margin-bottom: 50px;
 }
+
 .contact__us-get-in-touch {
     text-align: start;
 }
@@ -30,52 +31,58 @@
     width: 100%;
 }
 
+/* --- UPDATED FORM STYLES --- */
+
 .contact__us-get-in-touch-form form {
     display: flex;
     flex-direction: column;
     width: 680px;
-    height: 618px;
+    /* Removed fixed height to allow labels to expand naturally */
+    min-height: 618px; 
 }
 
-.contact__us-get-in-touch-form form label {
+/* This is your new wrapper to replace the old label + input + br combo */
+.field-label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     padding-top: 30px;
 }
 
-.contact__us-get-in-touch-form form label::before {
+/* The green asterisk now attaches to the text inside the label */
+.field-label span::after {
     content: ' *';
     color: green;
     font-weight: bold;
 }
 
-.contact__us-get-in-touch-form form input {
+.field-label input {
     height: 60px !important;
+    margin-top: 8px; /* Adds space between text and input */
     box-sizing: border-box !important;
-    flex-shrink: 0;
-    max-height: none !important;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-.contact__us-get-in-touch-form form input::placeholder,
-.contact__us-get-in-touch-form form textarea::placeholder {
+.field-label textarea {
+    height: 200px;
+    margin-top: 8px;
+    border: 1px solid black;
+    padding: 15px; /* Adjusted padding for better text placement */
+    border-radius: 5px;
+    box-sizing: border-box !important;
+    resize: vertical; /* Allows user to resize height only */
+}
+
+.field-label input::placeholder,
+.field-label textarea::placeholder {
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    padding-left: 10px;
     color: #969696;
-}
-
-.contact__us-get-in-touch-form form textarea {
-    height: 200px;
-    border: 1px solid black;
-    padding-top: 30px;
-    border-radius: 5px;
-    box-sizing: border-box !important;
-    flex-shrink: 0;
-    max-height: none !important;
 }
 
 .container__btn.contact-us-btn button {
@@ -84,7 +91,7 @@
     background-color: var(--green-1);
 }
 
-/* Responsive style */
+/* --- Responsive style --- */
 
 @media (max-width: 1550px) {
     .contact__us-container {
@@ -113,10 +120,6 @@
     .contact__us-get-in-touch p {
         max-width: 300px;
     }
-
-    /* .contact__us-get-in-touch-form form {
-        max-height: 568px;
-    } */
 
     .contact__us-get-in-touch h2 {
         font-size: 24px;
