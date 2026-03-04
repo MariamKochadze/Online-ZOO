@@ -51,6 +51,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+}
+
 /* Responsive style */
 @media (max-width: 1700px) {
     .main__section {
