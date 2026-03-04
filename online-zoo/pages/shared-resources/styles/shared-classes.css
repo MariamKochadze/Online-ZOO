@@ -1,0 +1,15 @@
+.row {
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* mobile */
+@media (max-width: 320px) {
+    .s-row {
+        width: 100%;
+    }
+
+    .s-margin-top-10 {
+        margin-top: 10px;
+    }
+}

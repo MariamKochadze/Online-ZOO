@@ -1,0 +1,71 @@
+.animal-list {
+    list-style: none;
+}
+
+.animal-list-sec {
+    position: relative;
+    height: 180px;
+}
+
+.animal-list-sec::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 1px;
+    background-color: white;
+}
+
+.animal-list-sec-btn-cont::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 1px;
+    background-color: white;
+    bottom: 60px;
+}
+
+.animal-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--orange-1);
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animal-item img {
+    z-index: 2;
+    width: 66.67%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.animal-item span {
+    display: none;
+}
+
+.animal-item.active {
+    background: white;
+    width: 104px;
+    height: 104px;
+}
+
+.animal-item.active::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-image: url('../../assets/images/panda-page/panda-icons/Ellipse 7.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
