@@ -113,7 +113,7 @@
     padding: 0 80px;
 }
 
-.container__btn-card button {
+.container__btn-card span {
     background-color: var(--blue-1);
     color: var(--orange-1);
     border-radius: 5px;
@@ -129,14 +129,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
-.container__btn-card button:hover {
+.container__btn-card span:hover {
     background-color: var(--orange-1);
     color: white;
 }
 
-.container__btn-card button img {
+.container__btn-card span img {
     color: var(--orange-1);
     /* position: absolute; */
     /* top: 50%; */
@@ -144,7 +146,7 @@
     transition: filter 0.3s ease;
 }
 
-.container__btn-card button:hover img {
+.container__btn-card span:hover img {
     filter: brightness(0) invert(1);
 }
 
