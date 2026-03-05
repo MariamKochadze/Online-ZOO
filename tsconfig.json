@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "../../built/local/tsc.js",
+        "sourceMap": true,
+        "allowUnreachableCode": false,
+        "strict": true,
+        "strictNullChecks": true,
+        "exactOptionalPropertyTypes": true
+    },
+    "include": ["pages/**/*"]
+}
