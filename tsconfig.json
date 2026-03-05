@@ -1,15 +1,19 @@
 {
     "compilerOptions": {
-        "module": "system",
+        "outDir": "./dist/",
+        "module": "ESNext",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "outFile": "../../built/local/tsc.js",
         "sourceMap": true,
         "allowUnreachableCode": false,
         "strict": true,
         "strictNullChecks": true,
-        "exactOptionalPropertyTypes": true
+        "exactOptionalPropertyTypes": true,
+        "moduleResolution": "Node",
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "moduleDetection": "force"
     },
     "include": ["pages/**/*"]
 }
