@@ -1,26 +1,14 @@
-abstract class PageLifeCycle {
-    constructor() {
-        window.addEventListener('load', (event: Event) => {
-            this.onWindowLoad(event);
-        });
-
-        window.addEventListener('beforeunload', (event: Event) => {
-            this.onWindowUnLoad(event);
-        });
-    }
-
-    protected abstract onWindowLoad(e: Event): void;
-
-    protected abstract onWindowUnLoad(e: Event): void;
-}
+import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
 
 class MapPage extends PageLifeCycle {
-    protected onWindowLoad(event: Event): void {
+    protected async onWindowLoad(event: Event): Promise<void> {
         console.log(event);
+        await Promise.resolve();
     }
 
-    protected onWindowUnLoad(event: Event): void {
+    protected async onWindowUnLoad(event: Event): Promise<void> {
         console.log(event);
+        await Promise.resolve();
     }
 }
 

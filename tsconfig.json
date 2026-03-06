@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "target": "ES6",
         "outDir": "./dist/",
         "module": "ESNext",
         "noImplicitAny": true,
@@ -15,5 +16,5 @@
         "esModuleInterop": true,
         "moduleDetection": "force"
     },
-    "include": ["pages/**/*"]
+    "include": ["pages/**/*", "config/**/*", "shared/**/*"]
 }

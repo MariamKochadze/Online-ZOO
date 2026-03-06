@@ -1,27 +1,29 @@
-abstract class PageLifeCycle {
-    constructor() {
-        window.addEventListener('load', (event: Event) => {
-            this.onWindowLoad(event);
-        });
-
-        window.addEventListener('beforeunload', (event: Event) => {
-            this.onWindowUnLoad(event);
-        });
-    }
-
-    protected abstract onWindowLoad(e: Event): void;
-
-    protected abstract onWindowUnLoad(e: Event): void;
-}
+import { configuration } from '../../config/configuration';
+import { Pet } from './models/pet-model';
+import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
+import { PetsApiService } from './services/pets-api-service';
 
 class LandingPage extends PageLifeCycle {
-    protected onWindowLoad(event: Event): void {
-        console.log(event);
+    private pets: Pet[] = [];
+
+    constructor(private readonly petsApiService: PetsApiService) {
+        super();
     }
 
-    protected onWindowUnLoad(event: Event): void {
+    protected async onWindowLoad(event: Event): Promise<void> {
+        console.log(event);
+
+        this.pets = await this.petsApiService.fetchPets();
+        console.log(this.pets);
+    }
+
+    protected async onWindowUnLoad(event: Event): Promise<void> {
+        await Promise.resolve();
         console.log(event);
     }
 }
 
-new LandingPage();
+// dependencies for the page
+const petsApiService = new PetsApiService(configuration);
+
+new LandingPage(petsApiService);
