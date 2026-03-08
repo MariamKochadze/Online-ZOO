@@ -19,8 +19,7 @@ class LandingPage extends PageLifeCycle {
         console.log(event);
 
         try {
-            await this.petsDisplayService.initialize();
-            await this.feedBackDisplayService.initialize();
+            await Promise.allSettled([this.petsDisplayService.initialize(), this.feedBackDisplayService.initialize()]);
         } catch (error) {
             console.error(error);
         }

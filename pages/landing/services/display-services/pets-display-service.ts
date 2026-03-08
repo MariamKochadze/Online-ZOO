@@ -16,7 +16,7 @@ export class PetsDisplayService {
         this.petsCardsContainer.classList.add('slider-ul');
     }
 
-    public async initialize() {
+    public async initialize(): Promise<void> {
         if (this.targetElement === null) {
             throw new Error('Target element must exist');
         }
@@ -32,7 +32,7 @@ export class PetsDisplayService {
         }
     }
 
-    private displayPets() {
+    private displayPets(): void {
         if (!this.targetElement || !this.pets) {
             return;
         }

@@ -17,7 +17,7 @@ export class FeedBackDisplayService {
         }
     }
 
-    public async initialize() {
+    public async initialize(): Promise<void> {
         if (this.targetElement === null) {
             throw new Error('Target element must exist');
         }
@@ -35,7 +35,7 @@ export class FeedBackDisplayService {
         }
     }
 
-    private displayFeedbacks() {
+    private displayFeedbacks(): void {
         if (!this.targetElement || !this.feedbacks) {
             return;
         }

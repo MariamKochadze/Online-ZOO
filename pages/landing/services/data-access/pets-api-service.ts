@@ -1,7 +1,6 @@
-import { ApplicationConfiguration } from "../../../../config/configuration";
-import { petImagePaths } from "../../constants/images";
-import { Pet, PetDto, PetsResponseBody } from "../../models/pet-model";
-
+import { ApplicationConfiguration } from '../../../../config/configuration';
+import { petImagePaths } from '../../constants/images';
+import { Pet, PetDto, PetsResponseBody } from '../../models/pet-model';
 
 export class PetsApiService {
     constructor(private readonly configuration: ApplicationConfiguration) {}
