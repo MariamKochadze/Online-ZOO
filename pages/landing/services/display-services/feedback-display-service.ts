@@ -1,7 +1,7 @@
-import { ErrorDisplayService } from './error-display-service';
 import { FeedbackApiService } from './../data-access/feedback-api-service';
-import { LoaderDisplayService } from './loader-display-service';
 import { Feedback } from '../../models/feedback-model';
+import { LoaderDisplayService } from '../../../../shared/services/display-servcies/loader-display-service';
+import { ErrorDisplayService } from '../../../../shared/services/display-servcies/error-display-service';
 
 export class FeedBackDisplayService {
     private feedbacks: Feedback[] | undefined = [];

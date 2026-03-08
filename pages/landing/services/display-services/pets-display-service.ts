@@ -1,7 +1,7 @@
 import { PetsApiService } from './../data-access/pets-api-service';
-import { LoaderDisplayService } from './loader-display-service';
 import { Pet } from '../../models/pet-model';
-import { ErrorDisplayService } from './error-display-service';
+import { LoaderDisplayService } from '../../../../shared/services/display-servcies/loader-display-service';
+import { ErrorDisplayService } from '../../../../shared/services/display-servcies/error-display-service';
 
 export class PetsDisplayService {
     private pets: Pet[] | undefined = [];

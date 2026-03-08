@@ -4,8 +4,8 @@ import { PetsApiService } from './services/data-access/pets-api-service';
 import { FeedbackApiService } from './services/data-access/feedback-api-service';
 import { PetsDisplayService } from './services/display-services/pets-display-service';
 import { FeedBackDisplayService } from './services/display-services/feedback-display-service';
-import { LoaderDisplayService } from './services/display-services/loader-display-service';
-import { ErrorDisplayService } from './services/display-services/error-display-service';
+import { LoaderDisplayService } from '../../shared/services/display-servcies/loader-display-service';
+import { ErrorDisplayService } from '../../shared/services/display-servcies/error-display-service';
 
 class LandingPage extends PageLifeCycle {
     constructor(
@@ -21,7 +21,7 @@ class LandingPage extends PageLifeCycle {
         try {
             await Promise.allSettled([this.petsDisplayService.initialize(), this.feedBackDisplayService.initialize()]);
         } catch (error) {
-            console.error(error);
+            console.log(error);
         }
     }
 }
