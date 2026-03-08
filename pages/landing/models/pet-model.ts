@@ -14,4 +14,5 @@ export interface Pet {
     readonly species: string;
     readonly name: string;
     readonly description: string;
+    readonly img: string | undefined;
 }

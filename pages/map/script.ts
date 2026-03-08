@@ -5,11 +5,6 @@ class MapPage extends PageLifeCycle {
         console.log(event);
         await Promise.resolve();
     }
-
-    protected async onWindowUnLoad(event: Event): Promise<void> {
-        console.log(event);
-        await Promise.resolve();
-    }
 }
 
 new MapPage();

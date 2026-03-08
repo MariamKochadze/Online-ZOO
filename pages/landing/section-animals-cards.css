@@ -26,6 +26,45 @@
     line-height: 130%;
 }
 
+.slider__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.slider-section {
+    width: 100%;
+}
+
+.slider-ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 37px;
+    row-gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.35s ease;
+    will-change: transform;
+}
+
+.slider-pets-section {
+    width: 440px;
+    height: auto;
+    background-color: var(--dark-blue-color);
+    padding-bottom: 35px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
 .container__pets-infos .animal-care-container {
     grid-template-rows: repeat(2, 658px);
 }
@@ -224,6 +263,24 @@
         width: 600px;
         margin: 0 auto;
         gap: 0;
+    }
+
+    .slider-section {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .slider-ul {
+        display: flex;
+        gap: 20px;
+        transition: none;
+        transform: none !important;
+    }
+
+    .slider-pets-section {
+        flex: 0 0 calc(50% - 10px);
+        width: auto !important;
+        scroll-snap-align: start;
     }
 
     .container__pets-infos .care-card {

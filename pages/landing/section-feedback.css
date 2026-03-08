@@ -47,14 +47,18 @@
 }
 
 .container__pets-feedback-desc {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-columns: calc((100% - 30px) / 2);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 60px;
+    overflow: auto;
 }
 .container__pets-feedback-desc-1 {
-    width: 515px;
-    height: 463px;
+    max-width: 515px;
+    max-height: 463px;
     background-color: white;
 
     border-radius: 5px;
@@ -81,8 +85,8 @@
     font-weight: 400;
     line-height: 150%;
     padding: 20px;
-    width: 415px;
-    height: 135px;
+    max-width: 415px;
+    max-height: 135px;
     display: block;
     margin-bottom: 20px;
 }
@@ -143,6 +147,7 @@
 }
 
 .container__pets-btn-2-feedback {
+    overflow-y: hidden;
     cursor: pointer;
     margin-left: 260px;
     bottom: 200px;
@@ -164,6 +169,10 @@
         transform 0.2s ease;
 }
 
+.container__pets-feedback-desc::-webkit-scrollbar {
+    display: none;
+}
+
 @media (max-width: 1919px) {
     .container__pets-feedback-sec {
         padding-left: 100px;
@@ -176,7 +185,11 @@
     }
 
     .container__pets-feedback-desc {
-        justify-content: end;
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        gap: 30px;
     }
 
     .container__pets-btn-scroll {
@@ -197,8 +210,12 @@
 
 @media screen and (max-width: 1160px) {
     .container__pets-feedback-desc {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        display: flex;
+        gap: 30px;
+    }
+
+    .container__pets-feedback-desc-1 {
+        flex: 0 0 calc(80% - 10px);
     }
 
     .container__pets-feedback {
