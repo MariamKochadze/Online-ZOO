@@ -8,10 +8,16 @@ export class PetsApiService {
     public async fetchPets(): Promise<Pet[] | undefined> {
         try {
             const response = await fetch(`${this.configuration.apiUrl}/pets`);
+
+            if (!response.ok) {
+                // TODO: once backend implements better error handling we can update as well.(now we have only 500 status)
+                throw new Error('Internal server error');
+            }
+
             const result = (await response.json()) as PetsResponseBody;
             return result.data.map((dto) => this.mapToPet(dto));
         } catch (error) {
-            console.error(error);
+            console.log(error);
             return undefined;
         }
     }

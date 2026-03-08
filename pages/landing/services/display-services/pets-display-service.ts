@@ -67,7 +67,6 @@ export class PetsDisplayService {
             this.petsCardsContainer.append(petCard);
         });
 
-        this.loaderDisplayService.hide(this.targetElement);
         this.targetElement.append(this.petsCardsContainer);
     }
 }

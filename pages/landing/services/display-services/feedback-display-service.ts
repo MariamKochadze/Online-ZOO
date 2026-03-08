@@ -57,7 +57,7 @@ export class FeedBackDisplayService {
 
             fragment.append(feedbackCard);
         });
-        this.loaderDisplayService.hide(this.targetElement);
+
         this.targetElement?.append(fragment);
     }
 }
