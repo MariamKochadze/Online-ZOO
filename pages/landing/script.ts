@@ -2,10 +2,10 @@ import { configuration } from '../../config/configuration';
 import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
 import { PetsApiService } from './services/data-access/pets-api-service';
 import { FeedbackApiService } from './services/data-access/feedback-api-service';
-import { PetsDisplayService } from './services/display-services/pets-display-service';
-import { FeedBackDisplayService } from './services/display-services/feedback-display-service';
 import { LoaderDisplayService } from '../../shared/services/display-servcies/loader-display-service';
 import { ErrorDisplayService } from '../../shared/services/display-servcies/error-display-service';
+import { PetsDisplayService } from './services/display-services/pets/pets-display-service';
+import { FeedBackDisplayService } from './services/display-services/feedbacks/feedback-display-service';
 
 class LandingPage extends PageLifeCycle {
     constructor(
@@ -26,10 +26,11 @@ class LandingPage extends PageLifeCycle {
     }
 }
 
+// Common/Shared Services
 const loaderDisplayService = new LoaderDisplayService();
 const errorDisplayService = new ErrorDisplayService();
 
-// dependencies for the page
+// Landing Page Specific services
 const petsApiService = new PetsApiService(configuration);
 const feedbackApiService = new FeedbackApiService(configuration);
 

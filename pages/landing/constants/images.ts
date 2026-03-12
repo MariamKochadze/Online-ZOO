@@ -5,6 +5,10 @@ interface ImagePaths {
 
 export const petImagePaths: ImagePaths[] = [
     {
+        id: 0,
+        path: '../../assets/images/placeholder-image.png',
+    },
+    {
         id: 1,
         path: '../../assets/images/Rectangle39.svg',
     },

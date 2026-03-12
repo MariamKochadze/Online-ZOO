@@ -13,7 +13,7 @@ export class FeedbackApiService {
             const response = await fetch(`${this.configuration.apiUrl}/feedback`);
 
             if (!response.ok) {
-                // TODO: once backend implements better error handling we can update as well.(now we have only 500 status)
+
                 throw new Error('Internal server error');
             }
 

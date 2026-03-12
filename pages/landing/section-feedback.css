@@ -56,6 +56,16 @@
     margin-bottom: 60px;
     overflow: auto;
 }
+
+.feedback-slider-track{
+    display: flex !important;  
+    flex-wrap: nowrap !important; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    will-change: transform;
+}
 .container__pets-feedback-desc-1 {
     max-width: 515px;
     max-height: 463px;

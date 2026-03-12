@@ -28,7 +28,7 @@ export class PetsApiService {
             species: petDto.commonName,
             name: petDto.name,
             description: petDto.description,
-            img: petImagePaths.find((img) => img.id === petDto.id)?.path, // TODO: backend needs to add img urls and then we will remove it from here
+            img: petImagePaths.find((img) => img.id === petDto.id)?.path ?? petImagePaths[0].path, // TODO: backend needs to add img urls and then we will remove it from here
         };
     }
 }
