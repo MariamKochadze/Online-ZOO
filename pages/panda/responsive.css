@@ -1,31 +1,31 @@
-@media (max-width: 1700px) {
-    /* Main content padding adjustment */
+/* @media (max-width: 1700px) {
+
     .main__section {
         padding: 0 40px;
     }
 
-    /* Collapse sidebar width */
+
     .sidebar {
         width: 115px;
     }
 
-    /* Show logo only when sidebar is toggled */
+
     #sidebarToggle:checked + .sidebar .logo img {
         display: block;
     }
 
-    /* Hide logo by default */
+
     .logo img {
         display: none;
     }
 
-    /* Center toggle button */
+
     .toggle-btn {
         margin: 0 auto;
         padding-top: 20px;
     }
 
-    /* Replace animal icons with centered background images */
+  
     .sidebar .animal-list-sec-panda {
         background-image: url('../../assets/images/panda-page/panda-icons/Panda-2.svg');
         background-position: center;
@@ -46,113 +46,105 @@
         background-position: center;
     }
 
-    /* Hide animal images inside sidebar items */
+
     .animal-item img {
         display: none;
     }
 
-    /* Remove active indicator styling */
+   
     .animal-item.active::before {
         display: none;
     }
 
-    /* Remove background styles for items */
+   
     .animal-item,
     .animal-item.active {
         background: none;
     }
 
-    /* Limit zoo main image width */
+   
     .zoo-page-img img {
         max-width: 1025px;
         margin: 0 auto;
     }
 }
 
-/* =====================================================
-   DESKTOP / SMALLER LAPTOPS ≤ 1400px
-   Stack header and resize images
-   ===================================================== */
+
 @media (max-width: 1400px) {
-    /* Reduce decorative sidebar width */
+    
     .animal-list-sec::before {
         width: 115px;
     }
 
-    /* Stack header elements vertically */
+  
     .zoo-page-header {
         grid-template-columns: 1fr;
         gap: 20px;
         text-align: center;
     }
 
-    /* Center main button */
+  
     .zoo-page-btn {
         justify-self: center;
     }
 
-    /* Adjust button spacing */
+  
     .container__btn button {
         margin-right: 60px;
     }
 
-    /* Reduce gap between animal info sections */
+  
     .zoo-animal-info {
         gap: 40px;
     }
 
-    /* Resize gallery images */
+  
     .zoo-page-images img {
         width: 265px;
         height: 209px;
     }
 
-    /* Resize "Did You Know" section */
+  
     .zoo-did-you-know-info {
         max-width: 930px;
         height: 267px;
     }
 
-    /* Reduce description spacing */
+
     .zoo-desc dl {
         gap: 10px;
     }
 }
 
-/* =====================================================
-   TABLET LANDSCAPE ≤ 1200px
-   ===================================================== */
+
 @media (max-width: 1200px) {
-    /* Keep compact sidebar */
+
     .sidebar {
         width: 115px;
     }
 }
 
-/* =====================================================
-   TABLET ≤ 1199px
-   Major layout restructuring for smaller screens
-   ===================================================== */
+
 @media (max-width: 1199px) {
-    /* Expand sidebar when toggled */
+
     #sidebarToggle:checked + .sidebar {
         width: 233px;
         height: 500px;
     }
 
-    /* Remove main section padding */
+
     .main__section.zoo-page {
         padding: 0 0 40px 0;
         margin: 0;
     }
 
-    /* Resize logo when sidebar expanded */
+  
     #sidebarToggle:checked + .sidebar .logo img {
         width: 91px;
         height: 30px;
     }
 
-    /* Resize animal icons */
+
     .animal-list-sec-panda,
     .animal-list-sec-eagle,
     .animal-list-sec-gorilla,
@@ -160,7 +152,7 @@
         background-size: 30px;
     }
 
-    /* Adjust decorative line position */
+
     .animal-list-sec-btn-cont::before {
         bottom: 40px;
     }
@@ -173,13 +165,13 @@
         height: 100px;
     }
 
-    /* Adjust toggle button spacing */
+
     .toggle-btn {
         padding-top: 26px;
         padding-left: 20px;
     }
 
-    /* Remove padding and reduce width of animal items */
+
     .animal-item {
         padding: 0;
     }
@@ -189,30 +181,29 @@
         width: 78px;
     }
 
-    /* Hide button container height */
+  
     .animal-list-sec-btn {
         height: 0;
     }
 
-    /* Hide first and last gallery images */
+
     .zoo-page-images img:first-child,
     .zoo-page-images img:last-child {
         display: none;
     }
 
-    /* Remove padding from info section */
+  
     .zoo-animal-info {
         padding: 0;
-        flex-direction: column-reverse; /* Stack content vertically */
+        flex-direction: column-reverse; 
     }
 
-    /* Smaller gallery images */
     .zoo-page-images img {
         width: 135px;
         height: 106px;
     }
 
-    /* Resize info cards */
+   
     .zoo-did-you-know-info {
         max-width: 600px;
         height: 354px;
@@ -223,7 +214,7 @@
         height: 199px;
     }
 
-    /* Resize description and panda image */
+   
     .zoo-animal-desription {
         max-width: 600px;
         height: 324px;
@@ -234,7 +225,7 @@
         height: 600px;
     }
 
-    /* Align "More Live" section */
+  
     .zoo-page-more-live {
         width: 100%;
         justify-self: end;
@@ -245,7 +236,6 @@
         padding: 50px 0;
     }
 
-    /* Align buttons */
     .container__btn.zoo-page-btn {
         justify-self: end;
     }
@@ -254,37 +244,33 @@
         margin: 0;
     }
 
-    /* Further collapse sidebar */
+  
     .sidebar {
         width: 78px;
         height: 500px;
     }
 }
 
-/* =====================================================
-   MOBILE ≤ 630px
-   Full mobile optimization
-   ===================================================== */
+
 @media (max-width: 630px) {
-    /* Compact sidebar */
+
     .sidebar {
         width: 50px;
         height: 300px;
     }
 
-    /* Expand sidebar when toggled */
+
     #sidebarToggle:checked + .sidebar {
         width: 230px;
         height: 300px;
     }
 
-    /* Smaller text */
+
     .text {
         font-size: 14px;
         line-height: 120%;
     }
 
-    /* Header adjustments */
     .sidebar-header {
         height: 30px;
     }
@@ -293,7 +279,6 @@
         padding-top: 5px;
     }
 
-    /* Resize decorative and animal sections */
     .animal-list-sec::before {
         width: 50px;
     }
@@ -309,7 +294,7 @@
         background-size: 20px;
     }
 
-    /* Header spacing */
+
     .zoo-page-header h2 {
         padding: 20px 0;
     }
@@ -319,7 +304,6 @@
         gap: 20px 0;
     }
 
-    /* Button adjustments */
     .container__btn.zoo-page-btn {
         margin-right: 10px;
     }
@@ -328,7 +312,7 @@
         width: 300px;
     }
 
-    /* Horizontal scroll gallery for mobile */
+
     .zoo-page-images {
         width: 100%;
         display: flex;
@@ -344,7 +328,6 @@
         height: 110px;
     }
 
-    /* Resize info sections */
     .zoo-did-you-know-info {
         width: 300px;
         height: 317px;
@@ -371,20 +354,18 @@
         height: 700px;
     }
 
-    /* Stack range rows vertically */
     .range-row {
         flex-direction: column;
     }
 
-    /* Align card button */
     .container__btn-card.zoos-btn-1 {
         text-align: start;
     }
 
-    /* Stack description list items */
+
     .zoo-desc dl {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
     }
-}
+} */

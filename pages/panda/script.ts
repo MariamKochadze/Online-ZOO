@@ -1,74 +1,31 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     const quickDonateBtn = document.querySelector('.btn-outline');
-//     const donateNowBtn = document.querySelector('.zoo-page-btn button');
+import { configuration } from '../../config/configuration';
+import { ErrorDisplayService } from '../../shared/services/display-servcies/error-display-service';
+import { LoaderDisplayService } from '../../shared/services/display-servcies/loader-display-service';
+import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
+import { CamerasApiService } from './data-access/cameras-api-service';
+import { CamerasDisplayService } from './display-services/cameras-display-service';
 
-//     const togetherWeCarePopup = document.querySelector('.donation__popup');
-//     const allFormSteps = document.querySelectorAll('.make__your-donation');
+class PandaPage extends PageLifeCycle {
+    constructor(private readonly cameraDisplayService: CamerasDisplayService) {
+        super();
+    }
 
-//     const step1Form = allFormSteps[0];
-//     const step2Form = allFormSteps[1];
-//     const step3Form = allFormSteps[2];
+    protected async onWindowLoad(e: Event): Promise<void> {
+        await Promise.resolve('5');
+        console.log(e);
 
-//     const closeBtns = document.querySelectorAll('.close-popup');
+        try {
+            await this.cameraDisplayService.initialize();
+        } catch (error) {
+            console.error(error);
+        }
+    }
+}
 
-//     const hideAll = () => {
-//         if (togetherWeCarePopup) togetherWeCarePopup.style.display = 'none';
-//         allFormSteps.forEach((s) => (s.style.display = 'none'));
-//         document.body.style.overflow = 'auto';
-//     };
+const animalApiService = new CamerasApiService(configuration);
+const loaderDisplayService = new LoaderDisplayService();
+const errorDsplayService = new ErrorDisplayService();
 
-//     const openStep = (stepElement) => {
-//         if (!stepElement) return;
-//         hideAll();
-//         stepElement.style.marginBottom = '0';
-//         stepElement.style.display = 'flex';
-//         document.body.style.overflow = 'hidden';
-//         m;
-//     };
+const camerasDisplayService = new CamerasDisplayService(animalApiService, loaderDisplayService, errorDsplayService);
 
-//     // --- BUTTON  ---
-
-//     [quickDonateBtn, donateNowBtn].forEach((btn) => {
-//         if (btn) {
-//             btn.addEventListener('click', (e) => {
-//                 e.preventDefault();
-//                 openStep(step1Form);
-//             });
-//         }
-//     });
-
-//     // --- NAVIGATION LOGIC ---
-
-//     step1Form?.querySelector('.container__btn button')?.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         openStep(step2Form);
-//     });
-
-//     step2Form?.querySelector('.container__btn button')?.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         openStep(step3Form);
-//     });
-
-//     // --- BACK BUTTONS ---
-//     step2Form?.querySelector('.next-container-back-btn a')?.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         openStep(step1Form);
-//     });
-
-//     step3Form?.querySelector('.next-container-back-btn a')?.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         openStep(step2Form);
-//     });
-
-//     // --- CLOSE LOGIC ---
-//     closeBtns.forEach((btn) => {
-//         btn.addEventListener('click', hideAll);
-//     });
-
-//     window.addEventListener('click', (e) => {
-//         if (e.target.classList.contains('donation__popup') || e.target.classList.contains('make__your-donation')) {
-//             hideAll();
-//         }
-//     });
-// });
-const n: number = 5;
+new PandaPage(camerasDisplayService);

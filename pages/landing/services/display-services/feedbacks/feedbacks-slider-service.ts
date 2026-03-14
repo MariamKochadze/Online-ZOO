@@ -2,17 +2,18 @@ import { Feedback } from '../../../models/feedback-model';
 
 export class FeedbackSliderBuilder {
     private track: HTMLUListElement | null = null;
-    private currentIndex = 1; 
+    private currentIndex = 1;
     private isTransitioning = false;
 
     public build(feedbacks: Feedback[]): HTMLUListElement {
         this.track = document.createElement('ul');
-        this.track.classList.add('feedback-slider-track'); 
-
+        this.track.classList.add('feedback-slider-track');
 
         const itemsToRender = [feedbacks[feedbacks.length - 1], ...feedbacks, feedbacks[0]];
 
-        this.track.innerHTML = itemsToRender.map(item => `
+        this.track.innerHTML = itemsToRender
+            .map(
+                (item) => `
             <li class="slider__slide">
                 <div class="container__pets-feedback-desc-1">
                     <div class="container__pets-feedback-desc-2">“</div>
@@ -21,10 +22,11 @@ export class FeedbackSliderBuilder {
                     <p class="container__pets-feedback-desc-1-p"><strong>${item.name}</strong></p>
                 </div>
             </li>
-        `).join('');
+        `,
+            )
+            .join('');
 
         this.setupButtons();
-        
 
         requestAnimationFrame(() => this.updatePosition(false));
 
@@ -32,7 +34,6 @@ export class FeedbackSliderBuilder {
     }
 
     private setupButtons(): void {
-
         const btnContainer = document.querySelector('.container__pets-btn-scroll');
         if (!btnContainer) return;
 
@@ -67,10 +68,10 @@ export class FeedbackSliderBuilder {
         const slidesCount = this.track.children.length;
 
         if (this.currentIndex === 0) {
-            this.currentIndex = slidesCount - 2; 
+            this.currentIndex = slidesCount - 2;
             this.updatePosition(false);
         } else if (this.currentIndex === slidesCount - 1) {
-            this.currentIndex = 1; 
+            this.currentIndex = 1;
             this.updatePosition(false);
         }
     }

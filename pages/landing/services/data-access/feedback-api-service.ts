@@ -13,7 +13,6 @@ export class FeedbackApiService {
             const response = await fetch(`${this.configuration.apiUrl}/feedback`);
 
             if (!response.ok) {
-
                 throw new Error('Internal server error');
             }
 

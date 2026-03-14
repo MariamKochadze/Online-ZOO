@@ -204,6 +204,8 @@ dd {
     top: 0;
     transition: width 0.3s ease;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 /* side bar checked */
 #sidebarToggle:checked + .sidebar {
@@ -263,12 +265,15 @@ dd {
     display: flex;
     justify-content: space-between;
     height: 70px;
+    flex-shrink: 0;
 }
 
 .animal-list-sec-btn-cont {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-shrink: 0;
 }
 
 .animal-list-sec-btn {
@@ -291,6 +296,13 @@ dd {
 /* ANIMAL LIST */
 .animal-list {
     list-style: none;
+    flex-grow: 1;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .animal-list-sec {
@@ -417,7 +429,7 @@ dd {
     }
 
     .sidebar {
-        width: 115px;
+        width: 115px !important;
     }
     #sidebarToggle:checked + .sidebar .logo img {
         display: block;

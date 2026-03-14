@@ -1,4 +1,4 @@
-.sidebar {
+/* .sidebar {
     width: 220px;
     background: var(--blue-1);
     color: white;
@@ -13,7 +13,7 @@
     width: 80px;
 }
 
-/* Sidebar Toggle */
+
 
 #sidebarToggle:checked + .sidebar {
     width: 300px;
@@ -48,4 +48,4 @@
 
 #sidebarToggle:checked + .sidebar .sidebar-header .toggle-btn .arrow-img {
     transform: rotate(180deg);
-}
+} */

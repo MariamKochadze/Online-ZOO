@@ -1,5 +1,4 @@
-import { Pet } from "../../../models/pet-model";
-
+import { Pet } from '../../../models/pet-model';
 
 export class PetsSliderBuilder {
     private track: HTMLUListElement | null = null;
