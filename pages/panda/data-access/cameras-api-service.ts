@@ -1,4 +1,5 @@
-import { Camera, CameraResponseBody } from '../models/animal-model';
+import { petImagePaths } from '../constants/image';
+import { Camera, CameraDto, CameraResponseBody } from '../models/camera-model';
 import { ApplicationConfiguration } from './../../../config/configuration';
 
 export class CamerasApiService {
@@ -13,10 +14,22 @@ export class CamerasApiService {
             }
 
             const result = (await response.json()) as CameraResponseBody;
-            return result.data;
+            return result.data.map((camera) => this.mapToCameras(camera));
         } catch (error) {
             console.log(error);
             return undefined;
         }
+    }
+
+    private mapToCameras(cameraDto: CameraDto): Camera {
+        const image = petImagePaths.find((img) => img.petId === cameraDto.petId) ?? petImagePaths[0];
+        return {
+            id: cameraDto.id,
+            text: cameraDto.text,
+            petId: cameraDto.petId,
+            img: image.path,
+            liveCamImg: image.liveCamImage,
+            liveCamImages: image.liveCamImages,
+        };
     }
 }

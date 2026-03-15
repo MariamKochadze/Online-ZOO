@@ -10,7 +10,6 @@ export class PetsApiService {
             const response = await fetch(`${this.configuration.apiUrl}/pets`);
 
             if (!response.ok) {
-                // TODO: once backend implements better error handling we can update as well.(now we have only 500 status)
                 throw new Error('Internal server error');
             }
 
@@ -28,7 +27,7 @@ export class PetsApiService {
             species: petDto.commonName,
             name: petDto.name,
             description: petDto.description,
-            img: petImagePaths.find((img) => img.id === petDto.id)?.path ?? petImagePaths[0].path, // TODO: backend needs to add img urls and then we will remove it from here
+            img: petImagePaths.find((img) => img.id === petDto.id)?.path ?? petImagePaths[0].path,
         };
     }
 }

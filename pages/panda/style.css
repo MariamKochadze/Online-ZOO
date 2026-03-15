@@ -208,39 +208,43 @@ dd {
     flex-direction: column;
 }
 /* side bar checked */
-#sidebarToggle:checked + .sidebar {
+.sidebar.is-expanded {
     width: 300px;
 }
-#sidebarToggle:checked + .sidebar .text {
+
+.is-expanded img {
+    margin: 15px;
+}
+.sidebar.is-expanded .text {
     display: inline;
 }
 .arrow-img {
     transition: transform 0.3s ease;
 }
-#sidebarToggle:checked + .sidebar .sidebar-header .toggle-btn .arrow-img {
+.sidebar.is-expanded .arrow-img {
     transform: rotate(180deg);
 }
 
-#sidebarToggle:checked + .sidebar .animal-list-sec::before,
-#sidebarToggle:checked + .sidebar .animal-list-sec-btn-cont::before {
+.sidebar.is-expanded .animal-list-sec::before,
+.sidebar.is-expanded .animal-list-sec-btn-cont::before {
     width: 300px;
 }
 
-#sidebarToggle:checked + .sidebar .animal-item.active::before {
+.sidebar.is-expanded .animal-item.active::before {
     display: none;
 }
 
-#sidebarToggle:checked + .sidebar .animal-item {
+.sidebar.is-expanded .animal-item {
     background: none;
     width: 169px;
     height: 69px;
 }
 
-#sidebarToggle:checked + .sidebar .animal-item img {
+.sidebar.is-expanded .animal-item img.icon {
     display: none;
 }
 
-#sidebarToggle:checked + .sidebar .animal-list-sec-panda {
+.sidebar.is-expanded .animal-list-sec-panda {
     background-image: url('../../assets/images/panda-page/panda-icons/Panda-2.svg');
     background-position: 20px center;
 }
@@ -429,10 +433,18 @@ dd {
     }
 
     .sidebar {
-        width: 115px !important;
+        width: 115px;
     }
-    #sidebarToggle:checked + .sidebar .logo img {
-        display: block;
+    .sidebar.is-expanded .logo img {
+        display: none;
+    }
+
+    .is-expanded img {
+        margin: 20px 50px;
+    }
+
+    .sidebar:not(.is-expanded) .logo img {
+        display: none;
     }
     .logo img {
         display: none;
@@ -442,7 +454,7 @@ dd {
         padding-top: 20px;
     }
 
-    .sidebar .animal-list-sec-panda {
+    /* .sidebar .animal-list-sec-panda {
         background-image: url('../../assets/images/panda-page/panda-icons/Panda-2.svg');
         background-position: center;
     }
@@ -457,7 +469,7 @@ dd {
     .sidebar .animal-list-sec-lemur {
         background-image: url('../../assets/images/panda-page/panda-icons/Lemur-2.svg');
         background-position: center;
-    }
+    } */
 
     .animal-item img {
         display: none;
@@ -519,7 +531,7 @@ dd {
 }
 
 @media (max-width: 1199px) {
-    #sidebarToggle:checked + .sidebar {
+    .sidebar.is-expanded {
         width: 233px;
         height: 500px;
     }
@@ -527,7 +539,7 @@ dd {
         padding: 0 0 40px 0;
         margin: 0;
     }
-    #sidebarToggle:checked + .sidebar .logo img {
+    .sidebar.is-expanded .logo img {
         width: 91px;
         height: 30px;
     }
@@ -615,10 +627,7 @@ dd {
         margin: 0;
     }
 
-    .sidebar {
-        width: 78px;
-        height: 500px;
-    }
+ 
 }
 
 @media (max-width: 630px) {
@@ -627,7 +636,7 @@ dd {
         height: 300px;
     }
 
-    #sidebarToggle:checked + .sidebar {
+    .sidebar.is-expanded {
         width: 230px;
         height: 300px;
     }
