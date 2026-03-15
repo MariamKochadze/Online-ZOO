@@ -22,19 +22,26 @@
                     <div class="input-group">
                         <div class="input-field" id="nameField">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" placeholder="Name" />
+                            <input id="nameInput" type="text" placeholder="Name" />
+                        </div>
+
+                        <div class="input-field" id="loginField">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="loginInput" type="text" placeholder="Login" />
                         </div>
 
                         <div class="input-field">
                             <i class="fa-solid fa-envelope"></i>
-                            <input type="email" placeholder="Email" />
+                            <input id="emailInput" type="email" placeholder="Email" />
                         </div>
 
                         <div class="input-field">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder="Password" />
+                            <input id="passwordInput" type="password" placeholder="Password" />
                         </div>
                         <p>Lost password <a href="#">Click here</a></p>
+
+                        <div id="show-error" style="color: red"></div>
                     </div>
                     <div class="btn__registration">
                         <button id="signupBtn" type="button">Sign Up</button>
@@ -48,12 +55,14 @@
         const signinBtn = document.getElementById('signinBtn');
         const signupBtn = document.getElementById('signupBtn');
         const nameField = document.getElementById('nameField');
+        const loginField = document.getElementById('loginField');
         const title = document.getElementById('title');
 
         function switchMode(mode) {
             const isSignup = mode === 'signup';
 
             nameField.style.display = isSignup ? 'flex' : 'none';
+            loginField.style.display = isSignup ? 'flex' : 'none';
             title.textContent = isSignup ? 'Sign Up' : 'Sign In';
 
             signinBtn.classList.toggle('disable', isSignup);

@@ -22,4 +22,8 @@ export class LocationService {
         const value = urlParams.get(paramKey);
         return value;
     }
+
+    public navigateTo(url: string): void {
+        window.location.href = url;
+    }
 }

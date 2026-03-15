@@ -1,3 +1,6 @@
+import { LocalStorageService } from './../../shared/services/local-storage-service';
+import { AuthenticationStateService } from './../../shared/services/authentication-state-service';
+import { UserInfoDisplayService } from './../../shared/services/display-servcies/user-info-display-service';
 import { configuration } from '../../config/configuration';
 import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
 import { PetsApiService } from './services/data-access/pets-api-service';
@@ -6,17 +9,21 @@ import { LoaderDisplayService } from '../../shared/services/display-servcies/loa
 import { ErrorDisplayService } from '../../shared/services/display-servcies/error-display-service';
 import { PetsDisplayService } from './services/display-services/pets/pets-display-service';
 import { FeedBackDisplayService } from './services/display-services/feedbacks/feedback-display-service';
+import { AuthenticationService } from '../../shared/services/authentication-service';
 
 class LandingPage extends PageLifeCycle {
     constructor(
         private readonly petsDisplayService: PetsDisplayService,
         private readonly feedBackDisplayService: FeedBackDisplayService,
+        private readonly authenticationService: AuthenticationService,
+        private readonly userInfoDisplayService: UserInfoDisplayService,
     ) {
         super();
     }
 
-    protected async onWindowLoad(event: Event): Promise<void> {
-        console.log(event);
+    protected async onWindowLoad(): Promise<void> {
+        this.authenticationService.initialize();
+        this.userInfoDisplayService.initialize();
 
         try {
             await Promise.allSettled([this.petsDisplayService.initialize(), this.feedBackDisplayService.initialize()]);
@@ -29,6 +36,12 @@ class LandingPage extends PageLifeCycle {
 // Common/Shared Services
 const loaderDisplayService = new LoaderDisplayService();
 const errorDisplayService = new ErrorDisplayService();
+const localStorageService = new LocalStorageService();
+
+const authenticationStateService = new AuthenticationStateService();
+const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);
+
+const userInfoDisplayService = new UserInfoDisplayService(authenticationStateService);
 
 // Landing Page Specific services
 const petsApiService = new PetsApiService(configuration);
@@ -41,4 +54,4 @@ const feedBackDisplayService = new FeedBackDisplayService(
     errorDisplayService,
 );
 
-new LandingPage(petsDisplayService, feedBackDisplayService);
+new LandingPage(petsDisplayService, feedBackDisplayService, authenticationService, userInfoDisplayService);

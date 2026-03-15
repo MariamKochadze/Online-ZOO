@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.getElementById('contactForm');
-    const thanksPopup = document.getElementById('thanksPopup');
+    const contactForm: HTMLFormElement | null = document.querySelector('#contactForm');
+    const thanksPopup: HTMLElement | null = document.getElementById('thanksPopup');
     const closeThanks = document.querySelector('.close-thanks');
 
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
+            if (!thanksPopup) {
+                return;
+            }
             thanksPopup.style.display = 'flex';
             document.body.style.overflow = 'hidden';
 
@@ -16,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (closeThanks) {
         closeThanks.addEventListener('click', () => {
+            if (!thanksPopup) {
+                return;
+            }
             thanksPopup.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
