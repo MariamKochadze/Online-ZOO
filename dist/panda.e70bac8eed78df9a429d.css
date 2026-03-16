@@ -3353,22 +3353,22 @@ main {
 
   
     .sidebar .animal-list-sec-panda {
-        background-image: url('./asset/images/panda-page/panda-icons/Panda-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Panda-2.svg');
         background-position: center;
     }
 
     .sidebar .animal-list-sec-eagle {
-        background-image: url('./asset/images/panda-page/panda-icons/Eagle-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Eagle-2.svg');
         background-position: center;
     }
 
     .sidebar .animal-list-sec-gorilla {
-        background-image: url('./asset/images/panda-page/panda-icons/Gorilla-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Gorilla-2.svg');
         background-position: center;
     }
 
     .sidebar .animal-list-sec-lemur {
-        background-image: url('./asset/images/panda-page/panda-icons/Lemur-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Lemur-2.svg');
         background-position: center;
     }
 
@@ -4056,19 +4056,19 @@ dd {
 }
 
 /* .sidebar.is-expanded .animal-list-sec-panda {
-    background-image: url('./asset/images/panda-page/panda-icons/Panda-2.svg');
+    background-image: url('./assets/images/panda-page/panda-icons/Panda-2.svg');
     background-position: 20px center;
 }
 #sidebarToggle:checked + .sidebar .animal-list-sec-eagle {
-    background-image: url('./asset/images/panda-page/panda-icons/Eagle-2.svg');
+    background-image: url('./assets/images/panda-page/panda-icons/Eagle-2.svg');
     background-position: 20px center;
 }
 #sidebarToggle:checked + .sidebar .animal-list-sec-gorilla {
-    background-image: url('./asset/images/panda-page/panda-icons/Gorilla-2.svg');
+    background-image: url('./assets/images/panda-page/panda-icons/Gorilla-2.svg');
     background-position: 20px center;
 }
 #sidebarToggle:checked + .sidebar .animal-list-sec-lemur {
-    background-image: url('./asset/images/panda-page/panda-icons/Lemur-2.svg');
+    background-image: url('./assets/images/panda-page/panda-icons/Lemur-2.svg');
     background-position: 20px center;
 } */
 .sidebar.collapsed {
@@ -4266,19 +4266,19 @@ dd {
     }
 
     /* .sidebar .animal-list-sec-panda {
-        background-image: url('./asset/images/panda-page/panda-icons/Panda-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Panda-2.svg');
         background-position: center;
     }
     .sidebar .animal-list-sec-eagle {
-        background-image: url('./asset/images/panda-page/panda-icons/Eagle-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Eagle-2.svg');
         background-position: center;
     }
     .sidebar .animal-list-sec-gorilla {
-        background-image: url('./asset/images/panda-page/panda-icons/Gorilla-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Gorilla-2.svg');
         background-position: center;
     }
     .sidebar .animal-list-sec-lemur {
-        background-image: url('./asset/images/panda-page/panda-icons/Lemur-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Lemur-2.svg');
         background-position: center;
     } */
 
