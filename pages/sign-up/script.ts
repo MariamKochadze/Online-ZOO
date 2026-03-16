@@ -7,6 +7,7 @@ import { SignInDisplayService } from './display-services/sign-in-form-handler-se
 import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
 import { SignUpDisplayService } from './display-services/sign-up-form-handler-service';
 import { configuration } from '../../config/configuration';
+import { SignInApiService } from './data-access/sign-in-api-service';
 
 class AuthenticationPage extends PageLifeCycle {
     constructor(
@@ -38,9 +39,10 @@ const authenticationStateService = new AuthenticationStateService();
 const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);
 
 const signUpApiService = new SignUpApiService(configuration);
+const signInApiService = new SignInApiService(configuration);
 
 const signUpDisplayService = new SignUpDisplayService(signUpApiService, localStorageService, locationService);
-const signInDisplayService = new SignInDisplayService();
+const signInDisplayService = new SignInDisplayService(signInApiService);
 
 new AuthenticationPage(
     signUpDisplayService,

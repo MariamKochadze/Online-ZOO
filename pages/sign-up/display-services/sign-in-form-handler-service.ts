@@ -1,12 +1,19 @@
+import { FailureData, SignInRequestBody, SuccessData } from '../models/sign-in-model';
+import { SignInApiService } from './../data-access/sign-in-api-service';
+
 export class SignInDisplayService {
     private signInFormButton: HTMLButtonElement | null = null;
     private emailInput: HTMLInputElement | null = null;
     private passwordInput: HTMLInputElement | null = null;
+    private showErrorDiv: HTMLElement | null = null;
+
+    constructor(private readonly signInApiService: SignInApiService) {}
 
     public async initialzie(): Promise<void> {
         this.signInFormButton = document.querySelector('#signinBtn');
         this.emailInput = document.querySelector('#emailInput');
         this.passwordInput = document.querySelector('#passwordInput');
+        this.showErrorDiv = document.querySelector('#show-error');
 
         await Promise.resolve();
         this.addEventListerSignInForm();
@@ -18,6 +25,10 @@ export class SignInDisplayService {
         }
 
         this.signInFormButton.addEventListener('click', () => {
+            if (this.showErrorDiv) {
+                this.showErrorDiv.innerHTML = '';
+            }
+
             const email = this.emailInput?.value;
             const password = this.passwordInput?.value;
             const isEmailValid = this.validateEmail(email);
@@ -27,8 +38,30 @@ export class SignInDisplayService {
                 return;
             }
 
-            
+            if (typeof email !== 'string' || typeof password !== 'string') {
+                return;
+            }
+
+            void this.sendsignInForm({ login: email, password });
         });
+    }
+
+    private async sendsignInForm({ login, password }: SignInRequestBody) {
+        const response: SuccessData | FailureData = await this.signInApiService.signIn({
+            login,
+            password,
+        });
+        if ('error' in response) {
+            if (!this.showErrorDiv) {
+                return;
+            }
+            this.showErrorDiv.innerHTML = response.error;
+            return;
+        }
+
+        localStorage.setItem('accessToken', JSON.stringify(response.access_token));
+        localStorage.setItem('user', JSON.stringify(response.user));
+        window.location.href = './landing.html';
     }
 
     private validateEmail(email: string | undefined): boolean {

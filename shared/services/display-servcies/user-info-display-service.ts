@@ -7,15 +7,30 @@ export class UserInfoDisplayService {
 
     public initialize() {
         this.userInfo = document.querySelector('#user-info');
-        console.log(this.userInfo);
+
         if (!this.userInfo) {
             return;
         }
 
-        console.log(this.authenticationStateService.getAuthState());
-
         if (this.authenticationStateService.getAuthState()) {
-            this.userInfo.innerHTML = `<a href="./profile.html">${this.authenticationStateService.getCurrentUser()?.name}</a> <button>Logout</button>`;
+            const userNameAncor: HTMLAnchorElement = document.createElement('a');
+            const logOutButton: HTMLButtonElement = document.createElement('button');
+
+            logOutButton.addEventListener('click', () => {
+                localStorage.removeItem('accessToken');
+                localStorage.removeItem('user');
+                window.location.reload();
+            });
+
+            userNameAncor.innerText = this.authenticationStateService.getCurrentUser()?.name ?? '';
+            logOutButton.innerText = 'LogOut';
+
+            const fragment = document.createDocumentFragment();
+
+            fragment.appendChild(userNameAncor);
+            fragment.appendChild(logOutButton);
+            this.userInfo.innerHTML = '';
+            this.userInfo.appendChild(fragment);
         } else {
             this.userInfo.innerHTML = `<a href="./signup.html">SIGN IN/SIGN UP</a>`;
         }

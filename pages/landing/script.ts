@@ -22,8 +22,8 @@ class LandingPage extends PageLifeCycle {
     }
 
     protected async onWindowLoad(): Promise<void> {
-        this.authenticationService.initialize();
-        this.userInfoDisplayService.initialize();
+        this.authenticationService.initialize(); // ამოწმებს ლოკალ სთორიჯს / სთეით სერვისს ააფდეითებს
+        this.userInfoDisplayService.initialize(); // ხატავს სახელს ნავიგაციაში
 
         try {
             await Promise.allSettled([this.petsDisplayService.initialize(), this.feedBackDisplayService.initialize()]);

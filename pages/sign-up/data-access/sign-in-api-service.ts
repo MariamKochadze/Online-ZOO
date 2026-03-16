@@ -1,27 +1,26 @@
-import { ApplicationConfiguration } from '../../../config/configuration';
+import { FailureData, SignInRequestBody, SignInSuccessResponseBody, SuccessData } from '../models/sign-in-model';
+import { ApplicationConfiguration } from './../../../config/configuration';
 
-class SignInApiService {
-    constructor(private readonly configuration: ApplicationConfiguration) {}
+export class SignInApiService {
+    constructor(private readonly applicationConfiguration: ApplicationConfiguration) {}
 
-    public async signIn(email: string, password: string) {
+    public async signIn(signIn: SignInRequestBody): Promise<SuccessData | FailureData> {
         try {
-            const response = await fetch(`${this.configuration.apiUrl}/auth/login`, {
+            const response = await fetch(`${this.applicationConfiguration.apiUrl}/auth/login`, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email, password }),
+                body: JSON.stringify(signIn),
             });
 
             if (!response.ok) {
-                const result = (await response.json()) as { error: string };
-                return { error: result.error };
+                const failure = (await response.json()) as FailureData;
+                return failure;
             }
 
-            
+            const success = (await response.json()) as SignInSuccessResponseBody;
+            return success.data;
         } catch (error) {
-            console.log(error);
-            return undefined;
+            console.error(error);
+            return { error: 'Internal server error' };
         }
     }
 }

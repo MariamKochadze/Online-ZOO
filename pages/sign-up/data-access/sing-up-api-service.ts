@@ -8,9 +8,6 @@ export class SignUpApiService {
         try {
             const response = await fetch(`${this.configuration.apiUrl}/auth/register`, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
                 body: JSON.stringify(registerRequestBody),
             });
 
