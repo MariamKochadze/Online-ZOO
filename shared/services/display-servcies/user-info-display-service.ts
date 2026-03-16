@@ -13,26 +13,21 @@ export class UserInfoDisplayService {
         }
 
         if (this.authenticationStateService.getAuthState()) {
-            const userNameAncor: HTMLAnchorElement = document.createElement('a');
-            const logOutButton: HTMLButtonElement = document.createElement('button');
+            const logoutButton: HTMLAnchorElement = document.createElement('a');
+            const img: HTMLImageElement = document.createElement('img');
+            img.src = '../../assets/icons/logout.png';
 
-            logOutButton.addEventListener('click', () => {
+            logoutButton.addEventListener('click', () => {
                 localStorage.removeItem('accessToken');
                 localStorage.removeItem('user');
                 window.location.reload();
             });
 
-            userNameAncor.innerText = this.authenticationStateService.getCurrentUser()?.name ?? '';
-            logOutButton.innerText = 'LogOut';
-
-            const fragment = document.createDocumentFragment();
-
-            fragment.appendChild(userNameAncor);
-            fragment.appendChild(logOutButton);
+            logoutButton.appendChild(img);
             this.userInfo.innerHTML = '';
-            this.userInfo.appendChild(fragment);
+            this.userInfo.appendChild(logoutButton);
         } else {
-            this.userInfo.innerHTML = `<a href="./signup.html">SIGN IN/SIGN UP</a>`;
+            this.userInfo.innerHTML = `<a href="./signup.html"><img src="../../assets/icons/register.png" alt="" /></a>`;
         }
     }
 }

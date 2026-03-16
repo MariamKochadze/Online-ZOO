@@ -193,6 +193,18 @@ body {
 }
 
 .slider__slide {
-    flex: 0 0 100% !important; 
+    flex: 0 0 100% !important;
     width: 100%;
+}
+
+.user-info-icon {
+    padding-left: 40px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.user-info-icon img {
+    width: 48px;
+    height: 48px;
 }
