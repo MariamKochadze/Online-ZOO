@@ -1,2 +1,10 @@
 node_modules
-dist
+assets
+config
+pages
+shared
+eslint.config.mjs
+package.json
+pnpm-lock.yml
+README.md
+webpack.config.js
