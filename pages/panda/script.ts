@@ -18,15 +18,13 @@ class PandaPage extends PageLifeCycle {
         private readonly petDetailsDisplayService: PetDetailsDisplayService,
         private readonly userInfoDisplayService: UserInfoDisplayService,
         private readonly authenticationService: AuthenticationService,
-
     ) {
         super();
     }
 
-    protected async onWindowLoad(e: Event): Promise<void> {
+    protected async onWindowLoad(): Promise<void> {
+        this.authenticationService.initialize();
         this.userInfoDisplayService.initialize();
-        await Promise.resolve('5');
-        console.log(e);
 
         try {
             await this.camerasDisplayService.initialize();
@@ -46,12 +44,10 @@ const petDetailsApiService = new PetDetailsApiService(configuration);
 
 const localStorageService = new LocalStorageService();
 
-
 const authenticationStateService = new AuthenticationStateService();
 const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);
 
-
-const userInfoDisplayService = new UserInfoDisplayService(authenticationStateService)
+const userInfoDisplayService = new UserInfoDisplayService(authenticationStateService);
 
 const camerasDisplayService = new CamerasDisplayService(
     camerasApiService,
