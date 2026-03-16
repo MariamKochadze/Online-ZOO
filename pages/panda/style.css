@@ -244,7 +244,7 @@ dd {
     display: none;
 }
 
-.sidebar.is-expanded .animal-list-sec-panda {
+/* .sidebar.is-expanded .animal-list-sec-panda {
     background-image: url('../../assets/images/panda-page/panda-icons/Panda-2.svg');
     background-position: 20px center;
 }
@@ -259,7 +259,7 @@ dd {
 #sidebarToggle:checked + .sidebar .animal-list-sec-lemur {
     background-image: url('../../assets/images/panda-page/panda-icons/Lemur-2.svg');
     background-position: 20px center;
-}
+} */
 .sidebar.collapsed {
     width: 80px;
 }
@@ -471,17 +471,17 @@ dd {
         background-position: center;
     } */
 
-    .animal-item img {
+    /* .animal-item img {
         display: none;
-    }
+    } */
 
     .animal-item.active::before {
         display: none;
     }
-    .animal-item,
+    /* .animal-item,
     .animal-item.active {
         background: none;
-    }
+    } */
 
     .zoo-page-img img {
         max-width: 1025px;

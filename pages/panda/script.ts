@@ -1,6 +1,10 @@
 import { configuration } from '../../config/configuration';
+import { AuthenticationService } from '../../shared/services/authentication-service';
+import { AuthenticationStateService } from '../../shared/services/authentication-state-service';
 import { ErrorDisplayService } from '../../shared/services/display-servcies/error-display-service';
 import { LoaderDisplayService } from '../../shared/services/display-servcies/loader-display-service';
+import { UserInfoDisplayService } from '../../shared/services/display-servcies/user-info-display-service';
+import { LocalStorageService } from '../../shared/services/local-storage-service';
 import { LocationService } from '../../shared/services/location-service';
 import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
 import { CamerasApiService } from './data-access/cameras-api-service';
@@ -12,11 +16,15 @@ class PandaPage extends PageLifeCycle {
     constructor(
         private readonly camerasDisplayService: CamerasDisplayService,
         private readonly petDetailsDisplayService: PetDetailsDisplayService,
+        private readonly userInfoDisplayService: UserInfoDisplayService,
+        private readonly authenticationService: AuthenticationService,
+
     ) {
         super();
     }
 
     protected async onWindowLoad(e: Event): Promise<void> {
+        this.userInfoDisplayService.initialize();
         await Promise.resolve('5');
         console.log(e);
 
@@ -36,6 +44,15 @@ const locationService = new LocationService();
 const camerasApiService = new CamerasApiService(configuration);
 const petDetailsApiService = new PetDetailsApiService(configuration);
 
+const localStorageService = new LocalStorageService();
+
+
+const authenticationStateService = new AuthenticationStateService();
+const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);
+
+
+const userInfoDisplayService = new UserInfoDisplayService(authenticationStateService)
+
 const camerasDisplayService = new CamerasDisplayService(
     camerasApiService,
     loaderDisplayService,
@@ -49,4 +66,4 @@ const petDetailsDisplayService = new PetDetailsDisplayService(
     locationService,
 );
 
-new PandaPage(camerasDisplayService, petDetailsDisplayService);
+new PandaPage(camerasDisplayService, petDetailsDisplayService, userInfoDisplayService, authenticationService);
