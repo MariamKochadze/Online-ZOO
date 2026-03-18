@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lemur Page</title>
+        <link rel="icon" href="../../assets/icons/Favicon.png" type="image/png" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../landing/style.css" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="../panda/style.css" />
+        <link rel="stylesheet" href="../landing/banner.css" />
+        <link rel="stylesheet" href="../landing/donation.css" />
+        <link rel="stylesheet" href="../landing/navigation.css" />
+        <link rel="stylesheet" href="../landing/variables.css" />
+        <link rel="stylesheet" href="../landing/section-animals-cards.css" />
+        <link rel="stylesheet" href="../landing/section-feedback.css" />
+        <link rel="stylesheet" href="../landing/section-footer.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/navigation.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/grid-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/variables.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/shared-classes.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/reset.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/flex-layout.css" />
+        <link rel="stylesheet" href="../shared-resources/styles/buttons.css" />
+        <link rel="stylesheet" href="../panda/popup.css" />
+        <script src="../panda/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="header__menu row flx align-center">
+                <a href="#online-logo">
+                    <img src="../../assets/images/Logo.svg" alt="online logo" />
+                </a>
+
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+                <label for="menu-toggle" class="menu-overlay"></label>
+
+                <label for="menu-toggle" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+
+                <ul class="header__menu-list flx align-center justify-flex-end wrap desktop-only">
+                    <li class="header__menu-info-social-links-container flx align-center">
+                        <ul class="header__menu-info flx justify-space-between">
+                            <li><a href="../landing/index.html">ABOUT</a></li>
+                            <li><a href="../map/index.html">MAP</a></li>
+                            <li><a href="#" class="active">ZOOS</a></li>
+                            <li><a href="../contact-us/index.html">CONTACT US</a></li>
+                            <li>
+                                <a
+                                    href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=31-8306&t=DQ1rYvA5u294mSEm-0"
+                                    >DESIGN</a
+                                >
+                            </li>
+                        </ul>
+                        <ul class="header__menu-social-links header flx justify-space-between wrap">
+                            <li>
+                                <a href="https://www.youtube.com/@RollingScopesSchool" target="_blank">
+                                    <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/rsschool_en?igsh=em1janI5bzZ0dXlx" target="_blank">
+                                    <img src="../../assets/images/Instagram.svg" alt="instagram logo" />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.facebook.com/EPAM.Poland?mibextid=wwXIfr&rdid=cgRX3ckS90yDJAxo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18JdV47Fxn%2F%3Fmibextid%3DwwXIfr#"
+                                    target="_blank"
+                                >
+                                    <img src="../../assets/images/Facebook.svg" alt="facebook logo" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <aside class="sidebar-humburger">
+                    <ul class="mobile-nav-list flx direction-column align-center">
+                        <li><a href="../landing/index.html">ABOUT</a></li>
+                        <li><a href="../map/index.html">MAP</a></li>
+                        <li><a href="#" class="active">ZOOS</a></li>
+                        <li><a href="../contact-us/index.html">CONTACT US</a></li>
+                        <li>
+                            <a
+                                href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=0-1&p=f&t=DQ1rYvA5u294mSEm-0"
+                                >DESIGN</a
+                            >
+                        </li>
+                    </ul>
+                </aside>
+            </nav>
+        </header>
+        <main>
+            <div class="zoo-top-layout">
+                <div class="zoo-page-side-nav">
+                    <input type="checkbox" id="sidebarToggle" hidden />
+                    <aside class="sidebar lemur-sidebar">
+                        <div class="sidebar-header">
+                            <span class="logo">
+                                <img src="../../assets/images/panda-page/panda-icons/LIVEBadge.svg" alt="live image" />
+                            </span>
+                            <label for="sidebarToggle" class="toggle-btn">
+                                <img
+                                    src="../../assets/images/panda-page/panda-icons/Group17.svg"
+                                    alt="arrow icon"
+                                    class="arrow-img"
+                                />
+                            </label>
+                        </div>
+
+                        <ul class="animal-list">
+                            <div class="animal-list-sec-lemur">
+                                <li class="animal-list-sec">
+                                    <div class="animal-item active" data-animal="lemur">
+                                        <img
+                                            src="../../assets/images/panda-page/panda-icons/Lemur.svg"
+                                            alt="lemur icon"
+                                            class="icon"
+                                        />
+                                        <span class="text"
+                                            >The ring-tailed lemurs play in Madagascar, Lemuria Land</span
+                                        >
+                                    </div>
+                                </li>
+                            </div>
+
+                            <div class="animal-list-sec-panda">
+                                <li class="animal-list-sec">
+                                    <a href="../panda/index.html">
+                                        <div class="animal-item" data-animal="panda">
+                                            <img
+                                                src="../../assets/images/panda-page/panda-icons/Panda.svg"
+                                                alt="panda icon"
+                                                class="icon"
+                                            />
+                                            <span class="text">Watch live from China's Panda Center</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+
+                            <div class="animal-list-sec-eagle">
+                                <li class="animal-list-sec">
+                                    <a href="../eagles/index.html">
+                                        <div class="animal-item" data-animal="eagle">
+                                            <img
+                                                src="../../assets/images/panda-page/panda-icons/Eagle.svg"
+                                                alt="eagle icon"
+                                                class="icon"
+                                            />
+                                            <span class="text">Watch The Bald Eagles Nest from West End cam</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+
+                            <div class="animal-list-sec-gorilla">
+                                <li class="animal-list-sec">
+                                    <a href="../gorillas/index.html">
+                                        <div class="animal-item" data-animal="gorilla">
+                                            <img
+                                                src="../../assets/images/panda-page/panda-icons/Gorilla.svg"
+                                                alt="gorilla icon"
+                                                class="icon"
+                                            />
+                                            <span class="text"
+                                                >Livestream from Gorilla Forest Corridor habitat cam</span
+                                            >
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+
+                        <div class="animal-list-sec-btn-cont">
+                            <button class="animal-list-sec-btn">
+                                <img src="../../assets/images/panda-page/panda-icons/Vector.svg" alt="arrow icon" />
+                            </button>
+                        </div>
+                    </aside>
+                </div>
+
+                <section class="grd xl-grd-cols-12 xl-grd-rows-3 s-grd-rows-4 main__section zoo-page">
+                    <div class="zoo-page-header xl-col-span-10 s-col-span-12">
+                        <h2>lemurs cams</h2>
+                    </div>
+                    <div class="container__btn zoo-page-btn xl-col-span-2 s-col-span-12 s-order-3 xs-order-4">
+                        <button>
+                            donate now
+                            <img src="../../assets/icons/Union.svg" alt="union icon" />
+                        </button>
+                    </div>
+                    <div class="zoo-page-img xl-col-span-12 s-order-2">
+                        <img src="../../assets/images/lemur-page/Youtubeplayer.png" alt="lemur image" />
+                    </div>
+                    <div class="zoo-page-more-live xl-col-span-12 s-order-4 xs-order-3">
+                        <div>
+                            <h2>more live views</h2>
+                        </div>
+                        <div class="zoo-page-images-slider-container">
+                            <div class="zoo-page-images">
+                                <img src="../../assets/images/panda-page/panda-icons/btn.png" alt="arrow icon" />
+                                <img
+                                    src="../../assets/images/lemur-page/Lemur additional cam card.png"
+                                    alt="lemur image"
+                                />
+                                <img
+                                    src="../../assets/images/lemur-page/Lemur additional cam card (1).png"
+                                    alt="lemur image"
+                                />
+                                <img
+                                    src="../../assets/images/lemur-page/Lemur additional cam card (2).png"
+                                    alt="lemur image"
+                                />
+                                <img src="../../assets/images/panda-page/panda-icons/btn (1).png" alt="arrow icon" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <input type="checkbox" id="donationToggle" hidden />
+            <section class="flx align-center justify-center m-align-flex-start main__section container__donation">
+                <div class="row flx align-center justify-space-between wrap">
+                    <div class="flx direction-column donation-desc">
+                        <h3>Provide Andy the lemur with fruits!</h3>
+                        <p>
+                            More than 90% of lemur species are endangered and might face extinction in the nearest
+                            future. Watch the ring-tailed lemurs play and climb in this soothing setting and support
+                            them by donating for the fruits they adore.
+                        </p>
+                    </div>
+                    <div class="donation_btn">
+                        <h4>Quick Donate</h4>
+                        <a class="btn btn-outline">
+                            <span>$ DONATION AMOUNT</span>
+                            <span class="icon-box">
+                                <img src="../../assets/icons/Union.svg" alt="icon" />
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Make your donation popup-1 -->
+            <section class="make__your-donation" id="step-1">
+                <div class="make__your-donation-container">
+                    <div class="make__your-donation-header">
+                        <h3>make your donation</h3>
+                    </div>
+                    <div class="donation__cont make__your-donation-form">
+                        <p>Donation Information:</p>
+                        <div class="make__your-donation-line"></div>
+                        <form class="make__your-donation-form-container">
+                            <label>Choose your donation amount:</label>
+                            <div class="make__your-donation-images">
+                                <img src="../../assets/icons/make-your-donation-10.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-20.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-30.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-50.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-80.svg" alt="donation image" />
+                                <img src="../../assets/icons/make-your-donation-100.svg" alt="donation image" />
+                            </div>
+                            <div class="make__your-donation-other-amount">
+                                <img src="../../assets/icons/donation-other-amount.svg" alt="donation image" />
+                                <input />
+                            </div>
+                            <div class="make__your-donation-select-pet">
+                                <img
+                                    src="../../assets/icons/make-your-donation-for-special-pet.svg"
+                                    alt="donation image"
+                                />
+
+                                <div class="select-wrapper">
+                                    <input type="checkbox" id="animalToggle" class="visually-hidden" />
+                                    <label for="animalToggle" class="dropdown-placeholder">
+                                        Choose your favourite
+                                        <span class="dropdown-placeholder-icon">
+                                            <img src="../../assets/icons/arrow-down.svg" alt="arrow image" />
+                                        </span>
+                                    </label>
+
+                                    <div class="dropdown-content">
+                                        <a href="">Lukas the Panda</a>
+                                        <a href="">Andy the Lemur</a>
+                                        <a href="">Glen the Gorilla</a>
+                                        <a href="">Mike the Alligator</a>
+                                        <a href="">Sam & Lora the eagles family</a>
+                                        <a href="">Liz the Koala</a>
+                                        <a href="">Shake the Lion</a>
+                                        <a href="">Senja the Tiger</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-content-checkbox">
+                                <input type="checkbox" />
+                                <p>Make this a monthly recurring gift</p>
+                            </div>
+                        </form>
+                        <div class="next-container">
+                            <div class="next-container-circle">
+                                <div class="next-container-circle-1"></div>
+                                <div class="next-container-circle-2"></div>
+                                <div class="next-container-circle-3"></div>
+                            </div>
+                            <div class="container__btn">
+                                <button class="next-btn" data-next="step-2">
+                                    next
+                                    <img src="../../assets/icons/Union.svg" alt="union icon" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Make your donation popup-2 -->
+            <section class="make__your-donation">
+                <div class="make__your-donation-container">
+                    <div class="make__your-donation-header">
+                        <h3>make your donation</h3>
+                    </div>
+                    <div class="donation__cont make__your-donation-form">
+                        <p>Billing Information:</p>
+                        <div class="make__your-donation-line"></div>
+                        <div class="make__your-donation-form-personal-info">
+                            <form action="submit">
+                                <label class="field-label">
+                                    <span>Your Name</span>
+                                    <input type="text" name="name" placeholder="First and last name" required />
+                                </label>
+
+                                <label class="field-label">
+                                    <span>Your Email Address</span>
+                                    <input type="email" name="email" placeholder="Enter your email" required />
+                                </label>
+
+                                <p>
+                                    You will receive emails from the Online Zoo, including updates and news on the
+                                    latest discoveries and translations. You can unsubscribe at any time.
+                                </p>
+                            </form>
+                        </div>
+                        <div class="next-container">
+                            <div class="next-container-circle">
+                                <div class="next-container-circle-1"></div>
+                                <div class="next-container-circle-2"></div>
+                                <div class="next-container-circle-3"></div>
+                            </div>
+                            <div class="next-container-back-btn">
+                                <a href="#">back</a>
+                            </div>
+                            <div class="container__btn">
+                                <button>
+                                    next
+                                    <img src="../../assets/icons/Union.svg" alt="union icon" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Make your donation popup-3 -->
+            <section class="make__your-donation">
+                <div class="make__your-donation-container">
+                    <div class="make__your-donation-header">
+                        <h3>make your donation</h3>
+                    </div>
+                    <div class="donation__cont make__your-donation-form">
+                        <p>Payment Information:</p>
+                        <div class="make__your-donation-line"></div>
+                        <div class="make__your-donation-form-personal-info payment-info">
+                            <form action="submit">
+                                <!-- Card + CVV Row -->
+                                <div class="payment-row">
+                                    <div class="field card-field">
+                                        <label for="card-number">Credit Card Number</label>
+                                        <input type="text" id="card-number" inputmode="numeric" />
+                                    </div>
+
+                                    <div class="field cvv-field">
+                                        <label for="cvv">CVV Number</label>
+                                        <input type="text" id="cvv" inputmode="numeric" />
+                                    </div>
+                                </div>
+
+                                <!-- Expiration Date -->
+                                <div class="expiration__date-container">
+                                    <div class="field expiration-field">
+                                        <label for="monthToggle">Expiration Date</label>
+
+                                        <div class="select-wrapper popup-3">
+                                            <input type="checkbox" id="monthToggle" class="visually-hidden" />
+
+                                            <label for="monthToggle" class="dropdown-placeholder year-popup">
+                                                Month
+                                                <span class="dropdown-placeholder-icon year-popup-arrow">
+                                                    <img src="../../assets/icons/arrow-down.svg" alt="arrow image" />
+                                                </span>
+                                            </label>
+
+                                            <div class="dropdown-content year-popup-month">
+                                                <a href="#">January</a>
+                                                <a href="#">February</a>
+                                                <a href="#">March</a>
+                                                <a href="#">April</a>
+                                                <a href="#">May</a>
+                                                <a href="#">June</a>
+                                                <a href="#">July</a>
+                                                <a href="#">August</a>
+                                                <a href="#">September</a>
+                                                <a href="#">October</a>
+                                                <a href="#">November</a>
+                                                <a href="#">December</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field expiration-field">
+                                        <div class="select-wrapper popup-3">
+                                            <input type="checkbox" id="yearToggle" class="visually-hidden" />
+
+                                            <label for="yearToggle" class="dropdown-placeholder year-popup">
+                                                Year
+                                                <span class="dropdown-placeholder-icon year-popup-arrow">
+                                                    <img src="../../assets/icons/arrow-down.svg" alt="arrow image" />
+                                                </span>
+                                            </label>
+
+                                            <div class="dropdown-content year-popup-month">
+                                                <a href="#">2026</a>
+                                                <a href="#">2027</a>
+                                                <a href="#">2028</a>
+                                                <a href="#">2029</a>
+                                                <a href="#">2030</a>
+                                                <a href="#">2031</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="next-container">
+                            <div class="next-container-circle">
+                                <div class="next-container-circle-1"></div>
+                                <div class="next-container-circle-2"></div>
+                                <div class="next-container-circle-3"></div>
+                            </div>
+                            <div class="next-container-back-btn">
+                                <a href="#">back</a>
+                            </div>
+                            <div class="container__btn">
+                                <button>
+                                    complete donation
+                                    <img src="../../assets/icons/Union.svg" alt="union icon" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__section zoo-did-you-know">
+                <div class="zoo-did-you-know-info">
+                    <h3>did you know?</h3>
+                    <p>
+                        A ring-tailed lemur mob will gather in open areas of the forest to sunbathe. They sit in what
+                        some call a "yoga position" with their bellies toward the sun and their arms and legs stretched
+                         out to the sides.
+                    </p>
+                </div>
+                <div class="zoo-animal-info">
+                    <div class="zoo-desc">
+                        <dl>
+                            <dt>Common name:</dt>
+                            <dd>Ring-Tailed Lemur</dd>
+
+                            <dt>Scientific name:</dt>
+                            <dd>Lemur catta</dd>
+
+                            <dt>Type:</dt>
+                            <dd>Mammals</dd>
+
+                            <dt>Size:</dt>
+                            <dd>Head and body: 17.75 inches; tail: 21.75 inches</dd>
+
+                            <dt>Diet:</dt>
+                            <dd>Herbivore</dd>
+
+                            <dt>Habitat:</dt>
+                            <dd>Arid, open areas and forests</dd>
+
+                            <dt>Range:</dt>
+                            <dd class="range-row">
+                                <span>Southeast Asia</span>
+                                <a href="../map/index.html" class="container__btn-card zoos-btn-1">
+                                    VIEW map
+                                    <img src="../../assets/icons/Union-1.svg" alt="union icon" />
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="zoo-panda-img">
+                        <img src="../../assets/images/lemur-page/image 163.png" alt="lemur image" />
+                    </div>
+                </div>
+                <div class="zoo-animal-desription">
+                    <p>
+                        Ring-tailed lemurs are named for the 13 alternating black and white bands that adorn their
+                        tails. Unlike most other lemurs, ringtails spend 40 percent of their time on the ground, moving
+                        quadrupedally along the forest floor. Ring-tailed lemurs live in southwestern Madagascar, in
+                        arid, open areas and forests in territories that range from 15 to 57 acres (0.06 to 0.2 square
+                        kilometers) in size. As with all lemurs, olfactory communication is important for ringtails.
+                        Ring-tailed lemurs have scent glands on their wrists and chests that they use to mark their
+                        foraging routes. Ringtails eat leaves, flowers and insects. They can also eat fruit, herbs and
+                        small vertebrates. Females usually give birth to their first baby when they are three years old,
+                        and usually once a year every year after that. All adult females participate in raising the
+                        offspring of the group. The median life expectancy for a ring-tailed lemur is about 16 years.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!-- footer donation popup -->
+            <section id="footerDonationPopup" class="donation__popup">
+                <div class="donation__popup-container">
+                    <div class="donation__popup-img">
+                        <img src="../../assets/images/donation-popup-img.png" alt="donation image" />
+
+                        <div class="close-popup" id="closeFooterPopup" style="cursor: pointer">
+                            <img src="../../assets/icons/donation-popup-close.svg" alt="close image" />
+                        </div>
+                    </div>
+                    <div class="donation__popup-section">
+                        <h2>together we care, save and protect!</h2>
+                        <p>
+                            Your most generous gift not only cares for countless animals, but it also offers hope and a
+                            vital lifeline to the world’s most endangered wildlife relying on us to survive.
+                        </p>
+                    </div>
+                    <div class="donation__popup-amount">
+                        <img src="../../assets/icons/donation-20.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-30.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-50.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-80.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-100.svg" alt="donation icon" />
+                        <img src="../../assets/icons/donation-other-amount.svg" alt="donation icon" />
+                    </div>
+                </div>
+            </section>
+            <section class="main__section footer-animals">
+                <div class="footer__icons">
+                    <div class="footer__icons-container">
+                        <div class="footer__icons-container-1">
+                            <a href="#about">
+                                <img src="../../assets/icons/Logo.svg" alt="logo icon" />
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=44-8504&t=DQ1rYvA5u294mSEm-0"
+                                target="_blank"
+                            >
+                                <img src="../../assets/icons/YemDigital.svg" alt="icon" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://rs.school/#about-rs-school" target="_blank">
+                                <img src="../../assets/icons/rs_school_jslogo.svg" alt="rsschool icon" />
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-ul">
+                            <li><a href="../landing/index.html">ABOUT</a></li>
+                            <li><a href="../map/index.html" class="active">MAP</a></li>
+                            <li><a href="../panda/index.html">ZOOS</a></li>
+                            <li><a href="../contact-us/index.html">CONTACT US</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="container__pets-btn-2-feedback footer-btn">
+                        donate for volunteers
+                        <img src="../../assets/icons/Union.svg" alt="icon" />
+                    </button>
+                </div>
+
+                <div class="footer_line"></div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-1">
+                        <p>© 2021 DinaK</p>
+                        <p>© Yem Digital</p>
+                        <p>© RSSchool</p>
+                    </div>
+                    <div>
+                        <ul class="flx header__menu-social-links footer">
+                            <li>
+                                <a href="https://www.youtube.com/c/rollingscopesschool" target="_blank">
+                                    <img src="../../assets/images/YouTube.svg" alt="youtube logo" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/rsschool_en/" target="_blank">
+                                    <img src="../../assets/images/Instagram.svg" alt="instagram logo" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/rsschoolEN/?locale=ka_GE" target="_blank">
+                                    <img src="../../assets/images/Facebook.svg" alt="facebook logo" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
