@@ -4,6 +4,49 @@
     box-sizing: border-box;
 }
 
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+body.darkmode header {
+    background-color: black;
+    color: white;
+}
+
+body.darkmode header a {
+    color: white;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+#theme-switch:first-child {
+    fill: red;
+}
+
+#theme-switch img:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:first-child {
+    display: block;
+}
+
+.darkmode #theme-switch img:last-child {
+    display: none;
+}
+
 img {
     object-fit: cover;
 }

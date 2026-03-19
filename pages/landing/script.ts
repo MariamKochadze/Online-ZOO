@@ -10,6 +10,7 @@ import { ErrorDisplayService } from '../../shared/services/display-servcies/erro
 import { PetsDisplayService } from './services/display-services/pets/pets-display-service';
 import { FeedBackDisplayService } from './services/display-services/feedbacks/feedback-display-service';
 import { AuthenticationService } from '../../shared/services/authentication-service';
+import { DarkLightMode } from '../../shared/services/display-servcies/dark-light-mode';
 
 class LandingPage extends PageLifeCycle {
     constructor(
@@ -17,6 +18,7 @@ class LandingPage extends PageLifeCycle {
         private readonly feedBackDisplayService: FeedBackDisplayService,
         private readonly authenticationService: AuthenticationService,
         private readonly userInfoDisplayService: UserInfoDisplayService,
+        private readonly darkLightMode: DarkLightMode,
     ) {
         super();
     }
@@ -24,6 +26,7 @@ class LandingPage extends PageLifeCycle {
     protected async onWindowLoad(): Promise<void> {
         this.authenticationService.initialize(); // ამოწმებს ლოკალ სთორიჯს / სთეით სერვისს ააფდეითებს
         this.userInfoDisplayService.initialize(); // ხატავს სახელს ნავიგაციაში
+        this.darkLightMode.init();
 
         try {
             await Promise.allSettled([this.petsDisplayService.initialize(), this.feedBackDisplayService.initialize()]);
@@ -37,6 +40,7 @@ class LandingPage extends PageLifeCycle {
 const loaderDisplayService = new LoaderDisplayService();
 const errorDisplayService = new ErrorDisplayService();
 const localStorageService = new LocalStorageService();
+const darkLightMode = new DarkLightMode();
 
 const authenticationStateService = new AuthenticationStateService();
 const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);
@@ -54,4 +58,10 @@ const feedBackDisplayService = new FeedBackDisplayService(
     errorDisplayService,
 );
 
-new LandingPage(petsDisplayService, feedBackDisplayService, authenticationService, userInfoDisplayService);
+new LandingPage(
+    petsDisplayService,
+    feedBackDisplayService,
+    authenticationService,
+    userInfoDisplayService,
+    darkLightMode,
+);
