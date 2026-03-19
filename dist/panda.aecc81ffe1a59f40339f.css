@@ -114,8 +114,8 @@
   !*** css ./node_modules/.pnpm/css-loader@7.1.4_webpack@5.105.4/node_modules/css-loader/dist/cjs.js!./pages/panda/base.css ***!
   \****************************************************************************************************************************/
 
-
-dt, dd {
+dt,
+dd {
     padding: 5px;
 }
 
@@ -875,7 +875,6 @@ body:has(.feedback-checkbox:checked) {
         width: 280px !important;
     }
 
- 
     .make__your-donation-form-personal-info input {
         width: 280px;
         height: 50px;
@@ -2158,9 +2157,9 @@ body.darkmode .user-popup {
     overflow: auto;
 }
 
-.feedback-slider-track{
-    display: flex !important;  
-    flex-wrap: nowrap !important; 
+.feedback-slider-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -2443,7 +2442,7 @@ body.darkmode .user-popup {
 }
 
 @media (max-width: 640px) {
-    .container__pets-pay{
+    .container__pets-pay {
         padding: 0;
     }
     .container__pets-info {
@@ -2457,7 +2456,6 @@ body.darkmode .user-popup {
     .care p {
         max-width: 300px;
     }
-
 }
 
 /*!****************************************************************************************************************************************!*\
@@ -2517,16 +2515,14 @@ body.darkmode .user-popup {
 }
 
 .footer__nav-ul li a {
-    display: inline-block; 
-    transition: transform 0.3s ease; 
-    text-decoration: none; 
+    display: inline-block;
+    transition: transform 0.3s ease;
+    text-decoration: none;
 }
-
 
 .footer__nav-ul li a:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
 }
-
 
 .footer__nav-ul li a:active {
     transform: translateY(-2px);
@@ -2651,10 +2647,9 @@ header {
     color: var(--green-1);
 }
 .header__menu-social-links li a {
-    display: inline-block; 
-    transition: transform 0.3s ease; 
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
-
 
 .header__menu-social-links li a:hover {
     transform: translateY(-5px) scale(1.1);
@@ -3149,8 +3144,6 @@ main {
     .m-align-flex-start {
         align-items: flex-start;
     }
-
-   
 }
 
 /* Below 320 */
@@ -3404,22 +3397,22 @@ main {
 
   
     .sidebar .animal-list-sec-panda {
-        background-image: url('../../assets/images/panda-page/panda-icons/Panda-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Panda-2.svg');
         background-position: center;
     }
 
     .sidebar .animal-list-sec-eagle {
-        background-image: url('../../assets/images/panda-page/panda-icons/Eagle-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Eagle-2.svg');
         background-position: center;
     }
 
     .sidebar .animal-list-sec-gorilla {
-        background-image: url('../../assets/images/panda-page/panda-icons/Gorilla-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Gorilla-2.svg');
         background-position: center;
     }
 
     .sidebar .animal-list-sec-lemur {
-        background-image: url('../../assets/images/panda-page/panda-icons/Lemur-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Lemur-2.svg');
         background-position: center;
     }
 
@@ -4107,19 +4100,19 @@ dd {
 }
 
 /* .sidebar.is-expanded .animal-list-sec-panda {
-    background-image: url('../../assets/images/panda-page/panda-icons/Panda-2.svg');
+    background-image: url('./assets/images/panda-page/panda-icons/Panda-2.svg');
     background-position: 20px center;
 }
 #sidebarToggle:checked + .sidebar .animal-list-sec-eagle {
-    background-image: url('../../assets/images/panda-page/panda-icons/Eagle-2.svg');
+    background-image: url('./assets/images/panda-page/panda-icons/Eagle-2.svg');
     background-position: 20px center;
 }
 #sidebarToggle:checked + .sidebar .animal-list-sec-gorilla {
-    background-image: url('../../assets/images/panda-page/panda-icons/Gorilla-2.svg');
+    background-image: url('./assets/images/panda-page/panda-icons/Gorilla-2.svg');
     background-position: 20px center;
 }
 #sidebarToggle:checked + .sidebar .animal-list-sec-lemur {
-    background-image: url('../../assets/images/panda-page/panda-icons/Lemur-2.svg');
+    background-image: url('./assets/images/panda-page/panda-icons/Lemur-2.svg');
     background-position: 20px center;
 } */
 .sidebar.collapsed {
@@ -4317,19 +4310,19 @@ dd {
     }
 
     /* .sidebar .animal-list-sec-panda {
-        background-image: url('../../assets/images/panda-page/panda-icons/Panda-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Panda-2.svg');
         background-position: center;
     }
     .sidebar .animal-list-sec-eagle {
-        background-image: url('../../assets/images/panda-page/panda-icons/Eagle-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Eagle-2.svg');
         background-position: center;
     }
     .sidebar .animal-list-sec-gorilla {
-        background-image: url('../../assets/images/panda-page/panda-icons/Gorilla-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Gorilla-2.svg');
         background-position: center;
     }
     .sidebar .animal-list-sec-lemur {
-        background-image: url('../../assets/images/panda-page/panda-icons/Lemur-2.svg');
+        background-image: url('./assets/images/panda-page/panda-icons/Lemur-2.svg');
         background-position: center;
     } */
 
@@ -4488,8 +4481,6 @@ dd {
     .container__btn.zoo-page-btn button {
         margin: 0;
     }
-
- 
 }
 
 @media (max-width: 630px) {
@@ -4594,4 +4585,3 @@ dd {
         gap: 10px;
     }
 }
-
