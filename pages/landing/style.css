@@ -59,6 +59,50 @@ body {
     height: 0;
 }
 
+#user-info {
+    position: relative; /* Anchor for the popup */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-popup {
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    width: 200px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    color: black; /* Ensure text is visible if header is orange/black */
+}
+
+/* Dark Mode adjustment */
+body.darkmode .user-popup {
+    background: #222;
+    border-color: #444;
+    color: white;
+}
+
+.logout-button {
+    margin-top: 10px;
+    width: 100%;
+    background: #fe9013;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background: #d37a11;
+}
+
 /* The container for the loader */
 .loader-wrapper {
     display: flex;

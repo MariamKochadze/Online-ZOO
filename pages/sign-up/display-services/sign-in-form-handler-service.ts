@@ -31,10 +31,16 @@ export class SignInDisplayService {
 
             const email = this.emailInput?.value;
             const password = this.passwordInput?.value;
-            const isEmailValid = this.validateEmail(email);
-            const isPasswordValid = this.validatePassword(password);
+            const emailErrors = this.validateEmail(email);
+            const passwordErrors = this.validatePassword(password);
 
-            if (!isEmailValid || !isPasswordValid) {
+            if (emailErrors.length || passwordErrors.length) {
+                [...emailErrors, ...passwordErrors].forEach((e) => {
+                    if (!this.showErrorDiv) {
+                        return;
+                    }
+                    this.showErrorDiv.innerText += ' ' + e;
+                });
                 return;
             }
 
@@ -64,35 +70,42 @@ export class SignInDisplayService {
         window.location.href = './landing.html';
     }
 
-    private validateEmail(email: string | undefined): boolean {
+    private validateEmail(email: string | undefined): string[] {
+        const errors: string[] = [];
+
         if (email === undefined) {
-            // make inut field red maybe email is required
-
-            return false;
+            errors.push('login: is required!');
         }
 
-        if (email === '') {
-            // make inut field red maybe email is required
-
-            return false;
+        if (email && email.length < 3) {
+            errors.push('login: should be at least 3 characters!');
         }
 
-        return true;
+        if (email && !/^[a-zA-Z]+$/.test(email[0])) {
+            errors.push('login: should start with letter!');
+        }
+
+        if (email && !/^[a-zA-Z]+$/.test(email)) {
+            errors.push('login: only English alphabet letters are allowed!');
+        }
+
+        return errors;
     }
 
-    private validatePassword(password: string | undefined): boolean {
+    private validatePassword(password: string | undefined): string[] {
+        const errors = [];
         if (password === undefined) {
-            // make inut field red maybe email is required
-
-            return false;
+            errors.push('password: is required!');
         }
 
-        if (password === '') {
-            // make inut field red maybe email is required
-
-            return false;
+        if (password && password.length < 6) {
+            errors.push('password: length should be at least 6 character!');
         }
 
-        return true;
+        if (password && /^[a-zA-Z]+$/.test(password)) {
+            errors.push('password: should contain at least one special character!');
+        }
+
+        return errors;
     }
 }

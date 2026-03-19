@@ -8,26 +8,62 @@ export class UserInfoDisplayService {
     public initialize() {
         this.userInfo = document.querySelector('#user-info');
 
-        if (!this.userInfo) {
+        if (!this.userInfo) return;
+
+        const user = this.authenticationStateService.getCurrentUser();
+        const isLoggedIn = this.authenticationStateService.getAuthState();
+
+        if (isLoggedIn && user) {
+            const profileIcon = document.createElement('div');
+            profileIcon.className = 'profile-trigger';
+            profileIcon.innerHTML = `<img src="../../assets/icons/profile.svg" alt="User" />`;
+
+            const username = document.createElement('span');
+            username.innerText = user.name;
+
+            profileIcon.addEventListener('click', (e) => {
+                e.stopPropagation(); 
+                this.toggleUserPopup(user.name, user.email);
+            });
+
+            this.userInfo.innerHTML = '';
+            this.userInfo.appendChild(profileIcon);
+            this.userInfo.append(username);
+        } else {
+
+            this.userInfo.innerHTML = `
+                <a href="./signup.html" class="login-link">
+                    <img src="../../assets/icons/register.png" alt="Register" />
+                </a>`;
+        }
+    }
+
+    private toggleUserPopup(name: string, email: string) {
+        let popup: HTMLElement | null = document.querySelector('.user-popup');
+
+        if (popup) {
+            popup.remove();
             return;
         }
 
-        if (this.authenticationStateService.getAuthState()) {
-            const logoutButton: HTMLAnchorElement = document.createElement('a');
-            const img: HTMLImageElement = document.createElement('img');
-            img.src = '../../assets/icons/logout.png';
+        popup = document.createElement('div');
+        popup.className = 'user-popup';
+        popup.innerHTML = `
+            <div class="user-popup__info">
+                <p class="user-popup__name"><strong>Name:</strong> ${name}</p>
+                <p class="user-popup__email"><strong>Email:</strong> ${email}</p>
+            </div>
+            <button id="logout-btn" class="logout-button">Log Out</button>
+        `;
 
-            logoutButton.addEventListener('click', () => {
-                localStorage.removeItem('accessToken');
-                localStorage.removeItem('user');
-                window.location.reload();
-            });
+        this.userInfo?.appendChild(popup);
 
-            logoutButton.appendChild(img);
-            this.userInfo.innerHTML = '';
-            this.userInfo.appendChild(logoutButton);
-        } else {
-            this.userInfo.innerHTML = `<a href="./signup.html"><img src="../../assets/icons/register.png" alt="" /></a>`;
-        }
+        document.getElementById('logout-btn')?.addEventListener('click', () => {
+            localStorage.removeItem('token'); 
+            localStorage.removeItem('user');
+            window.location.reload(); 
+        });
+
+        document.addEventListener('click', () => popup.remove(), { once: true });
     }
 }
