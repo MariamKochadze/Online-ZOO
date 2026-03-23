@@ -23,7 +23,7 @@
     <body>
         <header>
             <nav class="header__menu row flx align-center">
-                <a href="#online-logo">
+                <a href="#online-logo" class="logo-container">
                     <img src="../../assets/images/Logo.svg" alt="online logo" />
                 </a>
 
@@ -39,14 +39,15 @@
                 <ul class="header__menu-list flx align-center justify-flex-end wrap desktop-only">
                     <li class="header__menu-info-social-links-container flx align-center">
                         <ul class="header__menu-info flx justify-space-between">
-                            <li><a href="../landing.html">ABOUT</a></li>
-                            <li><a href="#" class="active">MAP</a></li>
-                            <li><a href="../panda.html">ZOOS</a></li>
-                            <li><a href="../contactus.html">CONTACT US</a></li>
+                            <li><a href="../landing.html" data-i18n="nav.about">ABOUT</a></li>
+                            <li><a href="#" class="active" data-i18n="nav.map">MAP</a></li>
+                            <li><a href="../panda.html" data-i18n="nav.zoos">ZOOS</a></li>
+                            <li><a href="../contact-us/index.html" data-i18n="nav.contact">CONTACT US</a></li>
                             <li>
                                 <a
                                     href="figma.com/design/fVU1MLRYsTITqFphUZNGh8/Online-ZOO-Project--Copy-?node-id=44-9749&t=0XzLqjTAbUnRUz7Q-0"
                                     target="_blank"
+                                    data-i18n="nav.design"
                                     >DESIGN</a
                                 >
                             </li>
@@ -72,24 +73,32 @@
                             </li>
                         </ul>
                     </li>
+                    <div class="lang__translator">
+                        <button data-lang="en">EN</button>
+                        <button data-lang="ka">KA</button>
+                    </div>
                     <li class="user-info-icon" id="user-info"></li>
                 </ul>
+                <button id="theme-switch">
+                    <img src="../../assets/icons/dark_mode_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" />
+                    <img src="../../assets/icons/light_mode_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" />
+                </button>
 
                 <aside class="sidebar-humburger">
                     <ul class="mobile-nav-list flx direction-column align-center">
-                        <li><a href="../landing.html">ABOUT</a></li>
-                        <li><a href="#" class="active">MAP</a></li>
-                        <li><a href="../panda.html">ZOOS</a></li>
-                        <li><a href="../contactus.html">CONTACT US</a></li>
-                        <li><a href="#design">DESIGN</a></li>
-                        <li><a href="../sign-up/index.html">SignIn</a></li>
+                        <li><a href="./landing.html" data-i18n="nav.about">ABOUT</a></li>
+                        <li><a href="./map.html" data-i18n="nav.map" class="active">MAP</a></li>
+                        <li><a href="./panda.html" data-i18n="nav.zoos">ZOOS</a></li>
+                        <li><a href="./contactus.html" data-i18n="nav.contact">CONTACT US</a></li>
+                        <li><a href="#design" data-i18n="nav.design">DESIGN</a></li>
+                        <li><a href="./sign-up.html" data-i18n="nav.signin">SignIn</a></li>
                     </ul>
                 </aside>
             </nav>
         </header>
         <main>
             <section class="main__section section__map">
-                <h2>find where are the animals live</h2>
+                <h2 data-i18n="map.title">find where are the animals live</h2>
                 <div class="main__section-map">
                     <div class="pin animal__species-1"></div>
                     <div class="pin animal__species-2"></div>
@@ -154,14 +163,14 @@
                     </div>
                     <nav class="footer__nav">
                         <ul class="footer__nav-ul">
-                            <li><a href="./landing.html">ABOUT</a></li>
-                            <li><a href="./map.html" class="active">MAP</a></li>
-                            <li><a href="./panda.html">ZOOS</a></li>
-                            <li><a href="./contactus.html">CONTACT US</a></li>
+                            <li><a href="./landing.html" data-i18n="nav.about">ABOUT</a></li>
+                            <li><a href="#" data-i18n="nav.map" class="active">MAP</a></li>
+                            <li><a href="./panda.html" data-i18n="nav.zoos">ZOOS</a></li>
+                            <li><a href="./contactus.html" data-i18n="nav.contact">CONTACT US</a></li>
                         </ul>
                     </nav>
 
-                    <button class="container__pets-btn-2-feedback footer-btn">
+                    <button class="container__pets-btn-2-feedback footer-btn" data-i18n="footer.donate">
                         donate for volunteers
                         <img src="../../assets/icons/Union.svg" alt="icon" />
                     </button>

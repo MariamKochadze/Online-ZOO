@@ -11,6 +11,7 @@ import { PetsDisplayService } from './services/display-services/pets/pets-displa
 import { FeedBackDisplayService } from './services/display-services/feedbacks/feedback-display-service';
 import { AuthenticationService } from '../../shared/services/authentication-service';
 import { DarkLightMode } from '../../shared/services/display-servcies/dark-light-mode';
+import { Translator } from '../../shared/services/display-servcies/translator';
 
 class LandingPage extends PageLifeCycle {
     constructor(
@@ -19,6 +20,7 @@ class LandingPage extends PageLifeCycle {
         private readonly authenticationService: AuthenticationService,
         private readonly userInfoDisplayService: UserInfoDisplayService,
         private readonly darkLightMode: DarkLightMode,
+        private readonly translator: Translator,
     ) {
         super();
     }
@@ -27,6 +29,7 @@ class LandingPage extends PageLifeCycle {
         this.authenticationService.initialize(); // ამოწმებს ლოკალ სთორიჯს / სთეით სერვისს ააფდეითებს
         this.userInfoDisplayService.initialize(); // ხატავს სახელს ნავიგაციაში
         this.darkLightMode.init();
+        void this.translator.init();
 
         try {
             await Promise.allSettled([this.petsDisplayService.initialize(), this.feedBackDisplayService.initialize()]);
@@ -50,6 +53,8 @@ const userInfoDisplayService = new UserInfoDisplayService(authenticationStateSer
 // Landing Page Specific services
 const petsApiService = new PetsApiService(configuration);
 const feedbackApiService = new FeedbackApiService(configuration);
+const localstorageService = new LocalStorageService();
+const translator = new Translator(localstorageService);
 
 const petsDisplayService = new PetsDisplayService(petsApiService, loaderDisplayService, errorDisplayService);
 const feedBackDisplayService = new FeedBackDisplayService(
@@ -64,4 +69,5 @@ new LandingPage(
     authenticationService,
     userInfoDisplayService,
     darkLightMode,
+    translator,
 );

@@ -18,6 +18,11 @@ body.darkmode header a {
     color: white;
 }
 
+body.darkmode header .logo-container img,
+body.darkmode header nav ul .user-info-icon img {
+    filter: invert(1) brightness(1.5);
+}
+
 #theme-switch {
     height: 50px;
     width: 50px;
@@ -27,8 +32,30 @@ body.darkmode header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 30px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#theme-switch:hover {
+    background-color: var(--orange-1); 
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#theme-switch img {
+    width: 24px;
+    height: 24px;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+#theme-switch:hover img:first-child {
+    transform: rotate(20deg);
+}
+#theme-switch:hover img:last-child {
+    transform: rotate(-20deg);
 }
 
 #theme-switch:first-child {
@@ -49,6 +76,42 @@ body.darkmode header a {
 
 img {
     object-fit: cover;
+}
+
+.lang__translator {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.lang__translator button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.lang__translator button:hover {
+    background-color: var(--orange-1);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lang__translator button:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.lang__translator button.selected {
+    background-color: var(--orange-1);
+    color: #fff;
 }
 
 h1 {
@@ -241,13 +304,13 @@ body {
 }
 
 .user-info-icon {
-    padding-left: 40px;
-    width: 48px;
-    height: 48px;
+    padding-left: 20px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
 .user-info-icon img {
-    width: 48px;
-    height: 48px;
+    width: 30px;
+    height: 30px;
 }

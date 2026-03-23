@@ -1,5 +1,7 @@
 import { AuthenticationService } from '../../shared/services/authentication-service';
 import { AuthenticationStateService } from '../../shared/services/authentication-state-service';
+import { DarkLightMode } from '../../shared/services/display-servcies/dark-light-mode';
+import { Translator } from '../../shared/services/display-servcies/translator';
 import { UserInfoDisplayService } from '../../shared/services/display-servcies/user-info-display-service';
 import { LocalStorageService } from '../../shared/services/local-storage-service';
 import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
@@ -8,12 +10,16 @@ class MapPage extends PageLifeCycle {
     constructor(
         private readonly authenticationService: AuthenticationService,
         private readonly userInfoDisplayService: UserInfoDisplayService,
+        private readonly darkLightThemeMode: DarkLightMode,
+        private readonly translator: Translator,
     ) {
         super();
     }
     protected async onWindowLoad(): Promise<void> {
         this.authenticationService.initialize();
         this.userInfoDisplayService.initialize();
+        this.darkLightThemeMode.init();
+        void this.translator.init();
 
         await Promise.resolve();
     }
@@ -21,8 +27,10 @@ class MapPage extends PageLifeCycle {
 
 const authenticationStateService = new AuthenticationStateService();
 const localStorageService = new LocalStorageService();
+const darkLightThemeMode = new DarkLightMode();
+const translator = new Translator(localStorageService);
 
 const userInfoDisplayService = new UserInfoDisplayService(authenticationStateService);
 const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);
 
-new MapPage(authenticationService, userInfoDisplayService);
+new MapPage(authenticationService, userInfoDisplayService, darkLightThemeMode, translator);

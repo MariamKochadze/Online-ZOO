@@ -3,11 +3,15 @@ import { UserInfoDisplayService } from '../../shared/services/display-servcies/u
 import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
 import { AuthenticationStateService } from '../../shared/services/authentication-state-service';
 import { LocalStorageService } from '../../shared/services/local-storage-service';
+import { DarkLightMode } from '../../shared/services/display-servcies/dark-light-mode';
+import { Translator } from '../../shared/services/display-servcies/translator';
 
 class ContactUsPage extends PageLifeCycle {
     constructor(
         private readonly authenticationService: AuthenticationService,
         private readonly userInfoDisplayService: UserInfoDisplayService,
+        private readonly darklightMode: DarkLightMode,
+        private readonly trabslator: Translator,
     ) {
         super();
     }
@@ -15,6 +19,8 @@ class ContactUsPage extends PageLifeCycle {
     protected async onWindowLoad(): Promise<void> {
         this.authenticationService.initialize();
         this.userInfoDisplayService.initialize();
+        this.darklightMode.init();
+        void this.trabslator.init();
 
         await Promise.resolve();
     }
@@ -53,7 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
 const authenticationStateService = new AuthenticationStateService();
 const localStorageService = new LocalStorageService();
 
+const darkLightMode = new DarkLightMode();
+const trabslator = new Translator(localStorageService);
+
 const userInfoDisplayService = new UserInfoDisplayService(authenticationStateService);
 const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);
 
-new ContactUsPage(authenticationService, userInfoDisplayService);
+new ContactUsPage(authenticationService, userInfoDisplayService, darkLightMode, trabslator);
