@@ -1,0 +1,198 @@
+[
+    {
+        "img": "./assets/images/Rectangle39.svg",
+        "name": "ლუკასი",
+        "id": 1,
+        "species": "დიდი პანდა",
+        "description": "ცენტრალური ჩინეთის მკვიდრი დიდი პანდები სიმბოლოდ იქცა დაუცველი სახეობებისთვის."
+    },
+    {
+        "img": "./assets/images/image118.svg",
+        "name": "ენდი",
+        "id": 2,
+        "species": "მადაგასკარის ლემური",
+        "description": "ლემურები ითვლებიან მსოფლიოში ყველაზე გადაშენების საფრთხის ქვეშ მყოფ ძუძუმწოვრებად."
+    },
+    {
+        "img": "./assets/images/Rectangle39(1).svg",
+        "name": "გლენი",
+        "id": 3,
+        "species": "გორილა კონგოში",
+        "description": "მრავალფეროვანი საკვები ძალიან მნიშვნელოვანია გორილებისა და მათი შვილების ჯანმრთელობისთვის."
+    },
+    {
+        "img": "./assets/images/416cc56faccbd1f8c211a2c6f3be2b808e0d55d3.png",
+        "name": "მაიკი",
+        "id": 4,
+        "species": "ჩინური ალიგატორი",
+        "description": "ცხვირიდან კუდამდე, მუცლიდან ზურგამდე, მყარი ქერცლი იცავს ამ პატარა ალიგატორს."
+    },
+    {
+        "img": "./assets/images/image117.svg",
+        "name": "სემი და ლორა",
+        "id": 5,
+        "species": "დასავლეთის მელოტი არწივები",
+        "description": "არწივის მშობლები დებენ და იცავენ კვერცხებს, კვებავენ ბარტყებს და ასწავლიან ნადირობასა და ფრენას."
+    },
+    {
+        "img": "./assets/images/image122.svg",
+        "name": "ლიზი",
+        "id": 6,
+        "species": "ავსტრალიური კოალა",
+        "description": "ამაღლებული ბილიკები გაძლევთ საშუალებას კოალებს თვალის დონეზე დააკვირდეთ ტყეში."
+    },
+    {
+        "img": "./assets/images/image121.svg",
+        "name": "შეიკი",
+        "id": 7,
+        "species": "აფრიკული ლომი",
+        "description": "ლომები აფრიკის სავანებსა და მინდვრებში ბინადრობენ, ნადირობენ და ბოკვერებს ზრდიან."
+    },
+    {
+        "img": "./assets/images/ba61c9a3e437eb74a7735052f11941ea06369a43.png",
+        "name": "სენია",
+        "id": 8,
+        "species": "სუმატრანული ვეფხვი",
+        "description": "სუმატრანული ვეფხვები ყველაზე პატარა ქვესახეობაა და ინდონეზიაში გვხვდება."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ბელა",
+        "id": 9,
+        "species": "წითელი პანდა",
+        "description": "ეს საყვარელი ხეზე მცხოვრები ცხოველები ჰიმალაიდან და სამხრეთ-დასავლეთ ჩინეთიდან არიან."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "როკი",
+        "id": 10,
+        "species": "მთის გორილა",
+        "description": "მთის გორილები ცენტრალური აფრიკის ვულკანურ მთებში ცხოვრობენ ოჯახურ ჯგუფებად."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ზარა",
+        "id": 11,
+        "species": "აფრიკული სპილო",
+        "description": "ყველაზე დიდი ხმელეთის ცხოველი, ცნობილია ინტელექტით და ძლიერი ოჯახური კავშირებით."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ნეპტუნი",
+        "id": 12,
+        "species": "ზღვის წავი",
+        "description": "ეს მხიარული ზღვის ძუძუმწოვრები იყენებენ იარაღებს ნიჟარების გასატეხად."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ემბერი",
+        "id": 13,
+        "species": "ბენგალური ვეფხვი",
+        "description": "ვეფხვების ყველაზე გავრცელებული ქვესახეობა, ცნობილი თავისი ფორთოხლისფერი ბეწვით."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "დიუკი",
+        "id": 14,
+        "species": "ნაცრისფერი მგელი",
+        "description": "უმაღლესი მტაცებლები, რომლებიც ჯგუფებად ცხოვრობენ და ნადირობენ."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "სანი",
+        "id": 15,
+        "species": "ფენეკი მელია",
+        "description": "ყველაზე პატარა მელია დიდი ყურებით, ადაპტირებული საჰარას უდაბნოში ცხოვრებისთვის."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "კოდა",
+        "id": 16,
+        "species": "გრიზლი დათვი",
+        "description": "ძლიერი ყოვლისმჭამელები, ცნობილია თევზაობის უნარით."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "მარინა",
+        "id": 17,
+        "species": "დელფინი",
+        "description": "ძალიან ჭკვიანი ზღვის ძუძუმწოვრები, ცნობილია თამაშით და სოციალური ქცევით."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ოსკარი",
+        "id": 18,
+        "species": "თოვლის ლეოპარდი",
+        "description": "იშვიათი მთის კატები, ადაპტირებული ცივ გარემოში."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "პერლი",
+        "id": 19,
+        "species": "პოლარული დათვი",
+        "description": "ყველაზე დიდი დათვი, ადაპტირებული არქტიკულ გარემოში."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ჯასპერი",
+        "id": 20,
+        "species": "იაგუარი",
+        "description": "ამერიკის ყველაზე დიდი კატა ძლიერი კბენით."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ვილოუ",
+        "id": 21,
+        "species": "რგოლკუდიანი ლემური",
+        "description": "სოციალური პრიმატები მადაგასკარიდან შავ-თეთრი კუდით."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "თანდერი",
+        "id": 22,
+        "species": "თეთრი მარტორქა",
+        "description": "მეორე ყველაზე დიდი ხმელეთის ძუძუმწოვარი."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ლუნა",
+        "id": 23,
+        "species": "არქტიკული მელია",
+        "description": "პატარა მელია სქელი ბეწვით, რომელიც სეზონურად იცვლის ფერს."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ატლასი",
+        "id": 24,
+        "species": "მარილიანი წყლის ნიანგი",
+        "description": "ყველაზე დიდი რეპტილია ძლიერი მტაცებლური უნარებით."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "რუბი",
+        "id": 25,
+        "species": "წითელი არარა",
+        "description": "ფერადი თუთიყუშები, ცნობილია ინტელექტით."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ტიტანი",
+        "id": 26,
+        "species": "კომოდოს დრაკონი",
+        "description": "ყველაზე დიდი ხვლიკი, შხამიანი კბენით."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ოლივი",
+        "id": 27,
+        "species": "ზარმაცი",
+        "description": "ნელა მოძრავი ცხოველები, რომლებიც დღეში 20 საათს სძინავთ."
+    },
+    {
+        "img": "./assets/images/placeholder-image.png",
+        "name": "ბლეიზი",
+        "id": 28,
+        "species": "ჩიტა",
+        "description": "ყველაზე სწრაფი ხმელეთის ცხოველი."
+    }
+]

@@ -1,0 +1,338 @@
+[
+    {
+        "id": 1,
+        "text": "უყურეთ პირდაპირ ეთერში ჩინეთის პანდების ცენტრიდან",
+        "petId": 1,
+        "img": "./assets/images/panda-page/panda-icons/Panda.svg",
+        "liveCamImg": "./assets/images/panda-page/panda-image/panda-youtube-img.png",
+        "liveCamImages": [
+            "./assets/images/panda-page/panda-image/1.png",
+            "./assets/images/panda-page/panda-image/2.png",
+            "./assets/images/panda-page/panda-image/3.png"
+        ]
+    },
+    {
+        "id": 2,
+        "text": "უყურეთ არწივების ბუდეს West End კამერიდან",
+        "petId": 5,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 3,
+        "text": "პირდაპირი ტრანსლაცია გორილების ტყის კორიდორის ჰაბიტატიდან",
+        "petId": 3,
+        "img": "./assets/images/panda-page/panda-icons/Gorilla.svg",
+        "liveCamImg": "./assets/images/gorillas-page/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/gorillas-page/1.png",
+            "./assets/images/gorillas-page/2.png",
+            "./assets/images/gorillas-page/3.png"
+        ]
+    },
+    {
+        "id": 4,
+        "text": "ლემურები თამაშობენ მადაგასკარში, Lemuria Land-ში",
+        "petId": 2,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 5,
+        "text": "უყურეთ მაიკს, ჩინურ ალიგატორს, მის დაცულ ჰაბიტატში",
+        "petId": 4,
+        "img": "./assets/images/panda-page/panda-icons/Lemur.svg",
+        "liveCamImg": "./assets/images/lemur-page/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/lemur-page/1.png",
+            "./assets/images/lemur-page/2.png",
+            "./assets/images/lemur-page/3.png"
+        ]
+    },
+    {
+        "id": 6,
+        "text": "უყურეთ ლიზს, ავსტრალიურ კოალას, ამაღლებულ ბილიკებზე",
+        "petId": 6,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 7,
+        "text": "პირდაპირი ტრანსლაცია Shake-ის, აფრიკული ლომის, სავანაში სეირნობისას",
+        "petId": 7,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 8,
+        "text": "უყურეთ სენჯას, სუმატრულ ვეფხვს, ინდონეზიიდან",
+        "petId": 8,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 9,
+        "text": "უყურეთ ბელას, წითელ პანდას, ჰიმალაის ჰაბიტატში",
+        "petId": 9,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 10,
+        "text": "პირდაპირი ტრანსლაცია როკის, მთის გორილას, ცენტრალურ აფრიკაში",
+        "petId": 10,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 11,
+        "text": "უყურეთ ზარას, აფრიკულ სპილოს, ბალახიან ველებზე",
+        "petId": 11,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 12,
+        "text": "უყურეთ ნეპტუნს, ზღვის წავს, კელპის ტყეში თამაშისას",
+        "petId": 12,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 13,
+        "text": "პირდაპირი ტრანსლაცია ამბერის, ბენგალური ვეფხვის, ინდოეთიდან",
+        "petId": 13,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 14,
+        "text": "უყურეთ დიუკს, რუხ მგელს, ნადირობისას თავის ხროვასთან ერთად",
+        "petId": 14,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 15,
+        "text": "უყურეთ სანის, ფენეკის მელას, საჰარის უდაბნოს ჰაბიტატში",
+        "petId": 15,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 16,
+        "text": "პირდაპირი ტრანსლაცია კოდას, გრიზლის დათვის, რომელიც თევზაობს ორაგულზე",
+        "petId": 16,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 17,
+        "text": "უყურეთ მარინას, ბოთლისცხვირა დელფინს, საზღვაო თავშესაფარში",
+        "petId": 17,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 18,
+        "text": "უყურეთ ოსკარს, თოვლის ლეოპარდს, მთის ჰაბიტატში",
+        "petId": 18,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 19,
+        "text": "პირდაპირი ტრანსლაცია პერლის, პოლარული დათვის, არქტიკულ გარემოში",
+        "petId": 19,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 20,
+        "text": "უყურეთ ჯასპერს, იაგუარს, ამერიკის ტროპიკულ ტყეში",
+        "petId": 20,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 21,
+        "text": "უყურეთ უილოუს, რგოლკუდა ლემურს, მადაგასკარიდან",
+        "petId": 21,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 22,
+        "text": "პირდაპირი ტრანსლაცია თანდერის, თეთრი მარტორქის, აფრიკის სავანაში",
+        "petId": 22,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 23,
+        "text": "უყურეთ ლუნას, არქტიკულ მელას, ტუნდრის ლანდშაფტში",
+        "petId": 23,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 24,
+        "text": "უყურეთ ატლასს, მარილიან წყალში მცხოვრებ ნიანგს, სამხრეთ-აღმოსავლეთ აზიაში",
+        "petId": 24,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 25,
+        "text": "პირდაპირი ტრანსლაცია რუბის, სკარლეტ მაკაოს, ტროპიკულ ტყეში",
+        "petId": 25,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 26,
+        "text": "უყურეთ ტიტანას, კომოდოს დრაკონს, ინდონეზიის კუნძულებზე",
+        "petId": 26,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 27,
+        "text": "უყურეთ ოლივს, ზარმაცას, ცენტრალური ამერიკის ტყეში",
+        "petId": 27,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    },
+    {
+        "id": 28,
+        "text": "პირდაპირი ტრანსლაცია ბლეიზის, გეპარდის, აფრიკის ველებზე",
+        "petId": 28,
+        "img": "./assets/images/panda-page/panda-icons/Eagle.svg",
+        "liveCamImg": "./assets/images/eagles-page/eagle-image/Youtubeplayer.png",
+        "liveCamImages": [
+            "./assets/images/eagles-page/eagle-image/1.png",
+            "./assets/images/eagles-page/eagle-image/2.png",
+            "./assets/images/eagles-page/eagle-image/3.png"
+        ]
+    }
+]

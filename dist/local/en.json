@@ -1,0 +1,80 @@
+{
+    "nav": {
+        "about": "ABOUT",
+        "map": "MAP",
+        "zoos": "ZOOS",
+        "contact": "CONTACT US",
+        "design": "DESIGN",
+        "signin": "Sign In"
+    },
+    "contact": {
+        "title": "Get in touch",
+        "description": "Whether you have a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a message and we'll get back to you as soon as we can."
+    },
+    "form": {
+        "name": "Your Name",
+        "namePlaceholder": "First and last name",
+        "email": "Your Email Address",
+        "emailPlaceholder": "Enter your email",
+        "subject": "Subject",
+        "subjectPlaceholder": "Enter the subject",
+        "message": "Message",
+        "messagePlaceholder": "Enter your message",
+        "submit": "Send message"
+    },
+    "popup": {
+        "title": "Thank You!",
+        "text": "Your message has been sent successfully. We will get back to you soon.",
+        "close": "Close"
+    },
+    "donation": {
+        "title": "Together we care, save and protect!",
+        "text": "Your most generous gift not only cares for countless animals, but it also offers hope and a vital lifeline to the world’s most endangered wildlife relying on us to survive."
+    },
+    "footer": {
+        "donate": "Donate for volunteers",
+        "donate-button":"DONATE NOW"
+    },
+    "map": {
+        "title": "find where are the animals live"
+    },
+    "zoos": {
+        "p": "more live views",
+        "donation-title": "Your donation makes a difference!",
+        "donation-description": " The Online Zoo's animal webcams are some of the most famous on the internet. Tune in towatch your favourite animals — live, 24/7!",
+        "donation-btn-title": "Quick Donate",
+        "donation-btn-desc": "$ DONATION AMOUNT",
+        "button":"MORE LIVE VIEWS"
+    },
+    "about": {
+        "title": "Watch your favourite animal online",
+        "desc": " Explore the exciting and mysterious world of wild animals in a natural setting without  leaving your home.",
+        "title-btn": "view live cam",
+        "title-2": "Welcome to the Online Zoo!",
+        "desc-2": " On our website, using live webcams, fans of all ages can observe various animals. Among them, are Giant pandas, eagles, alligators, forest gorillas, African lions, and others. It is the whole natural world in real-time in front of our cameras. We hope you will enjoy watching closely and explore animals’ behavior and habitats! Note: animals are not always onview on cameras, so please check back if you don't see anything.",
+        "title-3": "How we work",
+        "desc-3": " Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature andwild animals in our zoo and worldwide. Every day, our experts work to safeguard the healthand wellness of the animals. To continue these efforts, we need your help. We're so grateful to our numerous supporters. All donations, large and small, go a long way to the conservation efforts of our pets.",
+        "title-donation": "Your donation makes a difference!",
+        "desc-donation": "The Online Zoo's animal webcams are some of the most famous on the internet. Tune in to watch your favourite animals — live, 24/7!",
+        "title-4": "PAY AND FEED",
+        "title-4-p": "Your donation has an impact",
+        "desc-4": "  Providing our animals with high-quality nutritious diets is just one element of animal care at our Zoo. We do all the best so that our animals can eat food similar to what they might find in their natural habitats while making sure they get the right mix of nutrients, proteins, and vitamins to be happy and healthy. Please help us provide nutritious food for our animals by donating. The generosity of people like you can help  us make sure that our animals enjoy good food that keeps them in great condition.",
+        "title-5": "Make a donation",
+        "desc-5": "  You can donate through your credit card without any fees. It is easy and safe. We do not keep donors' personal information on an online network. Choose an amount to give and the  pet's name if needed. One of the most effective ways you can give is by making regular  donations.",
+        "title-6": "Bring your food charity — straight to your favorites pets.",
+        "desc-6": "  After your donation, the animal receives its favorite foods. You can support your favorite animals or any animal you care about and make a real personal impact. Never  doubt that your donation can make a difference even if it is small.",
+        "title-7": "what our users think",
+        "desc-7": "We are continuously striving to improve the experiences of our future guests. Below you can leave your own feedback, or simply view feedback from past clients.",
+        "title-8": "care for the animals you love",
+        "desc-8": "You can help to look after the animals you love with your gift today",
+        "desc-9": "Your $30 could give Lucas  a slice of panda cake, made with our secret recipe.",
+        "desc-9-btn": "feed",
+        "desc-10": "Your $150 will help to care for Senja,  a Sumatran tiger, for three weeks.",
+        "desc-11": "With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its natural habitat.",
+        "desc-12": "Sam & Lora have hatched and raised numerous young and will be happy with your help.",
+        "fav-btn": "choose your favourite",
+        "feedback-btn": "leave feedback",
+        "title-9": "meet some our Pets",
+        "desc-13": " Do you have a special place in your heart for animals? Who are your favorites? Perhaps you'd like to donate to special ones or all our pets? We think it's important for you to choose how  your donation is used."
+    }
+}
