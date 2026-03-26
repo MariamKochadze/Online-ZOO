@@ -3,6 +3,8 @@ import { LoaderDisplayService } from '../../../../../shared/services/display-ser
 import { Pet } from '../../../models/pet-model';
 import { PetsApiService } from '../../data-access/pets-api-service';
 import { PetsSliderBuilder } from './pets-slider-service';
+import petsKa from '../../../../../local/pets-details-ka.json';
+import { TranslationStateService } from '../../../../../shared/services/translation-state-service';
 
 export class PetsDisplayService {
     private pets: Pet[] | undefined = [];
@@ -12,9 +14,12 @@ export class PetsDisplayService {
         private readonly petsApiService: PetsApiService,
         private readonly loaderDisplayService: LoaderDisplayService,
         private readonly errorDisplayService: ErrorDisplayService,
+        private readonly translationStateService: TranslationStateService,
     ) {}
 
     public async initialize(): Promise<void> {
+        this.translationStateService.onLanguageChange(this.displayPets.bind(this));
+
         if (this.targetElement === null) {
             throw new Error('Target element must exist');
         }
@@ -26,18 +31,25 @@ export class PetsDisplayService {
         if (!this.pets) {
             this.errorDisplayService.showError(this.targetElement);
         } else {
-            this.displayPets();
+            this.displayPets(this.translationStateService.getCurrentlanguage());
         }
     }
 
-    private displayPets(): void {
+    private displayPets(lang: string): void {
         if (!this.targetElement || !this.pets) {
             return;
         }
 
         const petsSliderBuilder = new PetsSliderBuilder();
-        const petsSldier = petsSliderBuilder.build(this.pets);
+        let petsSldier;
 
+        if (lang === 'ka') {
+            petsSldier = petsSliderBuilder.build(petsKa);
+        } else {
+            petsSldier = petsSliderBuilder.build(this.pets);
+        }
+
+        this.targetElement.innerHTML = '';
         this.targetElement.append(petsSldier);
     }
 }

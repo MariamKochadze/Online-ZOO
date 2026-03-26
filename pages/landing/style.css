@@ -38,7 +38,7 @@ body.darkmode header nav ul .user-info-icon img {
 }
 
 #theme-switch:hover {
-    background-color: var(--orange-1); 
+    background-color: var(--orange-1);
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -83,6 +83,9 @@ img {
     flex-direction: row;
     gap: 10px;
     margin-left: 10px;
+    justify-content: flex-end;
+    position: absolute;
+    left: 75%;
 }
 
 .lang__translator button {
@@ -239,6 +242,11 @@ body {
     .main__section {
         padding: 0 60px;
     }
+    .header__menu-list.flx.align-center.justify-flex-end.wrap.desktop-only{
+        flex-direction: column;
+        gap: 0 !important;
+        align-items: flex-end !important;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -313,4 +321,6 @@ body {
 .user-info-icon img {
     width: 30px;
     height: 30px;
+    position: absolute;
+    right: 14%;
 }

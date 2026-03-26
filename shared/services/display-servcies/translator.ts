@@ -1,6 +1,6 @@
+import { TranslationStateService } from './../translation-state-service';
 import { LocalStorageService } from '../local-storage-service';
 
-// Define a type for translations (nested structure)
 interface Translations {
     [key: string]: string | Translations;
 }
@@ -9,11 +9,15 @@ export class Translator {
     private currentLang = 'en';
     private translations: Translations = {};
 
-    constructor(private readonly localStorageService: LocalStorageService) {}
+    constructor(
+        private readonly localStorageService: LocalStorageService,
+        private readonly translationStateService: TranslationStateService,
+    ) {}
 
     public async init(): Promise<void> {
         const savedLang = this.localStorageService.get<string>('lang');
         this.currentLang = savedLang ?? 'en';
+        this.translationStateService.setLanguage(this.currentLang);
 
         await this.loadTranslations(this.currentLang);
         this.applyTranslations();
@@ -43,7 +47,7 @@ export class Translator {
         }
     }
 
-    // Helper for nested keys like 'contact.title'
+
     private getNestedValue(obj: Translations, path: string): string | undefined {
         const parts = path.split('.');
         let result: string | Translations | undefined = obj;
@@ -98,11 +102,12 @@ export class Translator {
                     // Add 'selected' to the clicked button
                     btn.classList.add('selected');
 
-                    // Save selected language
+                   
                     this.localStorageService.add('lang', lang);
                     this.currentLang = lang;
+                    this.translationStateService.setLanguage(this.currentLang)
 
-                    // Load translations and apply
+            
                     await this.loadTranslations(lang);
                     this.applyTranslations();
                 })();

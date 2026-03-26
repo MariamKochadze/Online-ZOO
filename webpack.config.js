@@ -159,14 +159,14 @@ module.exports = {
                 },
             ],
         }),
-         new CopyPlugin({
-      patterns: [
-        {
-          from: 'local',
-          to: 'local',
-        },
-      ],
-    }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: 'local',
+                    to: 'local',
+                },
+            ],
+        }),
     ],
     devServer: {
         static: {

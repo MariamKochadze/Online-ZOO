@@ -24,7 +24,7 @@ export class PetsSliderBuilder {
                         <p>${pet.species}</p>
                         <span>${pet.description}</span>
                         <div class="container__btn-card">
-                            <span>
+                            <span data-i18n="about.title-btn">
                                 view live cam
                                 <img src="../../assets/icons/Union-1.svg" alt="union icon"/>
                             </span>

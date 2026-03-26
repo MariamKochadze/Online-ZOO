@@ -5,6 +5,7 @@ import { Translator } from '../../shared/services/display-servcies/translator';
 import { UserInfoDisplayService } from '../../shared/services/display-servcies/user-info-display-service';
 import { LocalStorageService } from '../../shared/services/local-storage-service';
 import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
+import { TranslationStateService } from '../../shared/services/translation-state-service';
 
 class MapPage extends PageLifeCycle {
     constructor(
@@ -27,8 +28,10 @@ class MapPage extends PageLifeCycle {
 
 const authenticationStateService = new AuthenticationStateService();
 const localStorageService = new LocalStorageService();
+const translationStateService = new TranslationStateService();
+
 const darkLightThemeMode = new DarkLightMode();
-const translator = new Translator(localStorageService);
+const translator = new Translator(localStorageService, translationStateService);
 
 const userInfoDisplayService = new UserInfoDisplayService(authenticationStateService);
 const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);

@@ -9,6 +9,7 @@ import { UserInfoDisplayService } from '../../shared/services/display-servcies/u
 import { LocalStorageService } from '../../shared/services/local-storage-service';
 import { LocationService } from '../../shared/services/location-service';
 import { PageLifeCycle } from '../../shared/services/page-lifecycle-service';
+import { TranslationStateService } from '../../shared/services/translation-state-service';
 import { CamerasApiService } from './data-access/cameras-api-service';
 import { PetDetailsApiService } from './data-access/pet-details-api-service';
 import { CamerasDisplayService } from './display-services/cameras-display-service';
@@ -50,8 +51,9 @@ const camerasApiService = new CamerasApiService(configuration);
 const petDetailsApiService = new PetDetailsApiService(configuration);
 
 const localStorageService = new LocalStorageService();
+const translationStateService = new TranslationStateService();
 
-const translator = new Translator(localStorageService);
+const translator = new Translator(localStorageService, translationStateService);
 
 const authenticationStateService = new AuthenticationStateService();
 const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);

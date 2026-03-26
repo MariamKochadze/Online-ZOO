@@ -1,3 +1,4 @@
+import { TranslationStateService } from './../../shared/services/translation-state-service';
 import { LocalStorageService } from './../../shared/services/local-storage-service';
 import { AuthenticationStateService } from './../../shared/services/authentication-state-service';
 import { UserInfoDisplayService } from './../../shared/services/display-servcies/user-info-display-service';
@@ -44,6 +45,7 @@ const loaderDisplayService = new LoaderDisplayService();
 const errorDisplayService = new ErrorDisplayService();
 const localStorageService = new LocalStorageService();
 const darkLightMode = new DarkLightMode();
+const translationStateService = new TranslationStateService();
 
 const authenticationStateService = new AuthenticationStateService();
 const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);
@@ -54,13 +56,20 @@ const userInfoDisplayService = new UserInfoDisplayService(authenticationStateSer
 const petsApiService = new PetsApiService(configuration);
 const feedbackApiService = new FeedbackApiService(configuration);
 const localstorageService = new LocalStorageService();
-const translator = new Translator(localstorageService);
+const translator = new Translator(localstorageService, translationStateService);
 
-const petsDisplayService = new PetsDisplayService(petsApiService, loaderDisplayService, errorDisplayService);
+const petsDisplayService = new PetsDisplayService(
+    petsApiService,
+    loaderDisplayService,
+    errorDisplayService,
+    translationStateService,
+);
 const feedBackDisplayService = new FeedBackDisplayService(
     feedbackApiService,
     loaderDisplayService,
     errorDisplayService,
+    translationStateService,
+
 );
 
 new LandingPage(

@@ -14,7 +14,8 @@
         "moduleResolution": "Node",
         "isolatedModules": true,
         "esModuleInterop": true,
-        "moduleDetection": "force"
+        "moduleDetection": "force",
+        "resolveJsonModule": true
     },
     "include": ["pages/**/*", "config/**/*", "shared/**/*"]
 }

@@ -5,6 +5,7 @@ import { AuthenticationStateService } from '../../shared/services/authentication
 import { LocalStorageService } from '../../shared/services/local-storage-service';
 import { DarkLightMode } from '../../shared/services/display-servcies/dark-light-mode';
 import { Translator } from '../../shared/services/display-servcies/translator';
+import { TranslationStateService } from '../../shared/services/translation-state-service';
 
 class ContactUsPage extends PageLifeCycle {
     constructor(
@@ -58,9 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const authenticationStateService = new AuthenticationStateService();
 const localStorageService = new LocalStorageService();
+const translationStateService = new TranslationStateService();
 
 const darkLightMode = new DarkLightMode();
-const trabslator = new Translator(localStorageService);
+const trabslator = new Translator(localStorageService, translationStateService);
 
 const userInfoDisplayService = new UserInfoDisplayService(authenticationStateService);
 const authenticationService = new AuthenticationService(localStorageService, authenticationStateService);
