@@ -32,7 +32,8 @@
         "text": "Your most generous gift not only cares for countless animals, but it also offers hope and a vital lifeline to the world’s most endangered wildlife relying on us to survive."
     },
     "footer": {
-        "donate": "Donate for volunteers"
+        "donate": "Donate for volunteers",
+        "donate-button":"DONATE NOW"
     },
     "map": {
         "title": "find where are the animals live"
@@ -42,7 +43,8 @@
         "donation-title": "Your donation makes a difference!",
         "donation-description": " The Online Zoo's animal webcams are some of the most famous on the internet. Tune in towatch your favourite animals — live, 24/7!",
         "donation-btn-title": "Quick Donate",
-        "donation-btn-desc": "$ DONATION AMOUNT"
+        "donation-btn-desc": "$ DONATION AMOUNT",
+        "button":"MORE LIVE VIEWS"
     },
     "about": {
         "title": "Watch your favourite animal online",

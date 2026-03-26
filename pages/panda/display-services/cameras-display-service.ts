@@ -3,6 +3,8 @@ import { ErrorDisplayService } from '../../../shared/services/display-servcies/e
 import { LoaderDisplayService } from '../../../shared/services/display-servcies/loader-display-service';
 import { CamerasApiService } from '../data-access/cameras-api-service';
 import { Camera } from '../models/camera-model';
+import { TranslationStateService } from '../../../shared/services/translation-state-service';
+import CamerasKa from '../../../local/cameras-ka.json';
 
 export class CamerasDisplayService {
     private cameras: Camera[] | undefined = [];
@@ -19,6 +21,7 @@ export class CamerasDisplayService {
         private readonly loaderDisplayService: LoaderDisplayService,
         private readonly errorDisplayService: ErrorDisplayService,
         private readonly locationService: LocationService,
+        private readonly translationStateService: TranslationStateService,
     ) {}
 
     public async initialize(): Promise<void> {
@@ -32,6 +35,16 @@ export class CamerasDisplayService {
         if (this.targetElement === null || this.liveCamSection === null) {
             throw new Error('Target elements must exist');
         }
+
+        this.translationStateService.onLanguageChange((lang: string) => {
+            if (lang === 'ka') {
+                this.displaySideBarItems(CamerasKa);
+            } else {
+                if (this.cameras) {
+                    this.displaySideBarItems(this.cameras);
+                }
+            }
+        });
 
         this.loaderDisplayService.show(this.targetElement);
         this.loaderDisplayService.show(this.liveCamSection);
@@ -67,7 +80,11 @@ export class CamerasDisplayService {
                 }
             });
 
-            this.displaySideBarItems(this.cameras);
+            if (this.translationStateService.getCurrentlanguage() === 'ka') {
+                this.displaySideBarItems(CamerasKa);
+            } else {
+                this.displaySideBarItems(this.cameras);
+            }
 
             // add event listeners
             this.addEventListenerToSideBarToggle();
@@ -114,7 +131,13 @@ export class CamerasDisplayService {
             return;
         }
 
-        const camera: Camera | undefined = this.cameras?.find((c) => c.petId === petId);
+        let camera: Camera | undefined;
+
+        if (this.translationStateService.getCurrentlanguage() === 'ka') {
+            camera = CamerasKa.find((c) => c.petId === petId);
+        } else {
+            camera = this.cameras?.find((c) => c.petId === petId);
+        }
 
         if (!camera && this.liveCamSection) {
             this.errorDisplayService.showError(this.liveCamSection);
@@ -124,7 +147,7 @@ export class CamerasDisplayService {
                         <h2>${camera.text}</h2>
                     </div>
                     <div class="container__btn zoo-page-btn xl-col-span-2 s-col-span-12 s-order-3 xs-order-4">
-                        <button>
+                        <button data-i18n="footer.donate-button">
                             donate now
                             <img src="../../assets/icons/Union.svg" alt="union icon" />
                         </button>
@@ -134,7 +157,7 @@ export class CamerasDisplayService {
                     </div>
                     <div class="zoo-page-more-live xl-col-span-12 s-order-4 xs-order-3">
                         <div>
-                            <h2>more live views</h2>
+                            <h2 data-i18n="zoos.button">more live views</h2>
                         </div>
                         <div class="zoo-page-images-slider-container">
                             <div class="zoo-page-images">

@@ -65,6 +65,7 @@ const camerasDisplayService = new CamerasDisplayService(
     loaderDisplayService,
     errorDsplayService,
     locationService,
+    translationStateService,
 );
 const petDetailsDisplayService = new PetDetailsDisplayService(
     petDetailsApiService,
